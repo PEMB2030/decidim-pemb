@@ -20,6 +20,10 @@ gem "faker", "~> 1.9"
 # gem "wicked_pdf", "~> 1.4"
 
 gem "figaro"
+gem "delayed_job_web"
+gem "rspec"
+gem "sentry-raven"
+gem "whenever", require: false
 
 group :production do
   gem "passenger"
