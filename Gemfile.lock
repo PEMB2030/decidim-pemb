@@ -323,6 +323,7 @@ GEM
     charlock_holmes (0.7.7)
     chef-utils (16.8.14)
     childprocess (3.0.0)
+    chronic (0.10.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     coffee-rails (5.0.0)
@@ -352,6 +353,11 @@ GEM
     delayed_job_active_record (4.1.5)
       activerecord (>= 3.0, < 6.2)
       delayed_job (>= 3.0, < 5)
+    delayed_job_web (1.4.3)
+      activerecord (> 3.0.0)
+      delayed_job (> 2.0.3)
+      rack-protection (>= 1.5.5)
+      sinatra (>= 1.4.4)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     devise (4.7.3)
@@ -519,6 +525,8 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     mustache (1.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     net-scp (3.0.0)
       net-ssh (>= 2.6.5, < 7.0.0)
     net-ssh (6.1.0)
@@ -585,6 +593,8 @@ GEM
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
       rack (>= 2.0.0)
+    rack-protection (2.1.0)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.4.4)
@@ -712,6 +722,8 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    sentry-raven (3.1.1)
+      faraday (>= 1.0)
     seven_zip_ruby (1.3.0)
     simplecov (0.19.1)
       docile (~> 1.1)
@@ -719,6 +731,11 @@ GEM
     simplecov-cobertura (1.3.1)
       simplecov (~> 0.8)
     simplecov-html (0.12.3)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
     smart_properties (1.15.0)
     social-share-button (1.2.3)
       coffee-rails
@@ -785,6 +802,8 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
     wicked_pdf (1.4.0)
       activesupport
     wisper (2.0.1)
@@ -808,16 +827,20 @@ DEPENDENCIES
   decidim!
   decidim-dev!
   delayed_job_active_record
+  delayed_job_web
   faker (~> 1.9)
   figaro
   letter_opener_web (~> 1.3)
   listen (~> 3.1)
   passenger
   puma (>= 4.3.5)
+  rspec
+  sentry-raven
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0)
   uglifier (~> 4.1)
   web-console (~> 3.5)
+  whenever
 
 RUBY VERSION
    ruby 2.7.2p137
