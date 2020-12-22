@@ -22,7 +22,8 @@ gem "faker", "~> 1.9"
 gem "figaro"
 gem "delayed_job_web"
 gem "rspec"
-gem "sentry-raven"
+gem "sentry-ruby"
+gem "sentry-rails"
 gem "whenever", require: false
 
 group :production do
