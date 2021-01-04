@@ -1,0 +1,52 @@
+$bd-light-green: #00D378;
+$bd-light-green-rgb: 0,211,120;
+$bd-dark-green: #00825A;
+$bd-dark-green-rbg: 0,130,90;
+$bd-purple: #5A36CE;
+$bd-purple-rgb: 90,54,206;
+$bd-pink: #FF7DBE;
+$bd-pink-rgb: 255,125,190;
+$bd-red: #FF3C5A;
+$bd-red-rgb: 255,60,90;
+$bd-blue: #46DCFF;
+$bd-blue-rgb: 70,220,255;
+$bd-yellow: #FFD232;
+$bd-yellow-rgb: 255,210,50;
+$bd-orange: #FF6732;
+$bd-orange-rgb: 255,103,50;
+$bd-brown: #A0695A;
+$bd-brown-rgb: 160,105,90;
+
+// Variables
+
+$primary: $bd-red !default;
+$primary-rgb: $bd-red-rgb !default;
+$secondary: $bd-light-green !default;
+$secondary-rgb: $bd-light-green-rgb !default;
+$success: #90cf36 !default;
+$success-rgb: 144,207,54 !default;
+$warning: #fc9f5b !default;
+$warning-rgb: 252,159,91 !default;
+$alert: #d7263d !default;
+$alert-rgb: 215,38,61 !default;
+
+// Custom vars
+$title-bar-bg: $bd-blue;
+$link-color: #003640;
+$link-color: #16444c;
+$navbar-fg: $title-bar-bg;
+$navbar-fg-hover: $link-color;
+$navbar-bg: #f1f1f1;
+
+:root{
+  --primary: #{$primary};
+  --primary-rgb: #{$primary-rgb};
+  --secondary: #{$secondary};
+  --secondary-rgb: #{$secondary-rgb};
+  --success: #{$success};
+  --success-rgb: #{$success-rgb};
+  --warning: #{$warning};
+  --warning-rgb: #{$warning-rgb};
+  --alert: #{$alert};
+  --alert-rgb: #{$alert-rgb};
+}
