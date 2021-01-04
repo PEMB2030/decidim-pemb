@@ -18,13 +18,13 @@ $bd-orange: #FF6732;
 $bd-orange-rgb: 255,103,50;
 $bd-brown: #A0695A;
 $bd-brown-rgb: 160,105,90;
-$bd-blue: #00478D;
-$bd-blue-rgb: 0,71,141;
+$bd-dark-blue: #00478D;
+$bd-dark-blue-rgb: 0,71,141;
 
 // Variables
 
-$primary: $bd-blue !default;
-$primary-rgb: $bd-blue-rgb !default;
+$primary: $bd-dark-blue !default;
+$primary-rgb: $bd-dark-blue-rgb !default;
 $secondary: $bd-dark-green !default;
 $secondary-rgb: $bd-dark-green-rgb !default;
 $success: #90cf36 !default;

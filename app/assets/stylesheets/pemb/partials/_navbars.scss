@@ -12,5 +12,17 @@
 }
 
 .title-bar{
-	background-color: $bd-blue;
+	background-color: $bd-dark-blue;
+}
+
+.navbar {
+   background-color: $navbar-bg;
+
+   a {
+      color: $bd-dark-blue;
+
+      &:hover {
+         color: $secondary;
+      }
+   }
 }
