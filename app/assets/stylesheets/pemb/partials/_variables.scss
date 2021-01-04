@@ -1,7 +1,9 @@
+@import "decidim/variables";
+
 $bd-light-green: #00D378;
 $bd-light-green-rgb: 0,211,120;
 $bd-dark-green: #00825A;
-$bd-dark-green-rbg: 0,130,90;
+$bd-dark-green-rgb: 0,130,90;
 $bd-purple: #5A36CE;
 $bd-purple-rgb: 90,54,206;
 $bd-pink: #FF7DBE;
@@ -16,13 +18,15 @@ $bd-orange: #FF6732;
 $bd-orange-rgb: 255,103,50;
 $bd-brown: #A0695A;
 $bd-brown-rgb: 160,105,90;
+$bd-blue: #00478D;
+$bd-blue-rgb: 0,71,141;
 
 // Variables
 
-$primary: $bd-red !default;
-$primary-rgb: $bd-red-rgb !default;
-$secondary: $bd-light-green !default;
-$secondary-rgb: $bd-light-green-rgb !default;
+$primary: $bd-blue !default;
+$primary-rgb: $bd-blue-rgb !default;
+$secondary: $bd-dark-green !default;
+$secondary-rgb: $bd-dark-green-rgb !default;
 $success: #90cf36 !default;
 $success-rgb: 144,207,54 !default;
 $warning: #fc9f5b !default;
@@ -31,10 +35,9 @@ $alert: #d7263d !default;
 $alert-rgb: 215,38,61 !default;
 
 // Custom vars
-$title-bar-bg: $bd-blue;
-$link-color: #003640;
-$link-color: #16444c;
-$navbar-fg: $title-bar-bg;
+$title-bar-bg: $bd-orange;
+$link-color: $bd-dark-green;
+$navbar-fg: $bd-orange;
 $navbar-fg-hover: $link-color;
 $navbar-bg: #f1f1f1;
 
