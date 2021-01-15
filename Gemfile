@@ -10,8 +10,8 @@ gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-decidim_awesome", "~> 0.6.0"
-gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
+gem "decidim-decidim_awesome", "~> 0.6.1"
+gem "decidim-notify", "~> 0.3.0"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.23"
 
 gem "bootsnap", "~> 1.4"
@@ -29,12 +29,8 @@ gem "rspec"
 gem "sentry-ruby"
 gem "sentry-rails"
 gem "whenever", require: false
-
-group :production do
-  gem "passenger"
-  gem 'delayed_job_active_record'
-  gem "daemons"
-end
+gem 'delayed_job_active_record'
+gem "daemons"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -49,9 +45,12 @@ group :development do
   gem "spring-watcher-listen", "~> 2.0"
   gem "web-console", "~> 3.5"
 
-  gem "capistrano"
-  gem "capistrano-bundler"
-  gem "capistrano-passenger", ">= 0.1.1"
-  gem "capistrano-rails"
-  gem "capistrano-rbenv"
+  gem "capistrano", "~> 3.15"
+  gem 'capistrano-rails-console', require: false
+  gem "capistrano-rbenv", "~> 2.2", require: false
+  gem "capistrano-bundler", "~> 2.0", require: false
+  gem "capistrano-passenger", "~> 0.2.0", require: false
+  gem "capistrano-rails", "~> 1.6", require: false
+
+  gem "passenger", "~> 6.0"
 end
