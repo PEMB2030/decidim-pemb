@@ -1,8 +1,12 @@
-# decidim-pemb
+# Decidim pel PEMB :: Barcelona de demà
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
 This is the open-source repository for decidim-pemb, based on [Decidim](https://github.com/decidim/decidim).
+
+![Build](https://github.com/Platoniq/decidim-pemb/workflows/Test/badge.svg?branch=main)
+
+![PEMB Homepage](app/assets/images/screenshot.png)
 
 ## Setting up the application
 

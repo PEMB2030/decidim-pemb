@@ -3,14 +3,14 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.23-stable" }
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.23-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-decidim_awesome", "~> 0.6.1"
+gem "decidim-decidim_awesome", "~> 0.6.2"
 gem "decidim-notify", "~> 0.3.0"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.23"
 
@@ -23,14 +23,14 @@ gem "faker", "~> 1.9"
 
 # gem "wicked_pdf", "~> 1.4"
 
-gem "figaro"
-gem "delayed_job_web"
-gem "rspec"
-gem "sentry-ruby"
-gem "sentry-rails"
-gem "whenever", require: false
-gem 'delayed_job_active_record'
 gem "daemons"
+gem "delayed_job_active_record"
+gem "delayed_job_web"
+gem "figaro"
+gem "rspec"
+gem "sentry-rails"
+gem "sentry-ruby"
+gem "whenever", require: false
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -46,11 +46,11 @@ group :development do
   gem "web-console", "~> 3.5"
 
   gem "capistrano", "~> 3.15"
-  gem 'capistrano-rails-console', require: false
-  gem "capistrano-rbenv", "~> 2.2", require: false
   gem "capistrano-bundler", "~> 2.0", require: false
   gem "capistrano-passenger", "~> 0.2.0", require: false
   gem "capistrano-rails", "~> 1.6", require: false
+  gem "capistrano-rails-console", require: false
+  gem "capistrano-rbenv", "~> 2.2", require: false
 
   gem "passenger", "~> 6.0"
 end
