@@ -4,14 +4,14 @@ $bd-light-green: #00D378;
 $bd-light-green-rgb: 0,211,120;
 $bd-dark-green: #00825A;
 $bd-dark-green-rgb: 0,130,90;
-$bd-purple: #5A36CE;
-$bd-purple-rgb: 90,54,206;
+$bd-blue: #5A36CE;
+$bd-blue-rgb: 90,54,206;
 $bd-pink: #FF7DBE;
 $bd-pink-rgb: 255,125,190;
 $bd-red: #FF3C5A;
 $bd-red-rgb: 255,60,90;
-$bd-blue: #46DCFF;
-$bd-blue-rgb: 70,220,255;
+$bd-light-blue: #46DCFF;
+$bd-light-blue-rgb: 70,220,255;
 $bd-yellow: #FFD232;
 $bd-yellow-rgb: 255,210,50;
 $bd-orange: #FF6732;
@@ -23,10 +23,10 @@ $bd-dark-blue-rgb: 0,71,141;
 
 // Variables
 
-$primary: $bd-dark-blue !default;
-$primary-rgb: $bd-dark-blue-rgb !default;
-$secondary: $bd-dark-green !default;
-$secondary-rgb: $bd-dark-green-rgb !default;
+$primary: $bd-blue !important;
+$primary-rgb: $bd-blue-rgb !important;
+$secondary: $bd-light-green !important;
+$secondary-rgb: $bd-light-green-rgb !important;
 $success: #90cf36 !default;
 $success-rgb: 144,207,54 !default;
 $warning: #fc9f5b !default;
@@ -37,8 +37,8 @@ $alert-rgb: 215,38,61 !default;
 // Custom vars
 $title-bar-bg: $bd-orange;
 $link-color: $bd-dark-green;
-$navbar-fg: $bd-orange;
-$navbar-fg-hover: $link-color;
+$navbar-fg: $bd-light-green;
+$navbar-fg-hover: $bd-light-green;
 $navbar-bg: #f1f1f1;
 
 :root{

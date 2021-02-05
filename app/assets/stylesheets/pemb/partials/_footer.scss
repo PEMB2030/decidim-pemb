@@ -1,10 +1,12 @@
 @import "variables";
 
 .main-footer {
-  background-color: $bd-dark-blue;
+  background-color: $bd-blue;
 }
 
 .mini-footer {
+  background-color: $bd-blue;
+
   .row {
     padding-bottom: 2rem;
 
