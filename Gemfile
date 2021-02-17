@@ -10,7 +10,7 @@ gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-decidim_awesome", "~> 0.6.2"
+gem "decidim-decidim_awesome", "~> 0.6.4"
 gem "decidim-notify", "~> 0.3.0"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.23"
 
