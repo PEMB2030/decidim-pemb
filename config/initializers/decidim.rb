@@ -17,7 +17,7 @@ Decidim.configure do |config|
   # Sets the default locale for new organizations. When creating a new
   # organization from the System area, system admins will be able to overwrite
   # this value for that specific organization.
-  config.default_locale = :en
+  config.default_locale = :ca
 
   # Restrict access to the system part with an authorized ip list.
   # You can use a single ip like ("1.2.3.4"), or an ip subnet like ("1.2.3.4/24")
@@ -38,6 +38,12 @@ Decidim.configure do |config|
   config.maps = {
     provider: :here,
     api_key: Rails.application.secrets.maps[:api_key],
+    dynamic: {
+      tile_layer: {
+        api_key: true,
+        scheme: "reduced.day"
+      },
+    },
     static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
   }
   #
