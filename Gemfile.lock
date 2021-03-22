@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 13ce6a1904eb6b9d49ad42cfcb9370d3fed64e85
+  revision: 6672905102be51da7c96aaf67689ee451134df86
   branch: feature/hashtags-map-search
   specs:
     decidim-decidim_awesome (0.6.6)
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/decidim/decidim
-  revision: dc75cb4940e944314d5cc848b66235045c6464c3
+  revision: 19c42930871b12d5f4c8d7e36077d7c946951cd5
   branch: release/0.23-stable
   specs:
     decidim (0.23.4)
@@ -308,7 +308,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.7.2)
+    bootsnap (1.7.3)
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
@@ -386,7 +386,7 @@ GEM
       decidim-core (>= 0.21)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
-    declarative-option (0.1.0)
+    declarative-option (0.1.1)
     delayed_job (4.1.9)
       activesupport (>= 3.0, < 6.2)
     delayed_job_active_record (4.1.5)
@@ -766,7 +766,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    sentry-rails (4.3.1)
+    sentry-rails (4.3.2)
       rails (>= 5.0)
       sentry-ruby-core (~> 4.3.0)
     sentry-ruby (4.3.0)
