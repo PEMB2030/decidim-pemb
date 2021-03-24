@@ -82,12 +82,14 @@ module ScriptHelpers
 
   def geolocate(address)
     results = Geocoder.search(address)
+    raise StandardError, "address not found" unless results.present?
+
     {
       latitude: results.first.latitude,
       longitude: results.first.longitude
     }
   rescue StandardError => e
-    print " -#{e.message}- "
+    print " GELOCATE ERROR -#{e.message}- for [#{address}] "
   end
 
   def raise_if_field_not_found(field, values)
