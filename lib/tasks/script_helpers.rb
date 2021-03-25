@@ -70,7 +70,7 @@ module ScriptHelpers
       when /^ADREÇA$/i
         values[:address] = value
       when /^CATEGORIA/i
-        values[:category] = Decidim::Category.find(value)
+        values[:category] = Decidim::Category.find_by(id: value)
       end
     end
     raise_if_field_not_found(:title, values)
@@ -89,7 +89,7 @@ module ScriptHelpers
       longitude: results.first.longitude
     }
   rescue StandardError => e
-    print " GELOCATE ERROR -#{e.message}- for [#{address}] "
+    print " GEOLOCATE ERROR -#{e.message}- for [#{address}] "
   end
 
   def raise_if_field_not_found(field, values)

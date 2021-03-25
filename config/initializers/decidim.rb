@@ -41,7 +41,7 @@ Decidim.configure do |config|
     dynamic: {
       tile_layer: {
         api_key: true,
-        scheme: "reduced.day"
+        scheme: "normal.day"
       }
     },
     static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
