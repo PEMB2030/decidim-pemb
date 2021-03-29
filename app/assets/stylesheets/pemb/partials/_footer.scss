@@ -1,24 +1,52 @@
 @import "variables";
 
 .main-footer {
-  background-color: $bd-blue;
+  background-color: $secondary;
 }
 
 .mini-footer {
-  background-color: $bd-blue;
+  background-color: $primary;
+}
 
-  .row {
-    padding-bottom: 2rem;
+.main-footer,
+.mini-footer {
+  a,
+  a:hover {
+    color: white;
+  }
+}
 
-    .barcelonadema-logo {
-      a {
-        img {
-          height: 7rem;
-          margin-top: -3rem;
-          margin-bottom: -4rem;
-          max-height: unset;
-        }
-      }
+.mini-footer {
+  padding-top: 2em;
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.custom-logos {
+  a img + .external-link-indicator {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding-bottom: 2em;
+
+  img {
+    height: 4em;
+    width: auto;
+  }
+
+  @include small-screen {
+    flex-direction: column;
+  }
+
+  @include mid-screen {
+    img {
+      height: 3em;
     }
   }
 }

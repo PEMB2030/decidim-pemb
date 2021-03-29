@@ -1,0 +1,22 @@
+@import "variables";
+
+.process-header__hashtag a {
+  color: $secondary;
+}
+
+.process-nav {
+  box-shadow: inset 0 -2px 0 0 $primary;
+
+  &__link {
+    text-transform: none;
+  }
+
+  &__content li {
+    &.is-active {
+      box-shadow: none;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

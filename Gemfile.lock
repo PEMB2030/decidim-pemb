@@ -1,12 +1,13 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 6672905102be51da7c96aaf67689ee451134df86
-  branch: feature/hashtags-map-search
+  revision: fe218d4c706839edb3c9d803326e34f2080d3042
+  branch: master
   specs:
     decidim-decidim_awesome (0.6.6)
       decidim-admin (>= 0.22.0, < 0.24)
       decidim-core (>= 0.22.0, < 0.24)
       redcarpet (~> 3.4)
+      sassc (~> 2.3.0)
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-term_customizer
