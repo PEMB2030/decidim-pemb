@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This migration comes from decidim_proposals (originally 20210318082934)
 
 class FixCountersForCopiedProposals < ActiveRecord::Migration[5.2]
@@ -10,9 +11,7 @@ class FixCountersForCopiedProposals < ActiveRecord::Migration[5.2]
                    to_type: "Decidim::Proposals::Proposal"
                  ).pluck(:to_id)
 
-    Decidim::Proposals::Proposal.where(id: copies_ids).find_each do |record|
-      record.update_comments_count
-    end
+    Decidim::Proposals::Proposal.where(id: copies_ids).find_each(&:update_comments_count)
   end
 
   def down; end

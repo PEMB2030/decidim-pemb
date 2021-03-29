@@ -1,0 +1,17 @@
+@import "variables";
+
+.home-section {
+  &:not(:first-child) {
+    border-top: 4px solid $secondary;
+  }
+
+  .button--sc.hollow {
+    background-color: $primary;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}
