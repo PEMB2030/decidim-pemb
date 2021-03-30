@@ -19,7 +19,7 @@
 
    a,
    a:hover {
-      color: $primary;
+      color: var(--primary);
       font-weight: bold;
    }
 }
@@ -35,7 +35,7 @@
    }
 
    &--active a {
-      box-shadow: inset 0 -4px 0 0 var(--primary);
+      box-shadow: inset 0 (-$border-width-big) 0 0 var(--primary);
    }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .topbar__search:not(:focus-within) button {
-   background-color: $secondary;
+   background-color: var(--secondary);
    color: white;
 }
 
