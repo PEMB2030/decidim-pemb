@@ -1,11 +1,11 @@
 @import "variables";
 
 .main-footer {
-  background-color: $secondary;
+  background-color: var(--secondary);
 }
 
 .mini-footer {
-  background-color: $primary;
+  background-color: var(--primary);
 }
 
 .main-footer,
