@@ -39,16 +39,11 @@ $alert-rgb: 215, 38, 61;
 $body-font-color: black;
 $body-background-color: white;
 
-$title-bar-bg: $bd-orange;
-$link-color: $bd-dark-green;
-
 $navbar-fg: white;
 $navbar-fg-hover: white;
-$navbar-bg: $bd-light-green;
+$navbar-bg: var(--secondary);
 
 $title-bar-bg: $bd-blue;
-
-$bd-lighter-green: lighten($bd-light-green, 20%);
 
 :root {
   --primary: #{$primary} !important;
@@ -63,42 +58,44 @@ $bd-lighter-green: lighten($bd-light-green, 20%);
   --alert-rgb: #{$alert-rgb} default;
 }
 
+$border-width: 2px;
+$border-width-big: 4px;
+$border-width-bigger: 8px;
+$border-radius: 16px;
+
 body,
 .off-canvas-wrapper {
   background: $body-background-color;
 }
 
 .callout.primary {
-  border-left: 8px solid $primary;
-  background-color: saturate(lighten($primary, 25%), 0.2);
+  border-left: $border-width-bigger solid $primary;
+  background-color: saturate(lighten($primary, 33%), 0.2);
 }
 
 .callout.secondary {
-  border-left: 8px solid $bd-light-blue;
-  background-color: saturate(lighten($bd-light-blue, 25%), 0.2);
+  border-left: $border-width-bigger solid $bd-light-blue;
+  background-color: saturate(lighten($bd-light-blue, 33%), 0.2);
 }
 
 .callout.success {
-  border-left: 8px solid $success;
-  background-color: saturate(lighten($success, 25%), 0.2);
+  border-left: $border-width-bigger solid $success;
+  background-color: saturate(lighten($success, 33%), 0.2);
 }
 
 .callout.warning {
-  border-left: 8px solid $warning;
-  background-color: saturate(lighten($warning, 25%), 0.2);
+  border-left: $border-width-bigger solid $warning;
+  background-color: saturate(lighten($warning, 33%), 0.2);
 }
 
 .callout.alert {
-  border-left: 8px solid $alert;
-  background-color: saturate(lighten($alert, 25%), 0.2);
+  border-left: $border-width-bigger solid $alert;
+  background-color: saturate(lighten($alert, 33%), 0.2);
 }
 
 .process-stats__data::after {
   border-left-color: var(--secondary);
-  height: 2rem;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 1rem);
+  border-left-width: $border-width-big;
 }
 
 @mixin small-screen {

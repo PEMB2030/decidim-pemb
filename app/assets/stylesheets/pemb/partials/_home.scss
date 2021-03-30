@@ -2,16 +2,16 @@
 
 .home-section {
   &:not(:first-child) {
-    border-top: 4px solid $secondary;
+    border-top: $border-width-big solid var(--secondary);
   }
 
   .button--sc.hollow {
-    background-color: $primary;
+    background-color: var(--primary);
     color: white;
     border: none;
 
     &:hover {
-      background-color: $secondary;
+      background-color: var(--secondary);
     }
   }
 }
