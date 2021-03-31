@@ -1,0 +1,29 @@
+@import "variables";
+
+.button {
+  border-radius: $border-radius;
+
+  &.hollow,
+  &.hollow.disabled,
+  &.hollow[disabled],
+  &.hollow.disabled:hover,
+  &.hollow[disabled]:hover,
+  &.hollow.disabled:focus,
+  &.hollow[disabled]:focus {
+    border-width: $border-width;
+  }
+}
+
+.card {
+  border-radius: $border-radius;
+  border-width: $border-width;
+}
+
+.card--mini .card__image-top {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+hr.reset {
+  border-bottom: $border-width-big solid var(--secondary);
+}
