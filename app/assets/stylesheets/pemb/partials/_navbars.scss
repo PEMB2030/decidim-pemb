@@ -1,32 +1,61 @@
 @import "variables";
 
-.logo-wrapper {
-	a {
-		img {
-      height: 7rem;
-      margin-top: -3rem;
-      margin-bottom: -3rem;
-      max-height: unset;
-		}
-	}
+.title-bar {
+   background-color: $title-bar-bg;
 }
 
-.title-bar{
-	background-color: $bd-blue;
+.logo-wrapper {
+   .custom-logos {
+      padding-bottom: 0;
+      img {
+         max-height: unset;
+         height: 4em;
+      }
+   }
 }
 
 .navbar {
    background-color: $navbar-bg;
 
-   a {
-      color: $bd-blue;
-
-      &:hover {
-         color: $bd-dark-blue;
-      }
+   a,
+   a:hover {
+      color: var(--primary);
+      font-weight: bold;
    }
 }
 
-.main-nav__link--active a {
-   box-shadow: inset 0 -4px 0 0 var(--primary);
+.main-nav__link {
+   a {
+      color: $navbar-fg;
+   }
+
+   a:hover,
+   a:focus {
+      color: $navbar-fg-hover;
+   }
+
+   &--active a {
+      box-shadow: inset 0 (-$border-width-big) 0 0 var(--primary);
+   }
+}
+
+.topbar__search input {
+   background-color: white;
+   color: $body-font-color;
+}
+
+.topbar__search:not(:focus-within) button {
+   background-color: var(--secondary);
+   color: white;
+}
+
+.topbar__user__login a,
+.topbar__dropmenu > ul > li > a,
+.topbar__admin__link a,
+.topbar__menu button {
+   color: white;
+
+   &:hover {
+      color: white;
+   }
 }
