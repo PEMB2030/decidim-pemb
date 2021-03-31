@@ -29,8 +29,8 @@ gem "delayed_job_active_record"
 gem "delayed_job_web"
 gem "figaro"
 gem "rspec"
-gem "sentry-ruby"
 gem "sentry-rails"
+gem "sentry-ruby"
 gem "whenever", require: false
 
 group :development, :test do
