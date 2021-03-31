@@ -31,3 +31,12 @@
 
 en:
   hello: "Hello world"
+
+ca:
+  layouts:
+    decidim:
+      decidim_awesome:
+        awesome_config:
+          hashtags: Hastags
+          items: Items
+          select_deselect_all: Selecciona/deselecciona tot
