@@ -82,7 +82,7 @@ module ScriptHelpers
 
   def geolocate(address)
     results = Geocoder.search(address)
-    raise StandardError, "address not found" unless results.present?
+    raise StandardError, "address not found" if results.blank?
 
     {
       latitude: results.first.latitude,

@@ -9,7 +9,7 @@ namespace :pemb do
     task :import, [:component, :csv] => :environment do |_task, args|
       process_csv(args) do |params|
         attributes = normalize(params[:line])
-        location = geolocate(attributes[:address]);
+        location = geolocate(attributes[:address])
         raise UnprocessableError, "Cannot be processed" unless location
 
         attributes.merge!(location)
@@ -24,8 +24,8 @@ namespace :pemb do
         form = OpenStruct.new(attributes)
 
         Decidim::Proposals::Admin::CreateProposal.call(form) do
-          on(:ok) do |proposal|
-            show_success("#{proposal.id} #{proposal.title} CREATED!")
+          on(:ok) do |p|
+            show_success("#{p.id} #{p.title} CREATED!")
           end
           on(:invalid) do
             show_error("NOT CREATED!")
