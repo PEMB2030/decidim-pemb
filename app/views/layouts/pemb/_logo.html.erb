@@ -1,12 +1,7 @@
 <% if organization %>
   <div class="custom-logos">
-    <a rel="Barcelona Demà"
-      href="https://pemb.cat/ca/barcelona-dema/"
-      target="_blank" rel="noopener">
-      <%= image_tag asset_path("pemb/logo_bd.png") %>
-    </a>
     <%= link_to decidim.root_url(host: organization.host) do %>
-      <%= image_tag asset_path("pemb/logo_pemb.png") %>
+      <%= image_tag asset_path("pemb/logo_conjunt.png") %>
     <% end %>
   </div>
 <% else %>
