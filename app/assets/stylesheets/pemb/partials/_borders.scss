@@ -19,9 +19,15 @@
   border-width: $border-width;
 }
 
+.card .card__image,
 .card--mini .card__image-top {
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
+}
+
+.card--process__column .card--full__image {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
 }
 
 hr.reset {

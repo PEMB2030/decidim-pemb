@@ -14,4 +14,16 @@
       background-color: var(--secondary);
     }
   }
+
+  .hero__container {
+    .columns.small-centered.small-6.medium-4.mediumlarge-3 {
+      width: 25em;
+    }
+  }
+
+  &.subhero {
+    h1 {
+      color: var(--secondary);
+    }
+  }
 }
