@@ -11,6 +11,7 @@ gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 # gem "decidim-decidim_awesome", "~> 0.6.4"
+gem "decidim-access_requests", git: "https://github.com/front/decidim-module-access_requests"
 gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "master"
 gem "decidim-notify", "~> 0.3.0"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.23"
