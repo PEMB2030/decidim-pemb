@@ -1,0 +1,22 @@
+---
+ca:
+  decidim:
+    authorization_handlers:
+      actors:
+        explanation: Una administradora aprovarà o denegarà el teu accés
+        name: Accés com a actor mapejat
+      admin:
+        actors:
+          help:
+          - La participant sol·licita accés
+          - Una administradora revisarà la sol·licitud
+          - L'administradora aprovarà o denegarà la sol·licitud d'accés
+          - La participant serà notificada de que la seva sol·licitud ha estat aprovada
+            o denegada
+  layouts:
+    decidim:
+      decidim_awesome:
+        awesome_config:
+          hashtags: Hastags
+          items: Items
+          select_deselect_all: Selecciona/deselecciona tot
