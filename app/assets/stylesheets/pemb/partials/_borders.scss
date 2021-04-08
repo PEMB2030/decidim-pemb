@@ -30,6 +30,11 @@
   border-bottom-right-radius: $border-radius;
 }
 
+.card__footer {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
 hr.reset {
   border-bottom: $border-width-big solid var(--secondary);
 }
