@@ -1,15 +1,4 @@
 GIT
-  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 66bc483bb12a0f3bf6d342fd0904fcdb353c0191
-  branch: fix/map-category-hash-filters
-  specs:
-    decidim-decidim_awesome (0.6.6)
-      decidim-admin (>= 0.22.0, < 0.24)
-      decidim-core (>= 0.22.0, < 0.24)
-      redcarpet (~> 3.4)
-      sassc (~> 2.3.0)
-
-GIT
   remote: https://github.com/Platoniq/decidim-module-term_customizer
   revision: 161bcbb4364cd265af8eeceed3f393f196136564
   branch: temp/0.23
@@ -382,6 +371,11 @@ GEM
     db-query-matchers (0.9.0)
       activesupport (>= 4.0, <= 6.0)
       rspec (~> 3.0)
+    decidim-decidim_awesome (0.6.7)
+      decidim-admin (>= 0.22.0, < 0.24)
+      decidim-core (>= 0.22.0, < 0.24)
+      redcarpet (~> 3.4)
+      sassc (~> 2.3.0)
     decidim-notify (0.3)
       decidim-admin (>= 0.21)
       decidim-core (>= 0.21)
@@ -574,7 +568,7 @@ GEM
     netrc (0.11.0)
     nio4r (2.5.7)
     nobspw (0.6.2)
-    nokogiri (1.11.2)
+    nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     oauth (0.5.6)
@@ -882,7 +876,7 @@ DEPENDENCIES
   decidim!
   decidim-conferences!
   decidim-consultations!
-  decidim-decidim_awesome!
+  decidim-decidim_awesome (~> 0.6.7)
   decidim-dev!
   decidim-notify (~> 0.3.0)
   decidim-templates!
