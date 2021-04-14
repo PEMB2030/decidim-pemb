@@ -16,20 +16,19 @@ describe "Visit the conferences page", type: :system, perform_enqueued: true do
 
   it "separates speakers and moderators" do
     within "#conference_speakers-grid > .row:first-child" do
-      expect(page).to have_content("Ponents")
+      expect(page).to have_content("PONENTS")
 
-      within "[data-role]" do
-        expect(page).to have_content(translated_attribute(conference_speaker.position))
+      within ".data-role" do
+        expect(page).to have_content(translated(conference_speaker.position))
         expect(page).not_to have_content("Moderadora")
       end
-      byebug
     end
 
     within "#conference_speakers-grid > .row:last-child" do
-      expect(page).to have_content("Moderadores")
+      expect(page).to have_content("MODERADORES")
 
-      within "[data-role]" do
-        expect(page).not_to have_content(translated_attribute(conference_speaker.position))
+      within ".data-role" do
+        expect(page).not_to have_content(translated(conference_speaker.position))
         expect(page).to have_content("Moderadora")
       end
     end
