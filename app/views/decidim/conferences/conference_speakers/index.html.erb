@@ -1,0 +1,25 @@
+<% add_decidim_meta_tags(title: t("conference_speakers.index.title", scope: "decidim")) %>
+
+<%
+edit_link(
+  decidim_admin_conferences.conference_speakers_path(current_participatory_space.slug),
+  :update,
+  :conference,
+  conference: current_participatory_space
+)
+%>
+
+<section class="" id="conference_speakers-grid">
+  <div class="row column">
+    <h3 class="section-heading"><%= t(".speakers") %></h3>
+    <div class="row small-up-2 medium-up-5 mb-l">
+      <%= render(collection.where.not("position->>'ca' ilike ?", "%moderador%")) %>
+    </div>
+  </div>
+  <div class="row column">
+    <h3 class="section-heading"><%= t(".moderators") %></h3>
+    <div class="row small-up-2 medium-up-5 mb-l">
+      <%= render(collection.where("position->>'ca' ilike ?", "%moderador%")) %>
+    </div>
+  </div>
+</section>

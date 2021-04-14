@@ -13,6 +13,10 @@ ca:
           - L'administradora aprovarà o denegarà la sol·licitud d'accés
           - La participant serà notificada de que la seva sol·licitud ha estat aprovada
             o denegada
+    conferences:
+      conference_speakers:
+        index:
+          moderators: Moderadores
   layouts:
     decidim:
       decidim_awesome:
