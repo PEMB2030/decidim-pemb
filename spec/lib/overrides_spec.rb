@@ -16,6 +16,13 @@ checksums = [
       "/app/views/layouts/decidim/_social_media_links.html.erb" => "497ce000e2e646fb4fba373961410252",
       "/app/cells/decidim/content_blocks/how_to_participate/show.erb" => "a5051a3f34ef68ccb0d180d98dfcb7b4"
     }
+  },
+  {
+    package: "decidim-conferences",
+    files: {
+      # views
+      "/app/views/layouts/decidim/_conference_hero.html.erb" => "80a466727d353089e21988a5c72e52bd"
+    }
   }
 ]
 
