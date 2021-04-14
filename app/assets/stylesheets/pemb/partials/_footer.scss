@@ -40,6 +40,10 @@
     width: auto;
   }
 
+  &-secondary img {
+    height: 2.5em;
+  }
+
   @include small-screen {
     flex-direction: column;
   }
@@ -48,5 +52,13 @@
     img {
       height: 3em;
     }
+
+    &-secondary img {
+      height: 1.5em;
+    }
   }
+}
+
+.mini-footer #custom-logos-support {
+  padding: 0;
 }
