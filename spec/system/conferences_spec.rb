@@ -3,20 +3,35 @@
 require "rails_helper"
 require "byebug"
 
-describe "Visit the home page", type: :system, perform_enqueued: true do
+describe "Visit the conferences page", type: :system, perform_enqueued: true do
   let(:organization) { create :organization }
+  let!(:conference) { create :conference, organization: organization }
+  let!(:conference_speaker) { create :conference_speaker, conference: conference }
+  let!(:conference_moderator) { create :conference_speaker, conference: conference, position: { ca: "Moderadora", en: "Moderator" } }
 
   before do
     switch_to_host(organization.host)
-    visit decidim.root_path
+    visit decidim_conferences.conference_conference_speakers_path(conference, locale: "ca")
   end
 
-  it "renders the home page" do
-    expect(page).to have_content("Home")
-  end
+  it "separates speakers and moderators" do
+    within "#conference_speakers-grid > .row:first-child" do
+      expect(page).to have_content("Ponents")
 
-  # it "has matomo tracker" do
-  #   expect(page.execute_script("return typeof window._paq")).not_to eq("undefined")
-  #   expect(page.execute_script("return typeof window._paq")).to eq("object")
-  # end
+      within "[data-role]" do
+        expect(page).to have_content(translated_attribute(conference_speaker.position))
+        expect(page).not_to have_content("Moderadora")
+      end
+      byebug
+    end
+
+    within "#conference_speakers-grid > .row:last-child" do
+      expect(page).to have_content("Moderadores")
+
+      within "[data-role]" do
+        expect(page).not_to have_content(translated_attribute(conference_speaker.position))
+        expect(page).to have_content("Moderadora")
+      end
+    end
+  end
 end
