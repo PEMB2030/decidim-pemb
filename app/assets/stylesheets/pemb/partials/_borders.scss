@@ -43,8 +43,7 @@ hr.reset {
   margin-left: 1em;
 
   &-item {
-    border-width: $border-width;
-    border-radius: $border-radius;
+    border: $border-width solid #e8e8e8;
     margin-right: 1em;
   }
 }
