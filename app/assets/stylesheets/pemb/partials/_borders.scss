@@ -38,3 +38,20 @@
 hr.reset {
   border-bottom: $border-width-big solid var(--secondary);
 }
+
+.process_stats {
+  margin-left: 1em;
+
+  &-item {
+    border-width: $border-width;
+    border-radius: $border-radius;
+    margin-right: 1em;
+  }
+}
+
+.conference-programme .programme-selector {
+  border-bottom-width: $border-width-big;
+  border-bottom-color: var(--secondary);
+
+  padding-bottom: 1.5rem;
+}
