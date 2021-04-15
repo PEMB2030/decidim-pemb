@@ -25,7 +25,9 @@
           </div>
         </div>
         <div class="column medium-3 end">
-          <%= link_to t(".register"), ENV.fetch("CONFERENCE_REGISTRATION_URL", "/conferences/jornada-cohesionada/f/71/"), class:"button button--sc light expanded" %>
+          <% if current_participatory_space.registrations_enabled? %>
+            <%= link_to t(".register"), ENV.fetch("CONFERENCE_REGISTRATION_PATH", "/conferences/jornada-cohesionada/f/71/"), class:"button button--sc light expanded" %>
+          <% end %>
         </div>
         <% current_participatory_space.components.where(manifest_name: "meetings").each do |component_meeting| %>
           <% if component_meeting.published? || component_meeting == self.try(:current_component) %>
