@@ -2,11 +2,11 @@
 ca:
   decidim:
     authorization_handlers:
-      actors:
-        explanation: Una administradora aprovarà o denegarà el teu accés
+      access_codes:
+        explanation: Introdueixi el codi d'accés que ha rebut per correu electrònic 
         name: Accés com a actor mapejat
       admin:
-        actors:
+        access_codes:
           help:
           - La participant sol·licita accés
           - Una administradora revisarà la sol·licitud
