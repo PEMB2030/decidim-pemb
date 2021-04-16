@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This migration comes from decidim_access_codes_verification (originally 20210409162973)
 
 class CreateDecidimAccessCodesAccessCodes < ActiveRecord::Migration[5.2]
