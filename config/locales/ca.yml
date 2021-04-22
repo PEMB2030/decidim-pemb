@@ -24,7 +24,7 @@ ca:
               Si no el trobes a la bústia d'entrada, revisa la carpeta de correus no desitjats.<br><br>
               Si no trobes el codi de la teva organització, pots contactar amb <a href="mailto:ajuda.barcelonadema@pemb.cat">ajuda.barcelonadema@pemb.cat</a> des d’on podrem ajudar-te! 
             send: Enviar
-            title: Introduiu el codi d'accés
+            title: Introdueix el codi de verificació
     authorization_handlers:
       access_codes:
         explanation: Introdueixi el codi d'accés que ha rebut per correu electrònic 
