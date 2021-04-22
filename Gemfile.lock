@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-access_codes
-  revision: 4af87390d93c3f2db28d87ee3a912fa1d67d399c
+  revision: 087c98f79c2740339eae151770126b98355cbc84
   branch: main
   specs:
     decidim-access_codes (0.23)
