@@ -1463,8 +1463,7 @@ body.outlook p {
 table.body th.decidim-bar,
 table.body td.decidim-bar {
   background-color: #5a36ce;
-  padding-top: 1em;
-  height: 5em; }
+  padding: 1em; }
   table.body th.decidim-bar a,
   table.body td.decidim-bar a {
     color: white; }
