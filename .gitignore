@@ -48,3 +48,6 @@ public/uploads
 .rbenv-vars
 .vscode
 spec/decidim_dummy_app
+
+# Ignore sass cache
+.sass-cache

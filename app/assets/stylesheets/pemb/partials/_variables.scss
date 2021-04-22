@@ -1,4 +1,4 @@
-@import "decidim/variables";
+// @import "decidim/variables";
 
 $bd-light-green: #00d378;
 $bd-light-green-rgb: 0, 211, 120;
@@ -34,10 +34,13 @@ $warning-rgb: 252, 159, 91;
 $alert: #d7263d;
 $alert-rgb: 215, 38, 61;
 
+$white: white;
+$black: black;
+
 // Custom variables
 
-$body-font-color: black;
-$body-background-color: white;
+$body-font-color: $black;
+$body-background-color: $white;
 
 $navbar-fg: white;
 $navbar-fg-hover: white;
@@ -58,6 +61,14 @@ $title-bar-bg: $bd-blue;
   --alert-rgb: #{$alert-rgb} default;
 }
 
+$hue: (
+  primary: hue($primary),
+  bd-light-blue: hue($bd-light-blue),
+  success: hue($success),
+  warning: hue($warning),
+  alert: hue($alert),
+);
+
 $border-width: 2px;
 $border-width-big: 4px;
 $border-width-bigger: 8px;
@@ -70,27 +81,27 @@ body,
 
 .callout.primary {
   border-left: $border-width-bigger solid $primary;
-  background-color: saturate(lighten($primary, 33%), 0.2);
+  background-color: hsl(map-get($hue, primary), 60, 90);
 }
 
 .callout.secondary {
   border-left: $border-width-bigger solid $bd-light-blue;
-  background-color: saturate(lighten($bd-light-blue, 33%), 0.2);
+  background-color: hsl(map-get($hue, bd-light-blue), 60, 90);
 }
 
 .callout.success {
   border-left: $border-width-bigger solid $success;
-  background-color: saturate(lighten($success, 33%), 0.2);
+  background-color: hsl(map-get($hue, success), 60, 90);
 }
 
 .callout.warning {
   border-left: $border-width-bigger solid $warning;
-  background-color: saturate(lighten($warning, 33%), 0.2);
+  background-color: hsl(map-get($hue, warning), 60, 90);
 }
 
 .callout.alert {
   border-left: $border-width-bigger solid $alert;
-  background-color: saturate(lighten($alert, 33%), 0.2);
+  background-color: hsl(map-get($hue, alert), 60, 90);
 }
 
 .process-stats__data::after {
