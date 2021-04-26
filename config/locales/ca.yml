@@ -20,7 +20,7 @@ ca:
             code: Codi d'accés
             instructions: |
               Si us plau, introdueix el codi de verificació que heu rebut a la teva organització a través del correu electrònic registrat en l’enquesta del mapa d’actors del procés Barcelona Demà.<br><br>
-              Recorda que cada codi és únic per organització mapejada i es podrà fer servir per a un <b>màxim de 10 usuàries de la mateixa organització</b>.<br><br>
+              Recorda que cada codi és únic per organització mapejada i es podrà fer servir per a un <b>màxim de 10 usuàries de la mateixa entitat</b>.<br><br>
               Si no el trobes a la bústia d'entrada, revisa la carpeta de correus no desitjats.<br><br>
               Si no trobes el codi de la teva organització, pots contactar amb <a href="mailto:ajuda.barcelonadema@pemb.cat">ajuda.barcelonadema@pemb.cat</a> des d’on podrem ajudar-te! 
             send: Enviar
