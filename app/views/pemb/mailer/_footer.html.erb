@@ -1,0 +1,83 @@
+<% def icon(name, options = {})
+  html_properties = {}
+  html_properties["width"] = options[:width]
+  html_properties["height"] = options[:height]
+  html_properties["fill"] = options[:fill]
+  html_properties["aria-label"] = options[:aria_label] || options[:"aria-label"] || options["aria-label"]
+  html_properties["role"] = options[:role] || "img"
+  html_properties["aria-hidden"] = options[:aria_hidden] || options[:"aria-hidden"] || options["aria-hidden"]
+
+  html_properties["class"] = "icon--#{name} icon"
+
+  content_tag :svg, html_properties do
+    inner = content_tag :title, options["title"] || html_properties["aria-label"]
+    # inner += content_tag :use, nil, role: options[:role], "href" => "#{asset_path("decidim/icons.svg", host: @organization.host)}#icon-#{name}"
+    inner += content_tag :use, nil, role: options[:role], "href" => "#{asset_url("decidim/icons.svg", host: "http://localhost:3000")}#icon-#{name}"
+
+    inner
+  end
+end %>
+
+<style>
+  .footer-social {
+    gap: 0.5em;
+    float: right;
+    display: flex;
+    list-style: none;
+    margin-right: 16px;
+  }
+  .footer-social svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+  }
+</style>
+
+<tr>
+  <th class="expander"></th>
+  <th class="small-6 first columns cityhall-bar">
+    <div class="decidim-logo" style="float: left; text-align: left; padding-left: 16px">
+      <% if @custom_url_for_mail_root.present? %>
+        <%= link_to @organization.name.html_safe, @custom_url_for_mail_root %>
+      <% else %>
+        <%= link_to @organization.name.html_safe, decidim.root_url(host: @organization.host) %>
+      <% end %>
+    </div>
+  </th>
+  <th class="small-6 first columns cityhall-bar">
+    <ul class="footer-social">
+      <% if @organization.twitter_handler.present? %>
+        <li>
+          <a class="footer-social__icon" target="_blank" rel="noopener" href="https://twitter.com/<%= @organization.twitter_handler %>">
+            <%= icon "twitter", role: "img", aria_label: "Twitter" %>
+          </a>
+        </li>
+      <% end %>
+      <% if @organization.facebook_handler.present? %>
+        <li>
+          <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.facebook.com/<%= @organization.facebook_handler %>">
+            <%= icon "facebook", role: "img", aria_label: "Facebook" %>
+          </a>
+        </li>
+      <% end %>
+      <% if @organization.instagram_handler.present? %>
+        <li>
+          <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.instagram.com/<%= @organization.instagram_handler %>">
+            <%= icon "instagram", role: "img", aria_label: "Instagram" %>
+          </a>
+        </li>
+      <% end %>
+      <li>
+        <a class="footer-social__icon" target="_blank" rel="noopener" href="https://pemb.cat/ca">
+          <%= icon "link-intact", role: "img", aria_label: "PEMB" %>
+        </a>
+      </li>
+      <li>
+        <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.linkedin.com/company/11257078">
+
+          <%= render partial: "layouts/decidim/social/linkedin" %>
+        </a>
+      </li>
+    </ul>
+  </th>
+</tr>
