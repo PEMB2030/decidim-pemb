@@ -28,19 +28,19 @@
       <% if @organization.twitter_handler.present? %>
         <li>
           <a class="footer-social__icon" target="_blank" rel="noopener" href="https://twitter.com/<%= @organization.twitter_handler %>">
-            <%= image_tag "icons/twitter" %>
+            <%= image_tag asset_url("icons/twitter") %>
           </a>
         </li>
       <% end %>
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://pemb.cat/ca">
-          <%= image_tag "icons/link" %>
+          <%= image_tag asset_url("icons/link") %>
         </a>
       </li>
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.linkedin.com/company/11257078">
 
-          <%= image_tag "icons/linkedin" %>
+          <%= image_tag asset_url("icons/linkedin") %>
         </a>
       </li>
     </ul>
