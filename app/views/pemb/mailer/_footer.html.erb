@@ -6,10 +6,9 @@
     list-style: none;
     margin-right: 16px;
   }
-  .footer-social svg {
+  .footer-social img {
     width: 16px;
     height: 16px;
-    fill: white;
   }
 </style>
 
@@ -29,19 +28,19 @@
       <% if @organization.twitter_handler.present? %>
         <li>
           <a class="footer-social__icon" target="_blank" rel="noopener" href="https://twitter.com/<%= @organization.twitter_handler %>">
-            <%= render partial: "layouts/decidim/social/twitter" %>
+            <%= image_tag "icons/twitter" %>
           </a>
         </li>
       <% end %>
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://pemb.cat/ca">
-          <%= render partial: "layouts/decidim/social/link" %>
+          <%= image_tag "icons/link" %>
         </a>
       </li>
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.linkedin.com/company/11257078">
 
-          <%= render partial: "layouts/decidim/social/linkedin" %>
+          <%= image_tag "icons/linkedin" %>
         </a>
       </li>
     </ul>
