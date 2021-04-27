@@ -1,22 +1,3 @@
-<% def icon(name, options = {})
-  html_properties = {}
-  html_properties["width"] = options[:width]
-  html_properties["height"] = options[:height]
-  html_properties["fill"] = options[:fill]
-  html_properties["aria-label"] = options[:aria_label] || options[:"aria-label"] || options["aria-label"]
-  html_properties["role"] = options[:role] || "img"
-  html_properties["aria-hidden"] = options[:aria_hidden] || options[:"aria-hidden"] || options["aria-hidden"]
-
-  html_properties["class"] = "icon--#{name} icon"
-
-  content_tag :svg, html_properties do
-    inner = content_tag :title, options["title"] || html_properties["aria-label"]
-    inner += content_tag :use, nil, role: options[:role], "href" => "#{asset_path("decidim/icons.svg", host: @organization.host)}#icon-#{name}"
-
-    inner
-  end
-end %>
-
 <style>
   .footer-social {
     gap: 0.5em;
@@ -48,27 +29,13 @@ end %>
       <% if @organization.twitter_handler.present? %>
         <li>
           <a class="footer-social__icon" target="_blank" rel="noopener" href="https://twitter.com/<%= @organization.twitter_handler %>">
-            <%= icon "twitter", role: "img", aria_label: "Twitter" %>
-          </a>
-        </li>
-      <% end %>
-      <% if @organization.facebook_handler.present? %>
-        <li>
-          <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.facebook.com/<%= @organization.facebook_handler %>">
-            <%= icon "facebook", role: "img", aria_label: "Facebook" %>
-          </a>
-        </li>
-      <% end %>
-      <% if @organization.instagram_handler.present? %>
-        <li>
-          <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.instagram.com/<%= @organization.instagram_handler %>">
-            <%= icon "instagram", role: "img", aria_label: "Instagram" %>
+            <%= render partial: "layouts/decidim/social/twitter" %>
           </a>
         </li>
       <% end %>
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://pemb.cat/ca">
-          <%= icon "link-intact", role: "img", aria_label: "PEMB" %>
+          <%= render partial: "layouts/decidim/social/link" %>
         </a>
       </li>
       <li>
