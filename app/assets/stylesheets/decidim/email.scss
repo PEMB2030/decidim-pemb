@@ -1827,3 +1827,15 @@ td {
   padding: 0;
   padding-top: 25px;
 }
+
+.footer-social {
+  gap: 0.5em;
+  float: right;
+  display: flex;
+  list-style: none;
+  margin-right: 16px;
+}
+.footer-social img {
+  width: 16px;
+  height: 16px;
+}
