@@ -16,6 +16,8 @@ checksums = [
       "/app/views/layouts/decidim/_social_media_links.html.erb" => "497ce000e2e646fb4fba373961410252",
       # mailer
       "/app/views/layouts/decidim/mailer.html.erb" => "5bbe335c1dfd02f8448af287328a49dc",
+      "/app/cells/decidim/newsletter_templates/basic_only_text/show.erb" => "todo",
+      "/app/cells/decidim/newsletter_templates/image_text_cta/show.erb" => "todo",
       # cells
       "/app/cells/decidim/content_blocks/how_to_participate/show.erb" => "a5051a3f34ef68ccb0d180d98dfcb7b4"
     }
