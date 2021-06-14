@@ -32,6 +32,13 @@ checksums = [
       "/app/views/decidim/conferences/conference_speakers/index.html.erb" => "1fad20938241a4ce3fe5a183bafe164e",
       "/app/views/decidim/conferences/conferences/show.html.erb" => "746ca5f3192ba14095431691b766430a"
     }
+  },
+  {
+    package: "decidim-meetings",
+    files: {
+      # views
+      "/app/views/decidim/meetings/meetings/show.html.erb" => "833d8e7bf4dbe6d43eb674e30730289c"
+    }
   }
 ]
 
