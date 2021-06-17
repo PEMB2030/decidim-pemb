@@ -48,7 +48,7 @@ edit_link(
           <%= meeting.start_time.strftime("%H:%M") %> - <%= meeting.end_time.strftime("%H:%M") %>
         </div>
         
-        <% if ENV["MEETING_REGISTRATION_PATH_#{meeting.id}"] %>
+        <% if ENV["MEETING_REGISTRATION_PATH_#{meeting.id}"] && meeting.can_be_joined_by?(current_user) %>
           <%= link_to t("join", scope: "decidim.meetings.meetings.show"), ENV["MEETING_REGISTRATION_PATH_#{meeting.id}"], class: "button button--sc light expanded" %>
         <% else %>
           <%= cell "decidim/meetings/join_meeting_button", meeting, big_button: true, show_remaining_slots: true %>
