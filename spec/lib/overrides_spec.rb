@@ -18,7 +18,6 @@ checksums = [
       "/app/views/layouts/decidim/mailer.html.erb" => "5bbe335c1dfd02f8448af287328a49dc",
       "/app/cells/decidim/newsletter_templates/basic_only_text/show.erb" => "1f3020690377a48dd6bd1f75db3f2254",
       "/app/cells/decidim/newsletter_templates/image_text_cta/show.erb" => "bbdfded0065ce4c2ac93f6358853b887",
-      "/app/views/decidim/newsletters/show.html.erb" => "d7cfee0853832c8f4930195702d2aeb3",
       # cells
       "/app/cells/decidim/content_blocks/how_to_participate/show.erb" => "a5051a3f34ef68ccb0d180d98dfcb7b4"
     }
@@ -37,7 +36,7 @@ checksums = [
     package: "decidim-meetings",
     files: {
       # views
-      "/app/views/decidim/meetings/meetings/show.html.erb" => "833d8e7bf4dbe6d43eb674e30730289c"
+      "/app/views/decidim/meetings/meetings/show.html.erb" => "f10b79ff2fbb714470fd7eef6f3a0056"
     }
   }
 ]
