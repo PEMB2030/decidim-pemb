@@ -23,12 +23,12 @@ gem "uglifier", "~> 4.1"
 gem "faker", "~> 2.14"
 # gem "wicked_pdf", "~> 1.4"
 
+gem "delayed_job_active_record"
+gem "delayed_job_web"
 gem "rspec"
 gem "sentry-rails"
 gem "sentry-ruby"
 gem "whenever", require: false
-gem "delayed_job_active_record"
-gem "delayed_job_web"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -55,6 +55,6 @@ group :development do
 end
 
 group :production do
-  gem "figaro"
   gem "daemons"
+  gem "figaro"
 end

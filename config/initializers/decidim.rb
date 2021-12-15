@@ -47,7 +47,7 @@ Decidim.configure do |config|
     static: { url: "https://image.maps.ls.hereapi.com/mia/1.6/mapview" }
   }
 
-  Cell::ViewModel.view_paths << File.expand_path(Rails.root.join("app", "views"))
+  Cell::ViewModel.view_paths << File.expand_path(Rails.root.join("app/views"))
   #
   # == OpenStreetMap (OSM) services ==
   # To use the OSM map service providers, you will need a service provider for
