@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.23-stable" }.freeze
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.24-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
@@ -11,23 +11,20 @@ gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-access_codes", git: "https://github.com/Platoniq/decidim-module-access_codes", branch: "main"
-gem "decidim-decidim_awesome", "~> 0.6.7"
-gem "decidim-notify", "~> 0.3.0"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.23"
+gem "decidim-decidim_awesome", "~> 0.7.2"
+gem "decidim-notify", "~> 0.4.0"
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.24"
 
 gem "bootsnap", "~> 1.4"
 
-gem "puma", ">= 4.3.5"
+gem "puma", ">= 5.0.0"
 gem "uglifier", "~> 4.1"
 
-gem "faker", "~> 1.9"
-
+gem "faker", "~> 2.14"
 # gem "wicked_pdf", "~> 1.4"
 
-gem "daemons"
 gem "delayed_job_active_record"
 gem "delayed_job_web"
-gem "figaro"
 gem "rspec"
 gem "sentry-rails"
 gem "sentry-ruby"
@@ -35,6 +32,7 @@ gem "whenever", require: false
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
+  gem "rubocop-faker"
 
   gem "decidim-dev", DECIDIM_VERSION
 end
@@ -54,4 +52,9 @@ group :development do
   gem "capistrano-rbenv", "~> 2.2", require: false
 
   gem "passenger", "~> 6.0"
+end
+
+group :production do
+  gem "daemons"
+  gem "figaro"
 end
