@@ -290,3 +290,7 @@ end
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
+
+# Api tunnings
+Decidim::Api::Schema.max_complexity = 5000
+Decidim::Api::Schema.max_depth = 50
