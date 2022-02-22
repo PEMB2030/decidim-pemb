@@ -50,3 +50,10 @@ spec/decidim_dummy_app
 
 # Ignore sass cache
 .sass-cache
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

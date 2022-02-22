@@ -1,0 +1,64 @@
+@import "variables";
+
+.main-footer {
+  background-color: var(--secondary);
+}
+
+.mini-footer {
+  background-color: var(--primary);
+}
+
+.main-footer,
+.mini-footer {
+  a,
+  a:hover {
+    color: white;
+  }
+}
+
+.mini-footer {
+  padding-top: 2em;
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.custom-logos {
+  a img + .external-link-indicator {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding-bottom: 2em;
+
+  img {
+    height: 4em;
+    width: auto;
+  }
+
+  &-secondary img {
+    height: 2.5em;
+  }
+
+  @include small-screen {
+    flex-direction: column;
+  }
+
+  @include mid-screen {
+    img {
+      height: 3em;
+    }
+
+    &-secondary img {
+      height: 1.5em;
+    }
+  }
+}
+
+.mini-footer #custom-logos-support {
+  padding: 0;
+}

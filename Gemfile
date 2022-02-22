@@ -3,7 +3,8 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.25-stable" }.freeze
+# DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.25-stable" }.freeze
+DECIDIM_VERSION = "~> 0.25.2"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION

@@ -1,7 +1,7 @@
 <% if organization %>
   <div class="custom-logos">
     <%= link_to decidim.root_url(host: organization.host) do %>
-      <%= image_tag asset_path("pemb/logo_conjunt.png") %>
+      <%= image_pack_tag "media/images/logo_conjunt.png" %>
     <% end %>
   </div>
 <% else %>
