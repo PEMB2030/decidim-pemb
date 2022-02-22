@@ -3,3 +3,4 @@
 
 // Load images
 require.context("../../images", true)
+import "src/map_customizations"

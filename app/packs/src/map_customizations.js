@@ -1,7 +1,6 @@
 $(() => {
-
   // Customize hashtag ordering
-  $("#map").on("ready.decidim", (_e, map) => {
+  $("#awesome-map").on("ready.decidim", (_e, map) => {
     console.log("init2");
     const hashtagCompare = (a, b) => {
       console.log("compare", a, b)
