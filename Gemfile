@@ -28,7 +28,7 @@ gem "rspec"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
-  # gem "rubocop-faker"
+  gem "rubocop-faker"
 
   gem "decidim-dev", DECIDIM_VERSION
 end
