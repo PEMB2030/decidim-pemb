@@ -54,7 +54,6 @@ spec/decidim_dummy_app
 /public/packs
 /public/packs-test
 /node_modules
-/packages
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
