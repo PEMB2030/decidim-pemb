@@ -9,6 +9,16 @@ GIT
       decidim-verifications (~> 0.25.2)
 
 GIT
+  remote: https://github.com/Platoniq/decidim-module-decidim_awesome
+  revision: 699e1be17e415e27367c4164f75816562acfdb62
+  branch: map-fixes
+  specs:
+    decidim-decidim_awesome (0.8.1)
+      decidim-admin (>= 0.25.0, < 0.27)
+      decidim-core (>= 0.25.0, < 0.27)
+      sassc (~> 2.3)
+
+GIT
   remote: https://github.com/Platoniq/decidim-module-notify
   revision: 18d8c8ef296c45c6f0eaa958aeb9c45ce542ca13
   branch: main
@@ -311,10 +321,6 @@ GEM
     decidim-debates (0.25.2)
       decidim-comments (= 0.25.2)
       decidim-core (= 0.25.2)
-    decidim-decidim_awesome (0.8.0)
-      decidim-admin (>= 0.25.0, < 0.27)
-      decidim-core (>= 0.25.0, < 0.27)
-      sassc (~> 2.3)
     decidim-dev (0.25.2)
       axe-core-rspec (~> 4.1.0)
       byebug (~> 11.0)
@@ -881,7 +887,7 @@ DEPENDENCIES
   decidim-access_codes!
   decidim-conferences (~> 0.25.2)
   decidim-consultations (~> 0.25.2)
-  decidim-decidim_awesome
+  decidim-decidim_awesome!
   decidim-dev (~> 0.25.2)
   decidim-notify!
   decidim-templates (~> 0.25.2)

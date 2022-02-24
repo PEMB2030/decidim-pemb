@@ -12,7 +12,7 @@ gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-access_codes", git: "https://github.com/Platoniq/decidim-module-access_codes", branch: "main"
-gem "decidim-decidim_awesome"
+gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "map-fixes"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify", branch: "main"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "master"
 

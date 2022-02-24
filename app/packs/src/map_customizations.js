@@ -1,7 +1,6 @@
 $(() => {
   // Customize hashtag ordering
   $("#awesome-map").on("ready.decidim", (_e, map) => {
-    console.log("init2");
     const hashtagCompare = (a, b) => {
       console.log("compare", a, b)
       if(a.toLowerCase().startsWith("#metropoli")) {
@@ -14,7 +13,8 @@ $(() => {
     };
 
     // order hashtags with "metropoli" first, then alphabetically
-    window.AwesomeMap.hashtagAdded = (hashtag, $div) => {
+    window.AwesomeMap.controls.onHashtag = (hashtag, $div) => {
+      console.log("hashtag added", hashtag)
       let $last = $div.contents("label:last");
       if($last.prev("label").length) {
         // move the label to order it alphabetically
