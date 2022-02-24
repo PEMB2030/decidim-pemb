@@ -3,8 +3,7 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-# DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "release/0.25-stable" }.freeze
-DECIDIM_VERSION = "~> 0.25.2"
+DECIDIM_VERSION = "~> 0.26.0"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
@@ -12,9 +11,9 @@ gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-access_codes", git: "https://github.com/Platoniq/decidim-module-access_codes", branch: "main"
-gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "map-fixes"
+gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify", branch: "main"
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "master"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "develop"
 
 gem "bootsnap", "~> 1.7"
 
