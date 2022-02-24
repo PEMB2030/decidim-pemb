@@ -19,15 +19,6 @@ GIT
       sassc (~> 2.3)
 
 GIT
-  remote: https://github.com/Platoniq/decidim-module-notify
-  revision: 0d9db0a5291bff12e157fd2b2d2cbef35ab3e2b7
-  branch: main
-  specs:
-    decidim-notify (0.5)
-      decidim-admin (>= 0.25)
-      decidim-core (>= 0.25)
-
-GIT
   remote: https://github.com/mainio/decidim-module-term_customizer
   revision: 6b5e50d9ae4cf16897cf193da4a55cd07d3fce81
   branch: develop
@@ -355,6 +346,9 @@ GEM
       decidim-core (= 0.26.0)
       decidim-forms (= 0.26.0)
       icalendar (~> 2.5)
+    decidim-notify (0.4)
+      decidim-admin (>= 0.21)
+      decidim-core (>= 0.21)
     decidim-pages (0.26.0)
       decidim-core (= 0.26.0)
     decidim-participatory_processes (0.26.0)
@@ -865,7 +859,7 @@ DEPENDENCIES
   decidim-consultations (~> 0.26.0)
   decidim-decidim_awesome!
   decidim-dev (~> 0.26.0)
-  decidim-notify!
+  decidim-notify
   decidim-templates (~> 0.26.0)
   decidim-term_customizer!
   faker (~> 2.14)
