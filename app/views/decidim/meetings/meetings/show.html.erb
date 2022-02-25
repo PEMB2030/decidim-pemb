@@ -37,20 +37,13 @@ edit_link(
     <% end %>
 
     <% if allowed_to?(:close, :meeting, meeting: meeting) %>
-      <%= link_to t(".close_meeting"), edit_meeting_meeting_close_path(meeting_id: meeting.id, id: meeting.id), class: "button hollow expanded button-sc button--icon follow-button" %>
+      <% caption =  meeting.closed? ? t(".edit_close_meeting") : t(".close_meeting") %>
+      <%= link_to caption, edit_meeting_meeting_close_path(meeting_id: meeting.id, id: meeting.id), class: "button hollow expanded button-sc button--icon follow-button" %>
     <% end %>
 
     <div class="card extra">
       <div class="card__content">
-        <div class="extra__date">
-          <%= l meeting.start_time, format: "%d" %>
-          <span class="extra__month"><%= l meeting.start_time, format: "%B" %>
-            <%= l(meeting.start_time, format: "%Y") if meeting.start_time.year != Date.current.year %>
-          </span>
-        </div>
-        <div class="extra__time">
-          <%= meeting.start_time.strftime("%H:%M") %> - <%= meeting.end_time.strftime("%H:%M") %>
-        </div>
+        <%= cell("decidim/date_range", { start: meeting.start_time, end: meeting.end_time }) %>
 
         <% if ENV["MEETING_REGISTRATION_PATH_#{meeting.id}"] && meeting.can_be_joined_by?(current_user) %>
           <%= link_to t("join", scope: "decidim.meetings.meetings.show"), ENV["MEETING_REGISTRATION_PATH_#{meeting.id}"], class: "button button--sc light expanded" %>
@@ -131,13 +124,18 @@ edit_link(
           <%= t("transparent", scope: "decidim.meetings.types") %>
         </span>
       <% end %>
-      <%= decidim_sanitize(present(meeting).description(links: true)) %>
+      <% if meeting.withdrawn? %>
+        <span class="<%= meeting_type_badge_css_class("withdraw") %> label proposal-status">
+          <%= t("withdraw", scope: "decidim.meetings.types") %>
+        </span>
+      <% end %>
+      <%= render_meeting_body(@meeting) %>
 
       <% if meeting.maps_enabled? && !meeting.online_meeting? %>
         <%= render partial: "decidim/shared/static_map", locals: { icon_name: "meetings", geolocalizable: meeting } %>
       <% end %>
 
-      <% unless meeting.in_person_meeting? %>
+      <% unless meeting.in_person_meeting? || meeting.withdrawn? %>
         <%= cell "decidim/meetings/online_meeting_link", meeting %>
       <% end %>
 
@@ -169,7 +167,7 @@ edit_link(
     <% if meeting.closed? && meeting.closing_visible? %>
       <div class="section">
         <h3 class="section-heading"><%= t(".meeting_minutes") %></h3>
-        <%= decidim_sanitize translated_attribute meeting.closing_report %>
+        <%= decidim_sanitize_editor translated_attribute meeting.closing_report %>
       </div>
     <% end %>
 
