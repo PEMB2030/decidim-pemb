@@ -33,7 +33,7 @@ checksums = [
     package: "decidim-meetings",
     files: {
       # views
-      "/app/views/decidim/meetings/meetings/show.html.erb" => "f362b6799ed6a57a5e0fec4aff6fd4a7"
+      "/app/views/decidim/meetings/meetings/show.html.erb" => "ad2e57142318e0b09fa280069ce64190"
     }
   }
 ]
