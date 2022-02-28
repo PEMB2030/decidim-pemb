@@ -16,19 +16,19 @@
       <% if organization.twitter_handler.present? %>
         <li>
           <a class="footer-social__icon" target="_blank" rel="noopener" href="https://twitter.com/<%= organization.twitter_handler %>">
-            <%= image_tag asset_pack_url("icons/twitter.png", host: url), alt: organization.name.html_safe %>
+            <%= image_tag asset_pack_url("media/images/twitter.png", host: url), alt: organization.name.html_safe %>
           </a>
         </li>
       <% end %>
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://pemb.cat/ca">
-          <%= image_tag asset_pack_url("icons/link.png", host: url), alt: organization.name.html_safe %>
+          <%= image_tag asset_pack_url("media/images/link.png", host: url), alt: organization.name.html_safe %>
         </a>
       </li>
       <li>
         <a class="footer-social__icon" target="_blank" rel="noopener" href="https://www.linkedin.com/company/11257078">
 
-          <%= image_tag asset_pack_url("icons/linkedin.png", host: url), alt: organization.name.html_safe %>
+          <%= image_tag asset_pack_url("media/images/linkedin.png", host: url), alt: organization.name.html_safe %>
         </a>
       </li>
     </ul>
