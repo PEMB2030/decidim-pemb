@@ -1,3 +1,11 @@
+<% if organization_primary_color %>
+<style>
+table.button table td {
+  background: <%= organization_primary_color %> !important
+}
+</style>
+<% end %>
+
 <table class="main container">
   <tr>
     <td class="decidim-bar">
@@ -16,7 +24,7 @@
               <tr>
                 <th>
                   <center>
-                    <%= render partial: "layouts/decidim/mailer_logo.html", locals: { organization: organization } %>
+                    <%= render partial: "layouts/decidim/mailer_logo.html", locals: { organization: organization, custom_url_for_mail_root: custom_url_for_mail_root } %>
                   </center>
                 </th>
               </tr>
@@ -27,7 +35,7 @@
               <tr>
                 <th>
                   <% if organization.official_img_header.attached? %>
-                    <%= link_to organization.official_url do %>
+                    <%= link_to newsletter.organization_official_url do %>
                       <%= image_tag organization.attached_uploader(:official_img_header).url(host: organization.host), alt: "", style: "max-height: 50px", class: "float-right" %>
                     <% end %>
                   <% end %>

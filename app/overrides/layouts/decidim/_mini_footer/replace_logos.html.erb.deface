@@ -1,3 +1,5 @@
+<!-- replace '.mini-footer' -->
+
 <div class="footer-transition"></div>
 <div class="mini-footer">
   <div class="custom-logos">
@@ -38,13 +40,13 @@
     <%= t("layouts.decidim.footer.made_with_open_source").html_safe %>
   </div>
   <div class="medium-5 large-4 column logos">
-    <div class="decidim-logo platoniq-logo">
+    <div class="decidim-logo pokecode-logo">
       <a rel="decidim noopener"
-          href="http://platoniq.net/"
+          href="http://pokecode.net/"
           target="_blank"
-          title="<%= t("platoniq.footer.logo") %>">
-        <span class="platoniq-text show-for-medium"><%= t("platoniq.footer.text") %></span>
-        <%= image_pack_tag("media/images/platoniq-logo.svg", alt: t("platoniq.footer.logo")) %>
+          title="<%= t("pokecode.footer.logo") %>">
+        <span class="pokecode-text show-for-medium"><%= t("pokecode.footer.text") %></span>
+        <%= image_pack_tag("media/images/logo_pokecode_white.png", alt: t("pokecode.footer.logo")) %>
       </a>
     </div>
     <div class="decidim-logo">

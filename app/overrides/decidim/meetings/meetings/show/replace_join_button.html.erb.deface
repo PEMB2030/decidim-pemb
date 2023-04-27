@@ -1,0 +1,7 @@
+<!-- replace 'erb[loud]:contains("decidim/meetings/join_meeting_button")' -->
+
+<% if ENV.fetch("MEETING_REGISTRATION_PATH_#{meeting.id}") && meeting.can_be_joined_by?(current_user) %>
+  <%= link_to t("join", scope: "decidim.meetings.meetings.show"), ENV.fetch("MEETING_REGISTRATION_PATH_#{meeting.id}"), class: "button button--sc light expanded" %>
+<% else %>
+  <%= cell "decidim/meetings/join_meeting_button", meeting, big_button: true, show_remaining_slots: true %>
+<% end %>
