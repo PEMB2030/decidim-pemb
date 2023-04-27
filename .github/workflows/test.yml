@@ -52,7 +52,7 @@ jobs:
           npm ci
           bundle exec rake assets:precompile
         env:
-          RAILS_ENV: test
+          RAILS_ENV: production
           DB_ADAPTER: nulldb
 
       - name: Run RSpec
