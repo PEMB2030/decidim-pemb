@@ -21,10 +21,6 @@
 /storage/*
 !/storage/.keep
 
-/node_modules
-/yarn-error.log
-
-/public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
@@ -51,6 +47,8 @@ spec/decidim_dummy_app
 # Ignore sass cache
 .sass-cache
 
+/public/sw.js*
+/public/assets
 /public/packs
 /public/packs-test
 /public/decidim-packs
@@ -59,3 +57,4 @@ spec/decidim_dummy_app
 yarn-debug.log*
 .yarn-integrity
 
+/coverage
