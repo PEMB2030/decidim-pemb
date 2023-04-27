@@ -25,6 +25,9 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
+  config.asset_host = ENV["RAILS_ASSET_HOST"] if ENV["RAILS_ASSET_HOST"].present?
+
+  # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
   # Specifies the header that your server uses for sending files.
@@ -32,7 +35,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
-  config.active_storage.service = :local
+  config.active_storage.service = Rails.application.secrets.dig(:storage, :provider) || :local
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
@@ -44,7 +47,7 @@ Rails.application.configure do
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
-  config.log_level = :info
+  config.log_level = %w(debug info warn error fatal).include?(ENV["RAILS_LOG_LEVEL"]) ? ENV["RAILS_LOG_LEVEL"] : :info
 
   # Prepend all log lines with the following tags.
   config.log_tags = [:request_id]
@@ -53,7 +56,8 @@ Rails.application.configure do
   # config.cache_store = :mem_cache_store
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
-  # config.active_job.queue_adapter     = :resque
+  # Use a real queuing backend for Active Job (and separate queues per environment).
+  config.active_job.queue_adapter = ENV["QUEUE_ADAPTER"] if ENV["QUEUE_ADAPTER"].present?
   # config.active_job.queue_name_prefix = "decidim-pemb_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
@@ -94,4 +98,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.deface.enabled = ENV["DB_ADAPTER"].blank? || ENV["DB_ADAPTER"] == "postgresql" if config.respond_to?(:deface)
 end
