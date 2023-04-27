@@ -8,10 +8,17 @@ require "decidim/rails"
 # require "action_text/engine"
 require "action_cable/engine"
 require "rails/test_unit/railtie"
+require_relative "../lib/decidim/env"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+
+module Decidim
+  def self.module_installed?(mod)
+    Gem.loaded_specs.has_key?("decidim-#{mod}")
+  end
+end
 
 module DecidimPemb
   class Application < Rails::Application
