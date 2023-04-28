@@ -67,20 +67,23 @@ def migrate(from, to)
     file.binmode
     file << blob.download
     file.rewind
-    checksum = blob.checksum
-    to_service.upload(blob.key, file, checksum: checksum)
+    to_service.upload(blob.key, file, checksum: blob.checksum, filename: blob.filename)
   rescue Errno::ENOENT
-    puts "Rescued by Errno::ENOENT statement. ID: #{blob.id} / Key: #{blob.key}"
+    puts "Rescued by Errno::ENOENT statement. ID: #{blob.id} / Filename: #{blob.filename}"
     next
   rescue ActiveStorage::FileNotFoundError
-    puts "Rescued by FileNotFoundError. ID: #{blob.id} / Key: #{blob.key}"
+    puts "Rescued by FileNotFoundError. ID: #{blob.id} / Filename: #{blob.filename}"
     next
   end
 end
 
 namespace :storage do
   desc 'Migrate ActiveStorage files from local to S3'
-  task migrate: :environment do
+  task migrate_to_s3: :environment do
+    migrate(:local, :s3)
+  end
+
+  task migrate_to_local: :environment do
     migrate(:local, :s3)
   end
 end
