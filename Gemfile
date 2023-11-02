@@ -3,14 +3,14 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = "~> 0.26.5"
+DECIDIM_VERSION = "~> 0.26.8"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-access_codes", git: "https://github.com/Platoniq/decidim-module-access_codes", branch: "main"
+gem "decidim-access_codes", git: "https://github.com/Platoniq/decidim-module-access_codes", tag: "e17b08fbdbbc0072a9ea7d71ced13dcb019a2f8a"
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome"
 gem "decidim-notify", "~> 0.5"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "release/0.26-stable"
