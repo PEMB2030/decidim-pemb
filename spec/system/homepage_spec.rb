@@ -11,7 +11,7 @@ describe "Visit the home page", type: :system do
   end
 
   it "renders the home page" do
-    expect(page).to have_content("Home")
+    expect(page).to have_content("Inici")
   end
 
   it "has custom logos" do
