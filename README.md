@@ -4,7 +4,7 @@ Free Open-Source participatory democracy, citizen participation and open governm
 
 This is the open-source repository for decidim-pemb, based on [Decidim](https://github.com/decidim/decidim).
 
-![Build](https://github.com/Platoniq/decidim-pemb/workflows/Test/badge.svg?branch=main)
+[![Test](https://github.com/PEMB2030/decidim-pemb/actions/workflows/test.yml/badge.svg)](https://github.com/PEMB2030/decidim-pemb/actions/workflows/test.yml)
 
 ![PEMB Homepage](app/assets/images/screenshot.png)
 
