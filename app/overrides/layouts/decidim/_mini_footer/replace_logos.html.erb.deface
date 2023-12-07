@@ -3,15 +3,15 @@
 <div class="footer-transition"></div>
 <div class="mini-footer">
   <div class="custom-logos">
-    <a rel="Barcelona Demà"
-      href="https://pemb.cat/ca/barcelona-dema/"
-      target="_blank" rel="noopener">
-      <%= image_pack_tag("media/images/logo_bd.png") %>
-    </a>
     <a rel="pemb"
         href="https://pemb.cat"
         target="_blank" rel="noopener">
-        <%= image_pack_tag("media/images/logo_pemb.png", alt: "PEMB (Pla Estratègic Metropolità de Barcelona)") %>
+        <%= image_pack_tag("media/images/logo_pemb.svg", alt: "PEMB (Pla Estratègic Metropolità de Barcelona)") %>
+    </a>
+    <a rel="Barcelona Demà"
+      href="https://compromismetropolita.cat"
+      target="_blank" rel="noopener">
+      <%= image_pack_tag("media/images/logo_ciutat.svg") %>
     </a>
   </div>
   <div class="row">
