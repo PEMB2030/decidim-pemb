@@ -7,7 +7,7 @@ describe "Visit the home page", type: :system do
 
   before do
     switch_to_host(organization.host)
-    visit decidim.root_path
+    visit decidim.root_path(locale: "ca")
   end
 
   it "renders the home page" do
