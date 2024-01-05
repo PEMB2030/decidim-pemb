@@ -37,9 +37,7 @@ module ScriptHelpers
       print "##{index} (#{100 * (index + 1) / table.count}%): "
       begin
         yield(component: component, admin: admin, line: line)
-      rescue UnprocessableError => e
-        show_error(e.message)
-      rescue ActiveRecord::RecordInvalid => e
+      rescue UnprocessableError, ActiveRecord::RecordInvalid => e
         show_error(e.message)
       rescue AlreadyProcessedError => e
         show_warning(e.message)

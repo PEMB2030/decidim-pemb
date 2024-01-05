@@ -21,7 +21,7 @@ namespace :pemb do
         attributes[:current_user] = params[:admin]
         attributes[:component] = params[:component]
         attributes[:current_component] = params[:component]
-        form = OpenStruct.new(attributes)
+        form = Struct.new(attributes)
 
         Decidim::Proposals::Admin::CreateProposal.call(form) do
           on(:ok) do |p|
