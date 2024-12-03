@@ -18,6 +18,17 @@ GIT
       decidim-core (>= 0.27.0, < 0.28)
 
 GIT
+  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
+  revision: 7410136a3844b6f2610d06705552c7f0509e2d23
+  branch: memoize-27
+  specs:
+    decidim-decidim_awesome (0.10.4)
+      decidim-admin (>= 0.26.0, < 0.28)
+      decidim-core (>= 0.26.0, < 0.28)
+      deface (>= 1.5)
+      sassc (~> 2.3)
+
+GIT
   remote: https://github.com/mainio/decidim-module-term_customizer
   revision: fced93404e8a9bb96202cf9fad6a86a84937fd0a
   branch: master
@@ -25,15 +36,6 @@ GIT
     decidim-term_customizer (0.27.0)
       decidim-admin (~> 0.27.0)
       decidim-core (~> 0.27.0)
-
-PATH
-  remote: ../decidim-module-decidim_awesome
-  specs:
-    decidim-decidim_awesome (0.10.4)
-      decidim-admin (>= 0.26.0, < 0.28)
-      decidim-core (>= 0.26.0, < 0.28)
-      deface (>= 1.5)
-      sassc (~> 2.3)
 
 GEM
   remote: https://rubygems.org/
