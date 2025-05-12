@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe "Visit the home page", type: :system do
+describe "Homepage" do
   let(:organization) { create :organization, twitter_handler: "pembarcelona" }
 
   before do
@@ -23,7 +23,7 @@ describe "Visit the home page", type: :system do
   end
 
   it "has custom social media links" do
-    expect(page).to have_css("a[href='https://twitter.com/pembarcelona']")
-    expect(page).to have_css("a[href='/link?external_url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F11257078']")
+    expect(page).to have_link("a[href='https://twitter.com/pembarcelona']")
+    expect(page).to have_link("a[href='/link?external_url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F11257078']")
   end
 end

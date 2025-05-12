@@ -5,3 +5,81 @@
 // To override CSS variables or Foundation settings use _decidim-settings.scss
 //
 // By default this is empty.
+
+// @import "decidim/variables";
+
+// $bd-light-green: #00d378;
+// $bd-light-green-rgb: 0, 211, 120;
+// $bd-dark-green: #00825a;
+// $bd-dark-green-rgb: 0, 130, 90;
+// $bd-blue: #5a36ce;
+// $bd-blue-rgb: 90, 54, 206;
+// $bd-pink: #ff7dbe;
+// $bd-pink-rgb: 255, 125, 190;
+// $bd-red: #ff3c5a;
+// $bd-red-rgb: 255, 60, 90;
+// $bd-light-blue: #46dcff;
+// $bd-light-blue-rgb: 70, 220, 255;
+// $bd-yellow: #ffd232;
+// $bd-yellow-rgb: 255, 210, 50;
+// $bd-orange: #ff6732;
+// $bd-orange-rgb: 255, 103, 50;
+// $bd-brown: #a0695a;
+// $bd-brown-rgb: 160, 105, 90;
+// $bd-dark-blue: #00478d;
+// $bd-dark-blue-rgb: 0, 71, 141;
+
+// // Variables
+
+// $primary: $bd-blue;
+// $primary-rgb: $bd-blue-rgb;
+// $secondary: $bd-light-green;
+// $secondary-rgb: $bd-light-green-rgb;
+// $success: $bd-light-green;
+// $success-rgb: $bd-light-green-rgb;
+// $warning: #fc9f5b;
+// $warning-rgb: 252, 159, 91;
+// $alert: #d7263d;
+// $alert-rgb: 215, 38, 61;
+
+// $white: white;
+// $black: black;
+
+// // Custom variables
+
+// $body-font-color: $black;
+// $body-background-color: $white;
+
+// $navbar-fg: white;
+// $navbar-fg-hover: white;
+// $navbar-bg: var(--secondary);
+
+// $title-bar-bg: $bd-blue;
+
+// :root {
+//   --primary: #{$primary} !important;
+//   --primary-rgb: #{$primary-rgb} !important;
+//   --secondary: #{$secondary} !important;
+//   --secondary-rgb: #{$secondary-rgb} !important;
+//   --success: #{$success} default;
+//   --success-rgb: #{$success-rgb} default;
+//   --warning: #{$warning} default;
+//   --warning-rgb: #{$warning-rgb} default;
+//   --alert: #{$alert} default;
+//   --alert-rgb: #{$alert-rgb} default;
+// }
+
+// $hue: (
+//   primary: hue($primary),
+//   bd-light-blue: hue($bd-light-blue),
+//   success: hue($success),
+//   warning: hue($warning),
+//   alert: hue($alert),
+// );
+
+// $border-width: 2px;
+// $border-width-big: 4px;
+// $border-width-bigger: 8px;
+// $border-radius: 16px;
+
+@import "../pemb";

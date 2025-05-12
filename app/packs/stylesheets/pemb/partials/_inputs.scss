@@ -1,14 +1,15 @@
-@import "./variables";
+::-webkit-input-placeholder{
+  @apply text-bodyfontcolor;
+}
 
-::-webkit-input-placeholder {
-  color: $body-font-color;
+:-ms-input-placeholder{
+  @apply text-bodyfontcolor;
 }
-:-ms-input-placeholder {
-  color: $body-font-color;
+
+::-ms-input-placeholder{
+  @apply text-bodyfontcolor;
 }
-::-ms-input-placeholder {
-  color: $body-font-color;
-}
-::placeholder {
-  color: $body-font-color;
+
+::placeholder{
+  @apply text-bodyfontcolor;
 }

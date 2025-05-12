@@ -416,7 +416,7 @@ Rails.application.config.to_prepare do
   Decidim::Api::Schema.max_depth = 50
 end
 
-Cell::ViewModel.view_paths << File.expand_path(Rails.root.join("app/views"))
+Cell::ViewModel.view_paths << Rails.root.join("app/views").expand_path
 
 # Inform Decidim about the assets folder
 Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)

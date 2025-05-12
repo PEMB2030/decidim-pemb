@@ -1,19 +1,18 @@
-@import "variables";
-
-.process-header__hashtag a {
-  color: var(--secondary);
+.process-header__hashtag a{
+  @apply text-secondary;
 }
 
-.process-nav {
-  &__link {
-    text-transform: none;
+.process-nav{
+  &__link{
+    @apply normal-case;
   }
 
-  &__content li {
-    &.is-active {
-      box-shadow: none;
-      a {
-        color: var(--secondary);
+  &__content li{
+    &.is-active{
+      @apply shadow-none;
+
+      a{
+        @apply text-secondary;
       }
     }
   }

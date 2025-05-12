@@ -10,37 +10,36 @@ checksums = [
     package: "decidim-core",
     files: {
       # layouts
-      "/app/views/layouts/decidim/_logo.html.erb" => "ab01dd1df9ce62cbd62f640a3b5018b2",
+      "/app/views/layouts/decidim/_logo.html.erb" => "838a2da0760e86e1cc1c1bc1892e983a",
       "/app/views/layouts/decidim/_mini_footer.html.erb" => "5a842f3e880f24f49789ee2f72d96f60",
       "/app/views/layouts/decidim/_social_media_links.html.erb" => "3ef7284789e8df2ddf6d8760783c11ed",
       # mailer
-      "/app/views/layouts/decidim/mailer.html.erb" => "0c7804de08649c8d3c55c117005e51c9",
-      "/app/cells/decidim/newsletter_templates/basic_only_text/show.erb" => "6f85f6b733a6db3b11f9cabb19ae4126",
-      "/app/cells/decidim/newsletter_templates/image_text_cta/show.erb" => "606f899f03d5e4e6d3c1691132eeb2ac",
+      "/app/views/layouts/decidim/mailer.html.erb" => "23a555f9c674d7db4b0ea6582525e2d6",
+      "/app/cells/decidim/newsletter_templates/basic_only_text/show.erb" => "7d9d4f2ab8897143fe66e8ac8db2cedb",
+      "/app/cells/decidim/newsletter_templates/image_text_cta/show.erb" => "08881fe2df7d87db0497376b08821594",
       # cells
-      "/app/cells/decidim/content_blocks/how_to_participate/show.erb" => "b0f119ca6aeaf3f74a639ff69e6ca2f9"
+      "/app/cells/decidim/content_blocks/how_to_participate/show.erb" => "29b61692a10c6728ef794bc8a269658a"
     }
   },
   {
     package: "decidim-conferences",
     files: {
       # views
-      "/app/views/decidim/conferences/conference_speakers/index.html.erb" => "1fad20938241a4ce3fe5a183bafe164e"
+      "/app/views/decidim/conferences/conference_speakers/index.html.erb" => "1b90dedf1bac2863f3f5ca8ea28e8e2f"
     }
   },
   {
     package: "decidim-meetings",
     files: {
       # views
-      "/app/views/decidim/meetings/meetings/show.html.erb" => "69914b0ea3e30b47506bb254269fbd3d"
+      "/app/views/decidim/meetings/meetings/show.html.erb" => "768c00157cf64aa37ab7aea827b3a68a"
     }
   }
 ]
 
 describe "Overriden files", type: :view do
-  # rubocop:disable Rails/DynamicFindBy
   checksums.each do |item|
-    spec = ::Gem::Specification.find_by_name(item[:package])
+    spec = Gem::Specification.find_by_name(item[:package])
 
     item[:files].each do |file, signature|
       it "#{spec.gem_dir}#{file} matches checksum" do
@@ -48,7 +47,6 @@ describe "Overriden files", type: :view do
       end
     end
   end
-  # rubocop:enable Rails/DynamicFindBy
 
   private
 

@@ -28,7 +28,7 @@ module ScriptHelpers
     organization = component.organization
     raise AdminError, "Organization not found!" unless organization
 
-    admin = Decidim::User.find_by(organization: organization, admin: true)
+    admin = Decidim::User.find_by(organization:, admin: true)
     raise AdminError, "First Admin not found!" unless admin
 
     table = CSV.parse(File.read(args.csv), headers: true, col_sep: ";")
@@ -36,7 +36,7 @@ module ScriptHelpers
     table.each_with_index do |line, index|
       print "##{index} (#{100 * (index + 1) / table.count}%): "
       begin
-        yield(component: component, admin: admin, line: line)
+        yield(component:, admin:, line:)
       rescue UnprocessableError, ActiveRecord::RecordInvalid => e
         show_error(e.message)
       rescue AlreadyProcessedError => e

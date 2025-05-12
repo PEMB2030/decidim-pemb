@@ -1,61 +1,56 @@
-@import "variables";
-
-.title-bar {
-   background-color: $title-bar-bg;
+.title-bar{
+  @apply bg-titlebarbg;
 }
 
-.logo-wrapper {
-   .custom-logos {
-      padding-bottom: 0;
-      img {
-         max-height: unset;
-         height: 3em;
-      }
-   }
+.logo-wrapper{
+  .custom-logos{
+    @apply pb-0;
+
+    img{
+      @apply h-[3em] max-h-none;
+    }
+  }
 }
 
-.navbar {
-   background-color: $navbar-bg;
+.navbar{
+  @apply bg-navbarbg;
 
-   a,
-   a:hover {
-      color: var(--primary);
-      font-weight: bold;
-   }
+  a,
+  a:hover{
+    @apply text-primary font-bold;
+  }
 }
 
-.main-nav__link {
-   a {
-      color: $navbar-fg;
-   }
+.main-nav__link{
+  a{
+    @apply text-navbarfg;
+  }
 
-   a:hover,
-   a:focus {
-      color: $navbar-fg-hover;
-   }
+  a:hover,
+  a:focus{
+    @apply text-navbarfghover;
+  }
 
-   &--active a {
-      box-shadow: inset 0 (-$border-width-big) 0 0 var(--primary);
-   }
+  &--active a{
+    @apply inset-shadow-[0 -4px 0 0 primary];
+  }
 }
 
-.topbar__search input {
-   background-color: white;
-   color: $body-font-color;
+.topbar__search input{
+  @apply bg-white text-bodyfontcolor;
 }
 
-.topbar__search:not(:focus-within) button {
-   background-color: var(--secondary);
-   color: white;
+.topbar__search:not(:focus-within) button{
+  @apply text-white bg-secondary;
 }
 
 .topbar__user__login a,
 .topbar__dropmenu > ul > li > a,
 .topbar__admin__link a,
-.topbar__menu button {
-   color: white;
+.topbar__menu button{
+  @apply text-white;
 
-   &:hover {
-      color: white;
-   }
+  &:hover{
+    @apply text-white;
+  }
 }

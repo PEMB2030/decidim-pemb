@@ -1,29 +1,25 @@
-@import "variables";
-
-.home-section {
-  &:not(:first-child) {
-    border-top: $border-width-big solid var(--secondary);
+.home-section{
+  &:not(:first-child){
+    @apply border-t-[4px] border-t-solid border-t-secondary;
   }
 
-  .button--sc.hollow {
-    background-color: var(--primary);
-    color: white;
-    border: none;
+  .button--sc.hollow{
+    @apply bg-primary text-white border-none;
 
-    &:hover {
-      background-color: var(--secondary);
+    &:hover{
+      @apply bg-secondary;
     }
   }
 
-  .hero__container {
-    .columns.small-centered.small-6.medium-4.mediumlarge-3 {
-      width: 25em;
+  .hero__container{
+    .columns.small-centered.small-6.medium-4.mediumlarge-3{
+      @apply w-[25em];
     }
   }
 
-  &.subhero {
-    h1 {
-      color: var(--secondary);
+  &.subhero{
+    h1{
+      @apply text-secondary;
     }
   }
 }
