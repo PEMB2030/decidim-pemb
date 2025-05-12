@@ -15,10 +15,10 @@
     "extends": "@decidim/eslint-config"
   },
   "dependencies": {
-    "@decidim/browserslist-config": "file:packages/browserslist-config",
-    "@decidim/core": "file:packages/core",
+    "@decidim/browserslist-config": "^0.29.3",
+    "@decidim/core": "^0.29.3",
     "@decidim/elections": "file:packages/elections",
-    "@decidim/webpacker": "file:packages/webpacker",
+    "@decidim/webpacker": "^0.29.3",
     "@rails/actioncable": "^6.1.7",
     "codemirror": "^5.65.19",
     "europa": "^4.0.0",

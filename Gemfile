@@ -9,7 +9,7 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-access_codes", git: "https://github.com/Platoniq/decidim-module-access_codes", branch: "release/0.27-stable"
+gem "decidim-access_codes", github: "openpoke/decidim-module-access_codes", branch: "upgrade-0.29"
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-term_customizer", github: "CodiTramuntana/decidim-module-term_customizer", branch: "upgrade/decidim_0.29"
 
@@ -21,7 +21,7 @@ gem "wicked_pdf", "~> 2.1"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
-  gem "faker", "~> 2.14"
+  gem "faker", "~> 3.2"
   gem "rubocop-faker"
 
   gem "brakeman"
