@@ -43,6 +43,9 @@ public/uploads
 .rbenv-vars
 .vscode
 spec/decidim_dummy_app
+.env
+.envrc
+.rubocop-*
 
 # Ignore sass cache
 .sass-cache
@@ -58,3 +61,10 @@ yarn-debug.log*
 .yarn-integrity
 
 coverage/
+
+# Ignore node modules
+/node_modules
+
+# Ignore Tailwind configuration
+tailwind.config.js
+.rubocop-https
