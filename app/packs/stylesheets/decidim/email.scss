@@ -1,5 +1,3 @@
-@import "../pemb/partials/variables";
-
 /* Index:
   1 - Foundation settings
   2 - Custom styles
@@ -8,27 +6,19 @@
 /* 1 - Foundation settings --------- */
 
 .wrapper{
-  width: 100%;
+  @apply w-full;
 }
 
 #outlook a{
-  padding: 0;
+  @apply p-0;
 }
 
 body{
-  width: 100% !important;
-  min-width: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  margin: 0;
-  padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  @apply w-full min-w-full m-0 p-0box-border;
 }
 
 .ExternalClass{
-  width: 100%;
+  @apply w-full;
 }
 
 .ExternalClass,
@@ -37,107 +27,80 @@ body{
 .ExternalClass font,
 .ExternalClass td,
 .ExternalClass div{
-  line-height: 100%;
+  @apply leading-[100%];
 }
 
 #backgroundTable{
-  margin: 0;
-  padding: 0;
-  width: 100% !important;
-  line-height: 100% !important;
+  @apply m-0 p-0 w-full leading-[100%];
 }
 
 img{
-  outline: none;
-  text-decoration: none;
-  -ms-interpolation-mode: bicubic;
-  width: auto;
-  max-width: 100%;
-  clear: both;
-  display: block;
+  @apply outline-none no-underline max-w-full clear-both block;
 }
 
 center{
-  width: 100%;
-  min-width: 580px;
+  @apply w-full min-w-[580px];
 }
 
 a img{
-  border: none;
+  @apply border-none;
 }
 
 p{
-  margin: 0 0 0 10px;
+  @apply mt-0 mr-0 mb-0 ml-[10px];
 }
 
 table{
-  border-spacing: 0;
-  border-collapse: collapse;
+  @apply border-spacing-0 border-collapse;
 }
 
 td{
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  border-collapse: collapse !important;
+  @apply border-collapse hyphens-auto break-normal;
 }
 
 table,
 tr,
 td{
-  padding: 0;
-  vertical-align: top;
-  text-align: left;
+  @apply p-0 align-top text-left;
 }
 
 @media only screen{
   html{
-    min-height: 100%;
-    background: #f3f3f3;
+    @apply min-h-full bg-background-6;
   }
 }
 
 table.body{
-  background: #f3f3f3;
-  height: 100%;
-  width: 100%;
+  @apply bg-background-6 h-full w-full;
 }
 
 table.container{
-  width: 580px;
-  margin: 0 auto;
-  text-align: inherit;
+  @apply w-[580px] my-0 mx-auto;
 }
 
 table.row{
-  padding: 0;
-  width: 100%;
-  position: relative;
+  @apply p-0 w-full relative;
 }
 
 table.spacer{
-  width: 100%;
+  @apply w-full;
 }
 
 /* stylelint-disable property-no-unknown */
 table.spacer td{
-  mso-line-height-rule: exactly;
+  /* mso-line-height-rule: exactly; */
 }
 /* stylelint-enable property-no-unknown */
 
 table.container table.row{
-  display: table;
+  @apply table;
 }
 
 td.columns,
 td.column,
 th.columns,
 th.column{
-  margin: 0 auto;
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-bottom: 16px;
+  @apply my-0 mx-auto px-[16px] pb-[16px];
 }
 
 td.columns .column,
@@ -148,8 +111,7 @@ th.columns .column,
 th.columns .columns,
 th.column .column,
 th.column .columns{
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  @apply px-0;
 }
 
 td.columns .column center,
@@ -160,537 +122,489 @@ th.columns .column center,
 th.columns .columns center,
 th.column .column center,
 th.column .columns center{
-  min-width: none !important;
+  @apply min-w-0;
 }
 
 td.columns.last,
 td.column.last,
 th.columns.last,
 th.column.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 td.columns table:not(.button),
 td.column table:not(.button),
 th.columns table:not(.button),
 th.column table:not(.button){
-  width: 100%;
+  @apply w-full;
 }
 
 td.large-1,
 th.large-1{
-  width: 32.33333px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply w-[32.33333px] px-[8px];
 }
 
 td.large-1.first,
 th.large-1.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-1.last,
 th.large-1.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-1,
 .collapse > tbody > tr > th.large-1{
-  padding-right: 0;
-  padding-left: 0;
-  width: 48.33333px;
+  @apply px-0 w-[48.33333px];
 }
 
 .collapse td.large-1.first,
 .collapse th.large-1.first,
 .collapse td.large-1.last,
 .collapse th.large-1.last{
-  width: 56.33333px;
+  @apply w-[56.33333px];
 }
 
 td.large-1 center,
 th.large-1 center{
-  min-width: .33333px;
+  @apply min-w-[.33333px];
 }
 
 .body .columns td.large-1,
 .body .column td.large-1,
 .body .columns th.large-1,
 .body .column th.large-1{
-  width: 8.33333%;
+  @apply w-[8.33333%];
 }
 
 td.large-2,
 th.large-2{
-  width: 80.66667px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply w-[80.66667px] px-[8px];
 }
 
 td.large-2.first,
 th.large-2.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-2.last,
 th.large-2.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-2,
 .collapse > tbody > tr > th.large-2{
-  padding-right: 0;
-  padding-left: 0;
-  width: 96.66667px;
+  @apply px-0 w-[96.66667px];
 }
 
 .collapse td.large-2.first,
 .collapse th.large-2.first,
 .collapse td.large-2.last,
 .collapse th.large-2.last{
-  width: 104.66667px;
+  @apply w-[104.66667px];
 }
 
 td.large-2 center,
 th.large-2 center{
-  min-width: 48.66667px;
+  @apply min-w-[48.66667px];
 }
 
 .body .columns td.large-2,
 .body .column td.large-2,
 .body .columns th.large-2,
 .body .column th.large-2{
-  width: 16.66667%;
+  @apply w-[16.66667%];
 }
 
 td.large-3,
 th.large-3{
-  width: 129px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply w-[129px] px-[8px];
 }
 
 td.large-3.first,
 th.large-3.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-3.last,
 th.large-3.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-3,
 .collapse > tbody > tr > th.large-3{
-  padding-right: 0;
-  padding-left: 0;
-  width: 145px;
+  @apply px-0 w-[145px];
 }
 
 .collapse td.large-3.first,
 .collapse th.large-3.first,
 .collapse td.large-3.last,
 .collapse th.large-3.last{
-  width: 153px;
+  @apply w-[153px];
 }
 
 td.large-3 center,
 th.large-3 center{
-  min-width: 97px;
+  @apply min-w-[97px];
 }
 
 .body .columns td.large-3,
 .body .column td.large-3,
 .body .columns th.large-3,
 .body .column th.large-3{
-  width: 25%;
+  @apply w-[25%];
 }
 
 td.large-4,
 th.large-4{
-  width: 177.33333px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[177.33333px];
 }
 
 td.large-4.first,
 th.large-4.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-4.last,
 th.large-4.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-4,
 .collapse > tbody > tr > th.large-4{
-  padding-right: 0;
-  padding-left: 0;
-  width: 193.33333px;
+  @apply px-0 w-[193.33333px];
 }
 
 .collapse td.large-4.first,
 .collapse th.large-4.first,
 .collapse td.large-4.last,
 .collapse th.large-4.last{
-  width: 201.33333px;
+  @apply w-[201.33333px];
 }
 
 td.large-4 center,
 th.large-4 center{
-  min-width: 145.33333px;
+  @apply min-w-[145.33333px];
 }
 
 .body .columns td.large-4,
 .body .column td.large-4,
 .body .columns th.large-4,
 .body .column th.large-4{
-  width: 33.33333%;
+  @apply w-[33.33333%];
 }
 
 td.large-5,
 th.large-5{
-  width: 225.66667px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[225.66667px];
 }
 
 td.large-5.first,
 th.large-5.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-5.last,
 th.large-5.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-5,
 .collapse > tbody > tr > th.large-5{
-  padding-right: 0;
-  padding-left: 0;
-  width: 241.66667px;
+  @apply px-0 w-[241.66667px];
 }
 
 .collapse td.large-5.first,
 .collapse th.large-5.first,
 .collapse td.large-5.last,
 .collapse th.large-5.last{
-  width: 249.66667px;
+  @apply w-[249.66667px];
 }
 
 td.large-5 center,
 th.large-5 center{
-  min-width: 193.66667px;
+  @apply min-w-[193.66667px];
 }
 
 .body .columns td.large-5,
 .body .column td.large-5,
 .body .columns th.large-5,
 .body .column th.large-5{
-  width: 41.66667%;
+  @apply w-[41.66667%];
 }
 
 td.large-6,
 th.large-6{
-  width: 274px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[274px];
 }
 
 td.large-6.first,
 th.large-6.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-6.last,
 th.large-6.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-6,
 .collapse > tbody > tr > th.large-6{
-  padding-right: 0;
-  padding-left: 0;
-  width: 290px;
+  @apply px-0 w-[290px];
 }
 
 .collapse td.large-6.first,
 .collapse th.large-6.first,
 .collapse td.large-6.last,
 .collapse th.large-6.last{
-  width: 298px;
+  @apply w-[298px];
 }
 
 td.large-6 center,
 th.large-6 center{
-  min-width: 242px;
+  @apply min-w-[242px];
 }
 
 .body .columns td.large-6,
 .body .column td.large-6,
 .body .columns th.large-6,
 .body .column th.large-6{
-  width: 50%;
+  @apply w-[50%];
 }
 
 td.large-7,
 th.large-7{
-  width: 322.33333px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[322.33333px];
 }
 
 td.large-7.first,
 th.large-7.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-7.last,
 th.large-7.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-7,
 .collapse > tbody > tr > th.large-7{
-  padding-right: 0;
-  padding-left: 0;
-  width: 338.33333px;
+  @apply px-0 w-[338.33333px];
 }
 
 .collapse td.large-7.first,
 .collapse th.large-7.first,
 .collapse td.large-7.last,
 .collapse th.large-7.last{
-  width: 346.33333px;
+  @apply w-[346.33333px];
 }
 
 td.large-7 center,
 th.large-7 center{
-  min-width: 290.33333px;
+  @apply min-w-[290.33333px];
 }
 
 .body .columns td.large-7,
 .body .column td.large-7,
 .body .columns th.large-7,
 .body .column th.large-7{
-  width: 58.33333%;
+  @apply w-[58.33333%];
 }
 
 td.large-8,
 th.large-8{
-  width: 370.66667px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[370.66667px];
 }
 
 td.large-8.first,
 th.large-8.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-8.last,
 th.large-8.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-8,
 .collapse > tbody > tr > th.large-8{
-  padding-right: 0;
-  padding-left: 0;
-  width: 386.66667px;
+  @apply px-0 w-[386.66667px];
 }
 
 .collapse td.large-8.first,
 .collapse th.large-8.first,
 .collapse td.large-8.last,
 .collapse th.large-8.last{
-  width: 394.66667px;
+  @apply w-[394.66667px];
 }
 
 td.large-8 center,
 th.large-8 center{
-  min-width: 338.66667px;
+  @apply min-w-[338.66667px];
 }
 
 .body .columns td.large-8,
 .body .column td.large-8,
 .body .columns th.large-8,
 .body .column th.large-8{
-  width: 66.66667%;
+  @apply w-[66.66667%];
 }
 
 td.large-9,
 th.large-9{
-  width: 419px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[419px];
 }
 
 td.large-9.first,
 th.large-9.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-9.last,
 th.large-9.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-9,
 .collapse > tbody > tr > th.large-9{
-  padding-right: 0;
-  padding-left: 0;
-  width: 435px;
+  @apply px-0 w-[435px];
 }
 
 .collapse td.large-9.first,
 .collapse th.large-9.first,
 .collapse td.large-9.last,
 .collapse th.large-9.last{
-  width: 443px;
+  @apply w-[443px];
 }
 
 td.large-9 center,
 th.large-9 center{
-  min-width: 387px;
+  @apply min-w-[387px];
 }
 
 .body .columns td.large-9,
 .body .column td.large-9,
 .body .columns th.large-9,
 .body .column th.large-9{
-  width: 75%;
+  @apply w-[75%];
 }
 
 td.large-10,
 th.large-10{
-  width: 467.33333px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[467.33333px];
 }
 
 td.large-10.first,
 th.large-10.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-10.last,
 th.large-10.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-10,
 .collapse > tbody > tr > th.large-10{
-  padding-right: 0;
-  padding-left: 0;
-  width: 483.33333px;
+  @apply px-0 w-[483.33333px];
 }
 
 .collapse td.large-10.first,
 .collapse th.large-10.first,
 .collapse td.large-10.last,
 .collapse th.large-10.last{
-  width: 491.33333px;
+  @apply w-[499.33333px];
 }
 
 td.large-10 center,
 th.large-10 center{
-  min-width: 435.33333px;
+  @apply min-w-[435.33333px];
 }
 
 .body .columns td.large-10,
 .body .column td.large-10,
 .body .columns th.large-10,
 .body .column th.large-10{
-  width: 83.33333%;
+  @apply w-[83.33333%];
 }
 
 td.large-11,
 th.large-11{
-  width: 515.66667px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[515.66667px];
 }
 
 td.large-11.first,
 th.large-11.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-11.last,
 th.large-11.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-11,
 .collapse > tbody > tr > th.large-11{
-  padding-right: 0;
-  padding-left: 0;
-  width: 531.66667px;
+  @apply px-0 w-[531.66667px];
 }
 
 .collapse td.large-11.first,
 .collapse th.large-11.first,
 .collapse td.large-11.last,
 .collapse th.large-11.last{
-  width: 539.66667px;
+  @apply w-[539.66667px];
 }
 
 td.large-11 center,
 th.large-11 center{
-  min-width: 483.66667px;
+  @apply min-w-[483.66667px];
 }
 
 .body .columns td.large-11,
 .body .column td.large-11,
 .body .columns th.large-11,
 .body .column th.large-11{
-  width: 91.66667%;
+  @apply w-[91.66667%];
 }
 
 td.large-12,
 th.large-12{
-  width: 564px;
-  padding-left: 8px;
-  padding-right: 8px;
+  @apply px-[8px] w-[564px];
 }
 
 td.large-12.first,
 th.large-12.first{
-  padding-left: 16px;
+  @apply pl-[16px];
 }
 
 td.large-12.last,
 th.large-12.last{
-  padding-right: 16px;
+  @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-12,
 .collapse > tbody > tr > th.large-12{
-  padding-right: 0;
-  padding-left: 0;
-  width: 580px;
+  @apply px-0 w-[580px];
 }
 
 .collapse td.large-12.first,
 .collapse th.large-12.first,
 .collapse td.large-12.last,
 .collapse th.large-12.last{
-  width: 588px;
+  @apply w-[588px];
 }
 
 td.large-12 center,
 th.large-12 center{
-  min-width: 532px;
+  @apply min-w-[532px];
 }
 
 .body .columns td.large-12,
 .body .column td.large-12,
 .body .columns th.large-12,
 .body .column th.large-12{
-  width: 100%;
+  @apply w-full;
 }
 
 td.large-offset-1,
@@ -699,7 +613,7 @@ td.large-offset-1.last,
 th.large-offset-1,
 th.large-offset-1.first,
 th.large-offset-1.last{
-  padding-left: 64.33333px;
+  @apply pl-[64.33333px];
 }
 
 td.large-offset-2,
@@ -708,7 +622,7 @@ td.large-offset-2.last,
 th.large-offset-2,
 th.large-offset-2.first,
 th.large-offset-2.last{
-  padding-left: 112.66667px;
+  @apply pl-[112.66667px];
 }
 
 td.large-offset-3,
@@ -717,7 +631,7 @@ td.large-offset-3.last,
 th.large-offset-3,
 th.large-offset-3.first,
 th.large-offset-3.last{
-  padding-left: 161px;
+  @apply pl-[161px];
 }
 
 td.large-offset-4,
@@ -726,7 +640,7 @@ td.large-offset-4.last,
 th.large-offset-4,
 th.large-offset-4.first,
 th.large-offset-4.last{
-  padding-left: 209.33333px;
+  @apply pl-[209.33333px];
 }
 
 td.large-offset-5,
@@ -735,7 +649,7 @@ td.large-offset-5.last,
 th.large-offset-5,
 th.large-offset-5.first,
 th.large-offset-5.last{
-  padding-left: 257.66667px;
+  @apply pl-[257.66667px];
 }
 
 td.large-offset-6,
@@ -744,7 +658,7 @@ td.large-offset-6.last,
 th.large-offset-6,
 th.large-offset-6.first,
 th.large-offset-6.last{
-  padding-left: 306px;
+  @apply pl-[306px];
 }
 
 td.large-offset-7,
@@ -753,7 +667,7 @@ td.large-offset-7.last,
 th.large-offset-7,
 th.large-offset-7.first,
 th.large-offset-7.last{
-  padding-left: 354.33333px;
+  @apply pl-[354.33333px];
 }
 
 td.large-offset-8,
@@ -762,7 +676,7 @@ td.large-offset-8.last,
 th.large-offset-8,
 th.large-offset-8.first,
 th.large-offset-8.last{
-  padding-left: 402.66667px;
+  @apply pl-[402.66667px];
 }
 
 td.large-offset-9,
@@ -771,7 +685,7 @@ td.large-offset-9.last,
 th.large-offset-9,
 th.large-offset-9.first,
 th.large-offset-9.last{
-  padding-left: 451px;
+  @apply pl-[451px];
 }
 
 td.large-offset-10,
@@ -780,7 +694,7 @@ td.large-offset-10.last,
 th.large-offset-10,
 th.large-offset-10.first,
 th.large-offset-10.last{
-  padding-left: 499.33333px;
+  @apply pl-[499.33333px];
 }
 
 td.large-offset-11,
@@ -789,57 +703,52 @@ td.large-offset-11.last,
 th.large-offset-11,
 th.large-offset-11.first,
 th.large-offset-11.last{
-  padding-left: 547.66667px;
+  @apply pl-[547.66667px];
 }
 
 td.expander,
 th.expander{
-  visibility: hidden;
-  width: 0;
-  padding: 0 !important;
+  @apply invisible w-0 p-0
 }
 
 table.container.radius{
-  border-radius: 0;
-  border-collapse: separate;
+  @apply border-separate rounded-none;
 }
 
 .block-grid{
-  width: 100%;
-  max-width: 580px;
+  @apply w-full max-w-[580px];
 }
 
 .block-grid td{
-  display: inline-block;
-  padding: 8px;
+  @apply p-[8px] inline-block;
 }
 
 .up-2 td{
-  width: 274px !important;
+  @apply w-[274px];
 }
 
 .up-3 td{
-  width: 177px !important;
+  @apply w-[177px];
 }
 
 .up-4 td{
-  width: 129px !important;
+  @apply w-[129px];
 }
 
 .up-5 td{
-  width: 100px !important;
+  @apply w-[100px];
 }
 
 .up-6 td{
-  width: 80px !important;
+  @apply w-[80px];
 }
 
 .up-7 td{
-  width: 66px !important;
+  @apply w-[66px];
 }
 
 .up-8 td{
-  width: 56px !important;
+  @apply w-[56px];
 }
 
 table.text-center,
@@ -853,7 +762,7 @@ h5.text-center,
 h6.text-center,
 p.text-center,
 span.text-center{
-  text-align: center;
+  @apply text-center;
 }
 
 table.text-left,
@@ -867,7 +776,7 @@ h5.text-left,
 h6.text-left,
 p.text-left,
 span.text-left{
-  text-align: left;
+  @apply text-left;
 }
 
 table.text-right,
@@ -881,86 +790,63 @@ h5.text-right,
 h6.text-right,
 p.text-right,
 span.text-right{
-  text-align: right;
+  @apply text-right;
 }
 
 span.text-center{
-  display: block;
-  width: 100%;
-  text-align: center;
+  @apply text-center block w-full;
 }
 
 @media only screen and (max-width: 596px){
   .small-float-center{
-    margin: 0 auto !important;
-    float: none !important;
-    text-align: center !important;
+    @apply text-center my-0 mx-auto float-none;
   }
 
   .small-text-center{
-    text-align: center !important;
+    @apply text-center
   }
 
   .small-text-left{
-    text-align: left !important;
+    @apply text-left;
   }
 
   .small-text-right{
-    text-align: right !important;
+    @apply text-right;
   }
 }
 
 img.float-left{
-  float: left;
-  text-align: left;
+  @apply text-left float-left;
 }
 
 img.float-right{
-  float: right;
-  text-align: right;
+  @apply text-right float-right;
 }
 
 img.float-center,
 img.text-center{
-  margin: 0 auto;
-  float: none;
-  text-align: center;
+  @apply my-0 mx-auto float-none text-center;
 }
 
 table.float-center,
 td.float-center,
 th.float-center{
-  margin: 0 auto;
-  float: none;
-  text-align: center;
+  @apply text-center my-0 mx-auto float-none;
 }
 
 th.float-right{
-  margin: 0 auto;
-  float: right;
-  text-align: center;
+  @apply my-0 mx-auto float-right text-center;
 }
 
 /* stylelint-disable property-no-unknown */
 .hide-for-large{
-  display: none !important;
-  mso-hide: all;
-  overflow: hidden;
-  max-height: 0;
-  font-size: 0;
-  width: 0;
-  line-height: 0;
+  @apply hidden overflow-hidden max-h-0 text-[0] w-0 leading-0;
 }
 /* stylelint-enable property-no-unknown */
 
 @media only screen and (max-width: 596px){
   .hide-for-large{
-    display: block !important;
-    width: auto !important;
-    overflow: visible !important;
-    max-height: none !important;
-    font-size: inherit !important;
-    line-height: inherit !important;
+    @apply block w-auto overflow-visible max-h-none text-[inherit] leading-[inherit];
   }
 }
 
@@ -973,25 +859,21 @@ table.body table.container .hide-for-large *{
 @media only screen and (max-width: 596px){
   table.body table.container .hide-for-large,
   table.body table.container .row.hide-for-large{
-    display: table !important;
-    width: 100% !important;
+    @apply table w-full;
   }
 }
 
 @media only screen and (max-width: 596px){
   table.body table.container .callout-inner.hide-for-large{
-    display: table-cell !important;
-    width: 100% !important;
+    @apply table-cell w-full;
   }
 }
 
 /* stylelint-disable property-no-unknown */
 @media only screen and (max-width: 596px){
   table.body table.container .show-for-large{
-    display: none !important;
-    width: 0;
     mso-hide: all;
-    overflow: hidden;
+    @apply hidden w-0 overflow-hidden;
   }
 }
 /* stylelint-enable property-no-unknown */
@@ -1008,13 +890,7 @@ p,
 td,
 th,
 a{
-  color: $black;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  line-height: 1.3;
+  @apply text-black font-normal p-0 m-0 text-left leading-[1.3] font-[Arial, sans-serif];
 }
 
 h1,
@@ -1023,35 +899,31 @@ h3,
 h4,
 h5,
 h6{
-  color: inherit;
-  word-wrap: normal;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  margin-bottom: 10px;
+  @apply text-[inherit] break-normal font-[Arial, sans-serif] font-normal mb-[10px];
 }
 
 h1{
-  font-size: 34px;
+  @apply text-[32px];
 }
 
 h2{
-  font-size: 30px;
+  @apply text-[30px];
 }
 
 h3{
-  font-size: 28px;
+  @apply text-[28px];
 }
 
 h4{
-  font-size: 24px;
+  @apply text-[24px];
 }
 
 h5{
-  font-size: 20px;
+  @apply text-[20px];
 }
 
 h6{
-  font-size: 18px;
+  @apply text-[18px];
 }
 
 body,
@@ -1059,47 +931,39 @@ table.body,
 p,
 td,
 th{
-  font-size: 16px;
-  line-height: 1.3;
+  @apply text-[16px] leading-[1.3];
 }
 
 p{
-  margin-bottom: 10px;
+  @apply mb-[10px];
 }
 
 p.lead{
-  font-size: 20px;
-  line-height: 1.6;
+  @apply text-[20px] leading-[1.6];
 }
 
 p.subheader{
-  margin-top: 4px;
-  margin-bottom: 8px;
-  font-weight: normal;
-  line-height: 1.4;
-  color: #8a8a8a;
+  @apply mt-[4px] mb-[8px] font-normal leading-[1.4] text-gray-8;
 }
 
 small{
-  font-size: 80%;
-  color: #cacaca;
+  @apply text-[80%] text-gray-9;
 }
 
 a{
-  color: #5f93b1;
-  text-decoration: none;
+  @apply no-underline text-skyblue;
 }
 
 a:hover{
-  color: var(--secondary);
+  @apply text-secondary;
 }
 
 a:active{
-  color: #147dc2;
+  @apply text-lightblue;
 }
 
 a:visited{
-  color: #5f93b1;
+  @apply text-skyblue;
 }
 
 h1 a,
@@ -1114,98 +978,66 @@ h5 a,
 h5 a:visited,
 h6 a,
 h6 a:visited{
-  color: #5f93b1;
+  @apply text-skyblue;
 }
 
 pre{
-  background: #f3f3f3;
-  margin: 30px 0;
+  @apply bg-background-6 my-[30px] mx-0;
 }
 
 pre code{
-  color: #cacaca;
+  @apply text-gray-9;
 }
 
 pre code span.callout{
-  color: #8a8a8a;
-  font-weight: bold;
+  @apply text-gray-8 font-bold;
 }
 
 pre code span.callout-strong{
-  color: #ff6908;
-  font-weight: bold;
+  @apply text-skyorange font-bold;
+
 }
 
 table.hr{
-  width: 100%;
+  @apply w-full;
 }
 
 table.hr th{
-  height: 0;
-  max-width: 580px;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid $black;
-  border-left: 0;
-  margin: 20px auto;
-  clear: both;
+  @apply h-0 max-w-[580px] border-t-0 border-r-0 border-b-[1px] border-b-solid border-b-black border-l-0 my-[20px] mx-auto clear-both;
 }
 
 .stat{
-  font-size: 40px;
-  line-height: 1;
+  @apply text-[40px] leading-[1];
 }
 
 p + .stat{
-  margin-top: -16px;
+  @apply -mt-[16px];
 }
 
 /* stylelint-disable property-no-unknown */
 span.preheader{
-  display: none !important;
-  visibility: hidden;
-  mso-hide: all !important;
-  font-size: 1px;
-  color: #f3f3f3;
-  line-height: 1px;
-  max-height: 0;
-  max-width: 0;
-  opacity: 0;
-  overflow: hidden;
+  @apply hidden invisible text-[1px] text-background-6 leading-[1px] max-h-0 max-w-0 opacity-0 overflow-hidden;
 }
 /* stylelint-enable property-no-unknown */
 
 table.button{
-  width: auto;
-  margin: 0 0 16px;
+  @apply w-auto mt-0 mx-0 mb-[16px];
 }
 
 table.button table td{
-  text-align: left;
-  color: $white;
-  background: $primary;
-  border: 2px solid $primary;
+  @apply text-left text-white bg-primary border-[2px] border-solid border-primary;
 }
 
 table.button table td a{
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: $white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  border: 0 solid $primary;
-  border-radius: 3px;
+  @apply font-[Arial, sans-serif] text-[16px] text-white no-underline inline-block py-[8px] px-[16px] border-0 border-solid border-primary rounded-[3px];
 }
 
 table.button.radius table td{
-  border-radius: 4px;
-  border: none;
+  @apply rounded-[4px] border-none;
 }
 
 table.button.rounded table td{
-  border-radius: 500px;
-  border: none;
+  @apply rounded-[500px] border-none;
 }
 
 table.button:hover table tr td a,
@@ -1220,495 +1052,435 @@ table.button.small table tr td a:visited,
 table.button.large:hover table tr td a,
 table.button.large:active table tr td a,
 table.button.large table tr td a:visited{
-  color: $white;
+  @apply text-white;
 }
 
 table.button.tiny table td,
 table.button.tiny table a{
-  padding: 4px 8px;
+  @apply py-[4px] px-[8px];
 }
 
 table.button.tiny table a{
-  font-size: 10px;
-  font-weight: normal;
+  @apply text-[10px] font-normal;
 }
 
 table.button.small table td,
 table.button.small table a{
-  padding: 5px 10px;
-  font-size: 12px;
+  @apply py-[5px] px-[10px] text-[12px];
 }
 
 table.button.large table a{
-  padding: 10px 20px;
-  font-size: 20px;
+  @apply py-[10px] px-[20px] text-[20px];
 }
 
 table.button.expand,
 table.button.expanded{
-  width: 100%;
+  @apply w-full;
 }
 
 // Fix for Outlook to center the button
 table.button.expand > tr > td,
 table.button.expanded > tr > td{
-  text-align: center;
+  @apply text-center;
 }
 
 table.button.expand table,
 table.button.expanded table{
-  width: 50%;
-  margin: auto;
+  @apply w-[50%] m-auto;
 }
 
 // Fix for Outlook to center the button link text
 table.button.expand table > tr > td,
 table.button.expanded table > tr > td{
-  text-align: center;
+  @apply text-center;
 }
 
 table.button.expand table a,
 table.button.expanded table a{
-  text-align: center;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  @apply text-center w-full px-0;
 }
 
 table.button.expand center,
 table.button.expanded center{
-  min-width: 0;
+  @apply min-w-0;
 }
 
 table.button:hover table td,
 table.button:visited table td,
 table.button:active table td{
-  background: $primary;
-  color: $white;
+  @apply bg-primary text-white;
 }
 
 table.button:hover table a,
 table.button:visited table a,
 table.button:active table a{
-  border: 0 solid #147dc2;
+  @apply border-0 border-solid border-lightblue;
 }
 
 table.button.secondary table td{
-  background: #777;
-  color: $white;
-  border: 0 solid #777;
+  @apply bg-gray-10 text-white border-0 border-solid border-gray-10;
 }
 
 table.button.secondary table a{
-  color: $white;
-  border: 0 solid #777;
+  @apply text-white border-0 border-solid border-gray-10;
 }
 
 table.button.secondary:hover table td{
-  background: #919191;
-  color: $white;
+  @apply bg-background-7 text-white;
+
 }
 
 table.button.secondary:hover table a{
-  border: 0 solid #919191;
+  @apply border-0 border-solid border-background-7;
+
 }
 
 table.button.secondary:hover table td a{
-  color: $white;
+  @apply text-white;
 }
 
 table.button.secondary:active table td a{
-  color: $white;
+  @apply text-white;
 }
 
 table.button.secondary table td a:visited{
-  color: $white;
+  @apply text-white;
 }
 
 table.button.success table td{
-  background: #00a767;
-  border: 0 solid #00a767;
+  @apply bg-skygreen border-0 border-solid border-skygreen;
 }
 
 table.button.success table a{
-  border: 0 solid #00a767;
+  @apply border-0 border-solid border-skygreen;
 }
 
 table.button.success:hover table td{
-  background: lighten(#00a767, 10%);
+  @apply bg-[color:lighten(skygreen, 10%)];
 }
 
 table.button.success:hover table a{
-  border: 0 solid lighten(#00a767, 10%);
+  @apply border-0 border-solid border-[color:lighten(skygreen, 10%)];
 }
 
 table.button.alert table td{
-  background: #e30613;
-  border: 0 solid #e30613;
+  @apply bg-skyred border-0 border-solid border-skyred;
 }
 
 table.button.alert table a{
-  border: 0 solid #e30613;
+  @apply border-0 border-solid border-skyred;
 }
 
 table.button.alert:hover table td{
-  background: lighten(#e30613, 10%);
+  @apply bg-[color:lighten(skyred, 10%)];
 }
 
 table.button.alert:hover table a{
-  border: 0 solid lighten(#e30613, 10%);
+  @apply border-0 border-solid border-[color:lighten(skyred, 10%)];
 }
 
 table.button.warning table td{
-  background: #ee734d;
-  border: 0 solid #ee734d;
+  @apply bg-lightorange border-0 border-solid border-lightorange;
 }
 
 table.button.warning table a{
-  border: 0 solid #ee734d;
+  @apply border-0 border-solid border-lightorange;
 }
 
 table.button.warning:hover table td{
-  background: lighten(#ee734d, 10%);
+  @apply bg-[color:lighten(lightorange,10%)];
 }
 
 table.button.warning:hover table a{
-  border: 0 solid lighten(#ee734d, 10%);
+  @apply border-0 border-solid border-[color:lighten(lightorange,10%)];
 }
 
 table.callout{
-  margin-bottom: 16px;
+  @apply mb-[16px];
 }
 
 th.callout-inner{
-  width: 100%;
-  border: 1px solid #cbcbcb;
-  padding: 10px;
-  background: $white;
+  @apply w-full border-0 border-solid border-background-8 p-[10px] bg-white;
 }
 
 th.callout-inner.primary{
-  background: #def0fc;
-  border: 1px solid #444;
-  color: $black;
+  @apply bg-lightgray border border-solid border-gray-11 text-black;
 }
 
 th.callout-inner.secondary{
-  background: #ebebeb;
-  border: 1px solid #444;
-  color: $black;
+  @apply bg-background-9 border border-solid border-gray-11 text-black;
 }
 
 th.callout-inner.success{
-  background: lighten(#00a767, 30%);
-  border: 1px solid #00a767;
-  color: $white;
+  @apply bg-[color:lighten(skygreen,30%)] border border-solid border-[color:lighten(skygreen,30%)] text-white;
 }
 
 th.callout-inner.warning{
-  background: lighten(#ee734d, 30%);
-  border: 1px solid #ee734d;
-  color: $white;
+  @apply bg-[color:lighten(lightorange,30%)] border border-solid border-[color:lighten(lightorange,30%)] text-white;
 }
 
 th.callout-inner.alert{
-  background: lighten(#e30613, 30%);
-  border: 1px solid #e30613;
-  color: $white;
+  @apply bg-[color:lighten(skyred,30%)] border border-solid border-[color:lighten(skyred,30%)] text-white;
 }
 
 .thumbnail{
-  border: solid 4px $white;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, .2);
-  display: inline-block;
-  line-height: 0;
-  max-width: 100%;
-  transition: box-shadow 200ms ease-out;
-  border-radius: 3px;
-  margin-bottom: 16px;
+  @apply shadow-[0 0 0 1px black] border-[4px] border-solid border-white inline-block leading-0 max-w-full rounded-[3px] mb-[16px] transition-shadow duration-[200ms] ease-out;
 }
 
 .thumbnail:hover,
 .thumbnail:focus{
-  box-shadow: 0 0 6px 1px rgba(33, 153, 232, .5);
+  @apply shadow-[0 0 6px 1px lightblue]
 }
 
 table.menu{
-  width: 580px;
+  @apply w-[580px];
 }
 
 table.menu td.menu-item,
 table.menu th.menu-item{
-  padding: 10px;
-  padding-right: 10px;
+  @apply p-[10px] pr-[10px];
 }
 
 table.menu td.menu-item a,
 table.menu th.menu-item a{
-  color: #5f93b1;
+  @apply text-skyblue;
 }
 
 table.menu.vertical td.menu-item,
 table.menu.vertical th.menu-item{
-  padding: 10px;
-  padding-right: 0;
-  display: block;
+  @apply p-[10px] pr-0 block;
 }
 
 table.menu.vertical td.menu-item a,
 table.menu.vertical th.menu-item a{
-  width: 100%;
+  @apply w-full;
 }
 
 table.menu.vertical td.menu-item table.menu.vertical td.menu-item,
 table.menu.vertical td.menu-item table.menu.vertical th.menu-item,
 table.menu.vertical th.menu-item table.menu.vertical td.menu-item,
 table.menu.vertical th.menu-item table.menu.vertical th.menu-item{
-  padding-left: 10px;
+  @apply pl-[10px];
 }
 
 table.menu.text-center a{
-  text-align: center;
+  @apply text-center;
 }
 
 .menu[align="center"]{
-  width: auto !important;
+  @apply w-auto;
 }
 
 body.outlook p{
-  display: inline !important;
+  @apply inline;
 }
 
 @media only screen and (max-width: 596px){
   table.body img{
-    width: auto;
-    height: auto;
+    @apply w-auto h-auto;
   }
 
   table.body center{
-    min-width: 0 !important;
+    @apply min-w-0;
   }
 
   table.body .container{
-    width: 95% !important;
+    @apply w-[95%];
   }
 
   table.body .columns,
   table.body .column{
-    height: auto !important;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    @apply h-auto box-border px-[16px];
   }
 
   table.body .columns .column,
   table.body .columns .columns,
   table.body .column .column,
   table.body .column .columns{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    @apply px-0;
   }
 
   table.body .collapse .columns,
   table.body .collapse .column{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    @apply px-0;
   }
 
   td.small-1,
   th.small-1{
-    display: inline-block !important;
-    width: 8.33333% !important;
+    @apply inline-block w-[8.33333%];
   }
 
   td.small-2,
   th.small-2{
-    display: inline-block !important;
-    width: 16.66667% !important;
+    @apply inline-block w-[16.66667%];
   }
 
   td.small-3,
   th.small-3{
-    display: inline-block !important;
-    width: 25% !important;
+    @apply inline-block w-[25%];
   }
 
   td.small-4,
   th.small-4{
-    display: inline-block !important;
-    width: 33.33333% !important;
+    @apply inline-block w-[33.33333%];
   }
 
   td.small-5,
   th.small-5{
-    display: inline-block !important;
-    width: 41.66667% !important;
+    @apply inline-block w-[41.66667%];
   }
 
   td.small-6,
   th.small-6{
-    display: inline-block !important;
-    width: 50% !important;
+    @apply inline-block w-[50%];
   }
 
   td.small-7,
   th.small-7{
-    display: inline-block !important;
-    width: 58.33333% !important;
+    @apply inline-block w-[58.33333%];
+
   }
 
   td.small-8,
   th.small-8{
-    display: inline-block !important;
-    width: 66.66667% !important;
+    @apply inline-block w-[66.66667%];
   }
 
   td.small-9,
   th.small-9{
-    display: inline-block !important;
-    width: 75% !important;
+    @apply inline-block w-[75%];
   }
 
   td.small-10,
   th.small-10{
-    display: inline-block !important;
-    width: 83.33333% !important;
+    @apply inline-block w-[83.33333%];
   }
 
   td.small-11,
   th.small-11{
-    display: inline-block !important;
-    width: 91.66667% !important;
+    @apply inline-block w-[91.66667%];
   }
 
   td.small-12,
   th.small-12{
-    display: inline-block !important;
-    width: 100% !important;
+    @apply inline-block w-full;
   }
 
   .columns td.small-12,
   .column td.small-12,
   .columns th.small-12,
   .column th.small-12{
-    display: block !important;
-    width: 100% !important;
+    @apply block w-full;
   }
 
   table.body td.small-offset-1,
   table.body th.small-offset-1{
-    margin-left: 8.33333% !important;
+    @apply ml-[8.33333%];
   }
 
   table.body td.small-offset-2,
   table.body th.small-offset-2{
-    margin-left: 16.66667% !important;
+    @apply ml-[16.66667%];
   }
 
   table.body td.small-offset-3,
   table.body th.small-offset-3{
-    margin-left: 25% !important;
+    @apply ml-[25%];
   }
 
   table.body td.small-offset-4,
   table.body th.small-offset-4{
-    margin-left: 33.33333% !important;
+    @apply ml-[33.33333%];
   }
 
   table.body td.small-offset-5,
   table.body th.small-offset-5{
-    margin-left: 41.66667% !important;
+    @apply ml-[41.66667%];
   }
 
   table.body td.small-offset-6,
   table.body th.small-offset-6{
-    margin-left: 50% !important;
+    @apply ml-[50%];
   }
 
   table.body td.small-offset-7,
   table.body th.small-offset-7{
-    margin-left: 58.33333% !important;
+    @apply ml-[58.33333%];
   }
 
   table.body td.small-offset-8,
   table.body th.small-offset-8{
-    margin-left: 66.66667% !important;
+    @apply ml-[66.66667%];
   }
 
   table.body td.small-offset-9,
   table.body th.small-offset-9{
-    margin-left: 75% !important;
+    @apply ml-[75%];
   }
 
   table.body td.small-offset-10,
   table.body th.small-offset-10{
-    margin-left: 83.33333% !important;
+    @apply ml-[83.33333%];
   }
 
   table.body td.small-offset-11,
   table.body th.small-offset-11{
-    margin-left: 91.66667% !important;
+    @apply ml-[91.66667%];
   }
 
   table.body table.columns td.expander,
   table.body table.columns th.expander{
-    display: none !important;
+    @apply hidden;
   }
 
   table.body .right-text-pad,
   table.body .text-pad-right{
-    padding-left: 10px !important;
+    @apply pl-[10px];
   }
 
   table.body .left-text-pad,
   table.body .text-pad-left{
-    padding-right: 10px !important;
+    @apply pr-[10px];
   }
 
   table.menu{
-    width: 100% !important;
+    @apply w-full;
   }
 
   table.menu td,
   table.menu th{
-    width: auto !important;
-    display: inline-block !important;
+    @apply w-full inline-block;
   }
 
   table.menu.vertical td,
   table.menu.vertical th,
   table.menu.small-vertical td,
   table.menu.small-vertical th{
-    display: block !important;
+    @apply block;
   }
 
   table.menu[align="center"]{
-    width: auto !important;
+    @apply w-auto;
   }
 
   table.button.small-expand,
   table.button.small-expanded{
-    width: 100% !important;
+    @apply w-full;
   }
 
   table.button.small-expand table,
   table.button.small-expanded table{
-    width: 100%;
+    @apply w-full;
   }
 
   table.button.small-expand table a,
   table.button.small-expanded table a{
-    text-align: center !important;
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    @apply text-center w-full px-0;
   }
 
   table.button.small-expand center,
   table.button.small-expanded center{
-    min-width: 0;
+    @apply min-w-0;
   }
 }
 
@@ -1716,129 +1488,103 @@ body.outlook p{
 
 table.body th.decidim-bar,
 table.body td.decidim-bar{
-  background-color: $primary;
-  padding: 1em;
+  @apply bg-primary p-[1em];
 
   a{
-    color: $white;
+    @apply text-white;
   }
 }
 
 .main.container > tbody > tr:first-of-type{
-  background: $primary;
+  @apply bg-primary;
 
   a{
-    color: $white;
+    @apply text-white;
   }
 }
 
 table.body{
-  background-color: #ededed;
-  margin: 20px 0;
+  @apply bg-background-10 my-[20px] mx-0;
 }
 
 .decidim-logo{
-  margin-top: 16px;
+  @apply mt-[16px];
 }
 
 .decidim-logo a{
-  display: inline-block;
-  height: 30px;
-  color: $white;
+  @apply inline-block h-[30px] text-white;
 }
 
 .cityhall-bar{
-  background-color: $primary;
+  @apply bg-primary;
 }
 
 .cityhall-logo{
-  width: 150px;
-  margin-top: 16px;
+  @apply w-[150px] mt-[16px];
 }
 
 .footnote,
 .headnote{
-  padding-top: 10px;
-  color: #666;
-  font-size: 12px;
+  @apply pt-[10px] text-gray text-[12px];
 }
 
 table.container.main{
-  background: $body-background-color;
+  @apply bg-bodybackgroundcolor;
 }
 
 .custom-button{
-  display: block;
-  text-align: center;
-  border-radius: 4px;
-  line-height: 1;
-  padding: .58em 1em;
-  background: red;
+  @apply block text-center rounded-[4px] leading-1 py-[.58em] px-[1em] bg-red;
 }
 
 .button--sc{
-  letter-spacing: .05em;
-  font-weight: 600;
-  text-transform: uppercase;
+  @apply tracking-wider font-semibold uppercase;
 
   &.large{
-    font-size: 1rem;
+    @apply text-[1em];
   }
 }
 
 table.content.image img{
-  width: 100%;
+  @apply w-full;
 }
 
 th,
 td{
-  box-sizing: border-box;
+  @apply box-border;
 }
 
 .row.content{
   .email-button a{
-    background: $primary;
-    color: $white;
-    padding: 1em;
-    border-radius: $border-radius;
+    @apply bg-primary text-white p-[1em] rounded-[16px];
   }
 
   .email-button__cta a{
     &.cta-accept{
-      background: $success;
+      @apply bg-success;
     }
 
     &.cta-decline{
-      background: $bd-dark-green;
+      @apply bg-bddarkgreen;
     }
   }
 
   p{
-    margin-bottom: 1.5rem;
-    line-height: 2em;
+    @apply mb-[1.5rem] leading-[2em];
   }
 }
 
 .logo-wrapper{
   img{
-    background: $primary;
-    padding: 8px;
-    max-height: 72px;
+    @apply bg-primary p-[8px] max-h-[72px];
   }
 
-  padding: 0;
-  padding-top: 25px;
+  @apply p-0 pt-[25px];
 }
 
 .footer-social{
-  gap: .5em;
-  float: right;
-  display: flex;
-  list-style: none;
-  margin-right: 16px;
+  @apply gap-[.5em] float-right flex list-none mr-[16px];
 }
 
 .footer-social img{
-  width: 16px;
-  height: 16px;
+  @apply w-[16px] h-[16px];
 }

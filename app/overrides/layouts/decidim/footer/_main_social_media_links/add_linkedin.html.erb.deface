@@ -1,0 +1,9 @@
+<!-- insert_bottom 'ul' -->
+
+<li>
+  <a class="footer-social__icon" target="_blank" data-external-link="text-only" rel="noopener noreferrer" href="https://www.linkedin.com/company/11257078">
+    <span class="sr-only">Barcelona Demà a LinkedIn</span>
+
+    <%= render partial: "layouts/decidim/social/linkedin" %>
+  </a>
+</li>
