@@ -23,7 +23,7 @@ describe "Homepage" do
   end
 
   it "has custom social media links" do
-    expect(page).to have_link("a[href='https://twitter.com/pembarcelona']")
-    expect(page).to have_link("a[href='/link?external_url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F11257078']")
+    expect(page).to have_link(nil, href: "https://twitter.com/pembarcelona")
+    expect(page).to have_link(nil, href: "/link?external_url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F11257078")
   end
 end

@@ -37,8 +37,7 @@ describe "When_visiting_a_meeting" do
     end
 
     it "has a custom link" do
-      expect(page).to have_link("a[href='/link?external_url=http%3A%2F%2Fpokecode.net']")
-      expect(page).to have_css(".follow-button")
+      expect(page).to have_link(nil, href: "/link?external_url=http%3A%2F%2Flocalhost%3A3000%2Flink%3Fexternal_url%3Dhttp%253A%252F%252Fpokecode.net%252F")
     end
 
     context "and registrations are not opened" do

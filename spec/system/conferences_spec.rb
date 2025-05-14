@@ -5,8 +5,8 @@ require "rails_helper"
 describe "Visit_the_conferences_page", perform_enqueued: true do
   let(:organization) { create :organization }
   let!(:conference) { create :conference, organization: }
-  let!(:conference_speaker) { create :conference_speaker, conference:, position: { ca: "Un altre rol", en: "Another role" } }
-  let!(:conference_moderator) { create :conference_speaker, conference:, position: { ca: "Moderadora", en: "Moderator" } }
+  let!(:conference_speaker) { create :conference_speaker, :published, conference:, position: { ca: "Un altre rol", en: "Another role" } }
+  let!(:conference_moderator) { create :conference_speaker, :published, conference:, position: { ca: "Moderadora", en: "Moderator" } }
 
   before do
     switch_to_host(organization.host)
@@ -15,18 +15,18 @@ describe "Visit_the_conferences_page", perform_enqueued: true do
 
   it "separates speakers and moderators" do
     within "#conference_speakers-grid > .row:first-child" do
-      expect(page).to have_content("PONENTS")
+      expect(page).to have_content("Ponents")
 
-      within ".data-role" do
+      within ".conference__speaker__item-text" do
         expect(page).to have_content(translated(conference_speaker.position))
         expect(page).to have_no_content("Moderadora")
       end
     end
 
     within "#conference_speakers-grid > .row:last-child" do
-      expect(page).to have_content("MODERADORES")
+      expect(page).to have_content("Moderadores")
 
-      within ".data-role" do
+      within ".conference__speaker__item-text" do
         expect(page).to have_no_content(translated(conference_speaker.position))
         expect(page).to have_content("Moderadora")
       end
