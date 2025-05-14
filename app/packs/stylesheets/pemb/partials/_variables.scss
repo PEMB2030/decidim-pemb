@@ -4,23 +4,23 @@ body,
 }
 
 .callout.primary {
-  @apply border-l-[8px] border-l-solid border-l-primary bg-[hsl(map-get($hue, primary), 60%, 90%)];
+  @apply border-l-[8px] border-solid border-l-primary;
 }
 
 .callout.secondary {
-  @apply border-l-[8px] border-l-solid border-l-bdlightblue bg-[hsl(map-get($hue, bd-light-blue), 60%, 90%)];
+  @apply border-l-[8px] border-solid border-l-bdlightblue;
 }
 
 .callout.success {
-  @apply border-l-[8px] border-l-solid border-l-success bg-[hsl(map-get($hue, success), 60%, 90%)];
+  @apply border-l-[8px] border-solid border-l-success;
 }
 
 .callout.warning {
-  @apply border-l-[8px] border-l-solid border-l-warning bg-[hsl(map-get($hue, warning), 60%, 90%)];
+  @apply border-l-[8px] border-solid border-l-warning;
 }
 
 .callout.alert {
-  @apply border-l-[8px] border-l-solid border-l-alert bg-[hsl(map-get($hue, alert), 60%, 90%)];
+  @apply border-l-[8px] border-solid border-l-alert;
 }
 
 .process-stats__data::after {

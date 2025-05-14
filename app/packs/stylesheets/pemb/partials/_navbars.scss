@@ -30,10 +30,6 @@
   a:focus {
     @apply text-navbarfghover;
   }
-
-  &--active a {
-    @apply inset-shadow-[0 -4px 0 0 primary];
-  }
 }
 
 .topbar__search input {

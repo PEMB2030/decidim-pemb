@@ -8,7 +8,7 @@
   &.hollow[disabled]:hover,
   &.hollow.disabled:focus,
   &.hollow[disabled]:focus {
-    @apply borde-[2px];
+    @apply border-[2px];
   }
 }
 
@@ -30,7 +30,7 @@
 }
 
 hr.reset {
-  @apply border-b-[4px] border-b-solid border-b-secondary;
+  @apply border-b-[4px] border-solid border-b-secondary;
 }
 
 .process_stats {

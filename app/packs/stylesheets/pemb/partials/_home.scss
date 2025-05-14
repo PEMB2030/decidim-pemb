@@ -1,6 +1,6 @@
 .home-section {
   &:not(:first-child) {
-    @apply border-t-[4px] border-t-solid border-t-secondary;
+    @apply border-t-[4px] border-solid border-t-secondary;
   }
 
   .button--sc.hollow {

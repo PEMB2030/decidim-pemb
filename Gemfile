@@ -16,7 +16,6 @@ gem "decidim-term_customizer", github: "CodiTramuntana/decidim-module-term_custo
 gem "bootsnap", "~> 1.7"
 gem "deface", ">= 1.9"
 gem "health_check"
-gem "nokogiri"
 gem "puma", ">= 6.3.1"
 
 group :development, :test do

@@ -15,7 +15,7 @@
 }
 
 .mini-footer {
-  @apply p-t-[2em];
+  @apply pt-[2em];
 
   a,
   a:hover {
@@ -28,7 +28,7 @@
     @apply hidden;
   }
 
-  @apply flex items-center justify-center gap-[2em] p-b-[2em];
+  @apply flex items-center justify-center gap-[2em] pb-[2em];
 
   img {
     @apply w-auto h-[3em];
