@@ -2,7 +2,7 @@
   "name": "app",
   "private": true,
   "engines": {
-    "node": "18.17.1",
+    "node": ">=18.17.1",
     "npm": ">=9.6.7"
   },
   "scripts": {
@@ -19,9 +19,9 @@
     "extends": "@decidim/eslint-config"
   },
   "dependencies": {
-    "@decidim/browserslist-config": "^0.30.0",
-    "@decidim/core": "^0.30.0",
-    "@decidim/webpacker": "^0.30.0",
+    "@decidim/browserslist-config": "^0.29.3",
+    "@decidim/core": "^0.29.3",
+    "@decidim/webpacker": "^0.29.3",
     "@rails/actioncable": "^8.0.200",
     "codemirror": "^5.65.19",
     "europa": "^6.0.0",
