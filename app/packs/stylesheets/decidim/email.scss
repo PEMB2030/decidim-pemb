@@ -5,19 +5,19 @@
 
 /* 1 - Foundation settings --------- */
 
-.wrapper{
+.wrapper {
   @apply w-full;
 }
 
-#outlook a{
+#outlook a {
   @apply p-0;
 }
 
-body{
+body {
   @apply w-full min-w-full m-0 p-0box-border;
 }
 
-.ExternalClass{
+.ExternalClass {
   @apply w-full;
 }
 
@@ -26,80 +26,80 @@ body{
 .ExternalClass span,
 .ExternalClass font,
 .ExternalClass td,
-.ExternalClass div{
+.ExternalClass div {
   @apply leading-[100%];
 }
 
-#backgroundTable{
+#backgroundTable {
   @apply m-0 p-0 w-full leading-[100%];
 }
 
-img{
+img {
   @apply outline-none no-underline max-w-full clear-both block;
 }
 
-center{
+center {
   @apply w-full min-w-[580px];
 }
 
-a img{
+a img {
   @apply border-none;
 }
 
-p{
+p {
   @apply mt-0 mr-0 mb-0 ml-[10px];
 }
 
-table{
+table {
   @apply border-spacing-0 border-collapse;
 }
 
-td{
+td {
   @apply border-collapse hyphens-auto break-normal;
 }
 
 table,
 tr,
-td{
+td {
   @apply p-0 align-top text-left;
 }
 
-@media only screen{
-  html{
+@media only screen {
+  html {
     @apply min-h-full bg-background-6;
   }
 }
 
-table.body{
+table.body {
   @apply bg-background-6 h-full w-full;
 }
 
-table.container{
+table.container {
   @apply w-[580px] my-0 mx-auto;
 }
 
-table.row{
+table.row {
   @apply p-0 w-full relative;
 }
 
-table.spacer{
+table.spacer {
   @apply w-full;
 }
 
 /* stylelint-disable property-no-unknown */
-table.spacer td{
+table.spacer td {
   /* mso-line-height-rule: exactly; */
 }
 /* stylelint-enable property-no-unknown */
 
-table.container table.row{
+table.container table.row {
   @apply table;
 }
 
 td.columns,
 td.column,
 th.columns,
-th.column{
+th.column {
   @apply my-0 mx-auto px-[16px] pb-[16px];
 }
 
@@ -110,7 +110,7 @@ td.column .columns,
 th.columns .column,
 th.columns .columns,
 th.column .column,
-th.column .columns{
+th.column .columns {
   @apply px-0;
 }
 
@@ -121,489 +121,489 @@ td.column .columns center,
 th.columns .column center,
 th.columns .columns center,
 th.column .column center,
-th.column .columns center{
+th.column .columns center {
   @apply min-w-0;
 }
 
 td.columns.last,
 td.column.last,
 th.columns.last,
-th.column.last{
+th.column.last {
   @apply pr-[16px];
 }
 
 td.columns table:not(.button),
 td.column table:not(.button),
 th.columns table:not(.button),
-th.column table:not(.button){
+th.column table:not(.button) {
   @apply w-full;
 }
 
 td.large-1,
-th.large-1{
+th.large-1 {
   @apply w-[32.33333px] px-[8px];
 }
 
 td.large-1.first,
-th.large-1.first{
+th.large-1.first {
   @apply pl-[16px];
 }
 
 td.large-1.last,
-th.large-1.last{
+th.large-1.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-1,
-.collapse > tbody > tr > th.large-1{
+.collapse > tbody > tr > th.large-1 {
   @apply px-0 w-[48.33333px];
 }
 
 .collapse td.large-1.first,
 .collapse th.large-1.first,
 .collapse td.large-1.last,
-.collapse th.large-1.last{
+.collapse th.large-1.last {
   @apply w-[56.33333px];
 }
 
 td.large-1 center,
-th.large-1 center{
+th.large-1 center {
   @apply min-w-[.33333px];
 }
 
 .body .columns td.large-1,
 .body .column td.large-1,
 .body .columns th.large-1,
-.body .column th.large-1{
+.body .column th.large-1 {
   @apply w-[8.33333%];
 }
 
 td.large-2,
-th.large-2{
+th.large-2 {
   @apply w-[80.66667px] px-[8px];
 }
 
 td.large-2.first,
-th.large-2.first{
+th.large-2.first {
   @apply pl-[16px];
 }
 
 td.large-2.last,
-th.large-2.last{
+th.large-2.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-2,
-.collapse > tbody > tr > th.large-2{
+.collapse > tbody > tr > th.large-2 {
   @apply px-0 w-[96.66667px];
 }
 
 .collapse td.large-2.first,
 .collapse th.large-2.first,
 .collapse td.large-2.last,
-.collapse th.large-2.last{
+.collapse th.large-2.last {
   @apply w-[104.66667px];
 }
 
 td.large-2 center,
-th.large-2 center{
+th.large-2 center {
   @apply min-w-[48.66667px];
 }
 
 .body .columns td.large-2,
 .body .column td.large-2,
 .body .columns th.large-2,
-.body .column th.large-2{
+.body .column th.large-2 {
   @apply w-[16.66667%];
 }
 
 td.large-3,
-th.large-3{
+th.large-3 {
   @apply w-[129px] px-[8px];
 }
 
 td.large-3.first,
-th.large-3.first{
+th.large-3.first {
   @apply pl-[16px];
 }
 
 td.large-3.last,
-th.large-3.last{
+th.large-3.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-3,
-.collapse > tbody > tr > th.large-3{
+.collapse > tbody > tr > th.large-3 {
   @apply px-0 w-[145px];
 }
 
 .collapse td.large-3.first,
 .collapse th.large-3.first,
 .collapse td.large-3.last,
-.collapse th.large-3.last{
+.collapse th.large-3.last {
   @apply w-[153px];
 }
 
 td.large-3 center,
-th.large-3 center{
+th.large-3 center {
   @apply min-w-[97px];
 }
 
 .body .columns td.large-3,
 .body .column td.large-3,
 .body .columns th.large-3,
-.body .column th.large-3{
+.body .column th.large-3 {
   @apply w-[25%];
 }
 
 td.large-4,
-th.large-4{
+th.large-4 {
   @apply px-[8px] w-[177.33333px];
 }
 
 td.large-4.first,
-th.large-4.first{
+th.large-4.first {
   @apply pl-[16px];
 }
 
 td.large-4.last,
-th.large-4.last{
+th.large-4.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-4,
-.collapse > tbody > tr > th.large-4{
+.collapse > tbody > tr > th.large-4 {
   @apply px-0 w-[193.33333px];
 }
 
 .collapse td.large-4.first,
 .collapse th.large-4.first,
 .collapse td.large-4.last,
-.collapse th.large-4.last{
+.collapse th.large-4.last {
   @apply w-[201.33333px];
 }
 
 td.large-4 center,
-th.large-4 center{
+th.large-4 center {
   @apply min-w-[145.33333px];
 }
 
 .body .columns td.large-4,
 .body .column td.large-4,
 .body .columns th.large-4,
-.body .column th.large-4{
+.body .column th.large-4 {
   @apply w-[33.33333%];
 }
 
 td.large-5,
-th.large-5{
+th.large-5 {
   @apply px-[8px] w-[225.66667px];
 }
 
 td.large-5.first,
-th.large-5.first{
+th.large-5.first {
   @apply pl-[16px];
 }
 
 td.large-5.last,
-th.large-5.last{
+th.large-5.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-5,
-.collapse > tbody > tr > th.large-5{
+.collapse > tbody > tr > th.large-5 {
   @apply px-0 w-[241.66667px];
 }
 
 .collapse td.large-5.first,
 .collapse th.large-5.first,
 .collapse td.large-5.last,
-.collapse th.large-5.last{
+.collapse th.large-5.last {
   @apply w-[249.66667px];
 }
 
 td.large-5 center,
-th.large-5 center{
+th.large-5 center {
   @apply min-w-[193.66667px];
 }
 
 .body .columns td.large-5,
 .body .column td.large-5,
 .body .columns th.large-5,
-.body .column th.large-5{
+.body .column th.large-5 {
   @apply w-[41.66667%];
 }
 
 td.large-6,
-th.large-6{
+th.large-6 {
   @apply px-[8px] w-[274px];
 }
 
 td.large-6.first,
-th.large-6.first{
+th.large-6.first {
   @apply pl-[16px];
 }
 
 td.large-6.last,
-th.large-6.last{
+th.large-6.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-6,
-.collapse > tbody > tr > th.large-6{
+.collapse > tbody > tr > th.large-6 {
   @apply px-0 w-[290px];
 }
 
 .collapse td.large-6.first,
 .collapse th.large-6.first,
 .collapse td.large-6.last,
-.collapse th.large-6.last{
+.collapse th.large-6.last {
   @apply w-[298px];
 }
 
 td.large-6 center,
-th.large-6 center{
+th.large-6 center {
   @apply min-w-[242px];
 }
 
 .body .columns td.large-6,
 .body .column td.large-6,
 .body .columns th.large-6,
-.body .column th.large-6{
+.body .column th.large-6 {
   @apply w-[50%];
 }
 
 td.large-7,
-th.large-7{
+th.large-7 {
   @apply px-[8px] w-[322.33333px];
 }
 
 td.large-7.first,
-th.large-7.first{
+th.large-7.first {
   @apply pl-[16px];
 }
 
 td.large-7.last,
-th.large-7.last{
+th.large-7.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-7,
-.collapse > tbody > tr > th.large-7{
+.collapse > tbody > tr > th.large-7 {
   @apply px-0 w-[338.33333px];
 }
 
 .collapse td.large-7.first,
 .collapse th.large-7.first,
 .collapse td.large-7.last,
-.collapse th.large-7.last{
+.collapse th.large-7.last {
   @apply w-[346.33333px];
 }
 
 td.large-7 center,
-th.large-7 center{
+th.large-7 center {
   @apply min-w-[290.33333px];
 }
 
 .body .columns td.large-7,
 .body .column td.large-7,
 .body .columns th.large-7,
-.body .column th.large-7{
+.body .column th.large-7 {
   @apply w-[58.33333%];
 }
 
 td.large-8,
-th.large-8{
+th.large-8 {
   @apply px-[8px] w-[370.66667px];
 }
 
 td.large-8.first,
-th.large-8.first{
+th.large-8.first {
   @apply pl-[16px];
 }
 
 td.large-8.last,
-th.large-8.last{
+th.large-8.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-8,
-.collapse > tbody > tr > th.large-8{
+.collapse > tbody > tr > th.large-8 {
   @apply px-0 w-[386.66667px];
 }
 
 .collapse td.large-8.first,
 .collapse th.large-8.first,
 .collapse td.large-8.last,
-.collapse th.large-8.last{
+.collapse th.large-8.last {
   @apply w-[394.66667px];
 }
 
 td.large-8 center,
-th.large-8 center{
+th.large-8 center {
   @apply min-w-[338.66667px];
 }
 
 .body .columns td.large-8,
 .body .column td.large-8,
 .body .columns th.large-8,
-.body .column th.large-8{
+.body .column th.large-8 {
   @apply w-[66.66667%];
 }
 
 td.large-9,
-th.large-9{
+th.large-9 {
   @apply px-[8px] w-[419px];
 }
 
 td.large-9.first,
-th.large-9.first{
+th.large-9.first {
   @apply pl-[16px];
 }
 
 td.large-9.last,
-th.large-9.last{
+th.large-9.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-9,
-.collapse > tbody > tr > th.large-9{
+.collapse > tbody > tr > th.large-9 {
   @apply px-0 w-[435px];
 }
 
 .collapse td.large-9.first,
 .collapse th.large-9.first,
 .collapse td.large-9.last,
-.collapse th.large-9.last{
+.collapse th.large-9.last {
   @apply w-[443px];
 }
 
 td.large-9 center,
-th.large-9 center{
+th.large-9 center {
   @apply min-w-[387px];
 }
 
 .body .columns td.large-9,
 .body .column td.large-9,
 .body .columns th.large-9,
-.body .column th.large-9{
+.body .column th.large-9 {
   @apply w-[75%];
 }
 
 td.large-10,
-th.large-10{
+th.large-10 {
   @apply px-[8px] w-[467.33333px];
 }
 
 td.large-10.first,
-th.large-10.first{
+th.large-10.first {
   @apply pl-[16px];
 }
 
 td.large-10.last,
-th.large-10.last{
+th.large-10.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-10,
-.collapse > tbody > tr > th.large-10{
+.collapse > tbody > tr > th.large-10 {
   @apply px-0 w-[483.33333px];
 }
 
 .collapse td.large-10.first,
 .collapse th.large-10.first,
 .collapse td.large-10.last,
-.collapse th.large-10.last{
+.collapse th.large-10.last {
   @apply w-[499.33333px];
 }
 
 td.large-10 center,
-th.large-10 center{
+th.large-10 center {
   @apply min-w-[435.33333px];
 }
 
 .body .columns td.large-10,
 .body .column td.large-10,
 .body .columns th.large-10,
-.body .column th.large-10{
+.body .column th.large-10 {
   @apply w-[83.33333%];
 }
 
 td.large-11,
-th.large-11{
+th.large-11 {
   @apply px-[8px] w-[515.66667px];
 }
 
 td.large-11.first,
-th.large-11.first{
+th.large-11.first {
   @apply pl-[16px];
 }
 
 td.large-11.last,
-th.large-11.last{
+th.large-11.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-11,
-.collapse > tbody > tr > th.large-11{
+.collapse > tbody > tr > th.large-11 {
   @apply px-0 w-[531.66667px];
 }
 
 .collapse td.large-11.first,
 .collapse th.large-11.first,
 .collapse td.large-11.last,
-.collapse th.large-11.last{
+.collapse th.large-11.last {
   @apply w-[539.66667px];
 }
 
 td.large-11 center,
-th.large-11 center{
+th.large-11 center {
   @apply min-w-[483.66667px];
 }
 
 .body .columns td.large-11,
 .body .column td.large-11,
 .body .columns th.large-11,
-.body .column th.large-11{
+.body .column th.large-11 {
   @apply w-[91.66667%];
 }
 
 td.large-12,
-th.large-12{
+th.large-12 {
   @apply px-[8px] w-[564px];
 }
 
 td.large-12.first,
-th.large-12.first{
+th.large-12.first {
   @apply pl-[16px];
 }
 
 td.large-12.last,
-th.large-12.last{
+th.large-12.last {
   @apply pr-[16px];
 }
 
 .collapse > tbody > tr > td.large-12,
-.collapse > tbody > tr > th.large-12{
+.collapse > tbody > tr > th.large-12 {
   @apply px-0 w-[580px];
 }
 
 .collapse td.large-12.first,
 .collapse th.large-12.first,
 .collapse td.large-12.last,
-.collapse th.large-12.last{
+.collapse th.large-12.last {
   @apply w-[588px];
 }
 
 td.large-12 center,
-th.large-12 center{
+th.large-12 center {
   @apply min-w-[532px];
 }
 
 .body .columns td.large-12,
 .body .column td.large-12,
 .body .columns th.large-12,
-.body .column th.large-12{
+.body .column th.large-12 {
   @apply w-full;
 }
 
@@ -612,7 +612,7 @@ td.large-offset-1.first,
 td.large-offset-1.last,
 th.large-offset-1,
 th.large-offset-1.first,
-th.large-offset-1.last{
+th.large-offset-1.last {
   @apply pl-[64.33333px];
 }
 
@@ -621,7 +621,7 @@ td.large-offset-2.first,
 td.large-offset-2.last,
 th.large-offset-2,
 th.large-offset-2.first,
-th.large-offset-2.last{
+th.large-offset-2.last {
   @apply pl-[112.66667px];
 }
 
@@ -630,7 +630,7 @@ td.large-offset-3.first,
 td.large-offset-3.last,
 th.large-offset-3,
 th.large-offset-3.first,
-th.large-offset-3.last{
+th.large-offset-3.last {
   @apply pl-[161px];
 }
 
@@ -639,7 +639,7 @@ td.large-offset-4.first,
 td.large-offset-4.last,
 th.large-offset-4,
 th.large-offset-4.first,
-th.large-offset-4.last{
+th.large-offset-4.last {
   @apply pl-[209.33333px];
 }
 
@@ -648,7 +648,7 @@ td.large-offset-5.first,
 td.large-offset-5.last,
 th.large-offset-5,
 th.large-offset-5.first,
-th.large-offset-5.last{
+th.large-offset-5.last {
   @apply pl-[257.66667px];
 }
 
@@ -657,7 +657,7 @@ td.large-offset-6.first,
 td.large-offset-6.last,
 th.large-offset-6,
 th.large-offset-6.first,
-th.large-offset-6.last{
+th.large-offset-6.last {
   @apply pl-[306px];
 }
 
@@ -666,7 +666,7 @@ td.large-offset-7.first,
 td.large-offset-7.last,
 th.large-offset-7,
 th.large-offset-7.first,
-th.large-offset-7.last{
+th.large-offset-7.last {
   @apply pl-[354.33333px];
 }
 
@@ -675,7 +675,7 @@ td.large-offset-8.first,
 td.large-offset-8.last,
 th.large-offset-8,
 th.large-offset-8.first,
-th.large-offset-8.last{
+th.large-offset-8.last {
   @apply pl-[402.66667px];
 }
 
@@ -684,7 +684,7 @@ td.large-offset-9.first,
 td.large-offset-9.last,
 th.large-offset-9,
 th.large-offset-9.first,
-th.large-offset-9.last{
+th.large-offset-9.last {
   @apply pl-[451px];
 }
 
@@ -693,7 +693,7 @@ td.large-offset-10.first,
 td.large-offset-10.last,
 th.large-offset-10,
 th.large-offset-10.first,
-th.large-offset-10.last{
+th.large-offset-10.last {
   @apply pl-[499.33333px];
 }
 
@@ -702,52 +702,52 @@ td.large-offset-11.first,
 td.large-offset-11.last,
 th.large-offset-11,
 th.large-offset-11.first,
-th.large-offset-11.last{
+th.large-offset-11.last {
   @apply pl-[547.66667px];
 }
 
 td.expander,
-th.expander{
-  @apply invisible w-0 p-0
+th.expander {
+  @apply invisible w-0 p-0;
 }
 
-table.container.radius{
+table.container.radius {
   @apply border-separate rounded-none;
 }
 
-.block-grid{
+.block-grid {
   @apply w-full max-w-[580px];
 }
 
-.block-grid td{
+.block-grid td {
   @apply p-[8px] inline-block;
 }
 
-.up-2 td{
+.up-2 td {
   @apply w-[274px];
 }
 
-.up-3 td{
+.up-3 td {
   @apply w-[177px];
 }
 
-.up-4 td{
+.up-4 td {
   @apply w-[129px];
 }
 
-.up-5 td{
+.up-5 td {
   @apply w-[100px];
 }
 
-.up-6 td{
+.up-6 td {
   @apply w-[80px];
 }
 
-.up-7 td{
+.up-7 td {
   @apply w-[66px];
 }
 
-.up-8 td{
+.up-8 td {
   @apply w-[56px];
 }
 
@@ -761,7 +761,7 @@ h4.text-center,
 h5.text-center,
 h6.text-center,
 p.text-center,
-span.text-center{
+span.text-center {
   @apply text-center;
 }
 
@@ -775,7 +775,7 @@ h4.text-left,
 h5.text-left,
 h6.text-left,
 p.text-left,
-span.text-left{
+span.text-left {
   @apply text-left;
 }
 
@@ -789,90 +789,91 @@ h4.text-right,
 h5.text-right,
 h6.text-right,
 p.text-right,
-span.text-right{
+span.text-right {
   @apply text-right;
 }
 
-span.text-center{
+span.text-center {
   @apply text-center block w-full;
 }
 
-@media only screen and (max-width: 596px){
-  .small-float-center{
+@media only screen and (max-width: 596px) {
+  .small-float-center {
     @apply text-center my-0 mx-auto float-none;
   }
 
-  .small-text-center{
-    @apply text-center
+  .small-text-center {
+    @apply text-center;
   }
 
-  .small-text-left{
+  .small-text-left {
     @apply text-left;
   }
 
-  .small-text-right{
+  .small-text-right {
     @apply text-right;
   }
 }
 
-img.float-left{
+img.float-left {
   @apply text-left float-left;
 }
 
-img.float-right{
+img.float-right {
   @apply text-right float-right;
 }
 
 img.float-center,
-img.text-center{
+img.text-center {
   @apply my-0 mx-auto float-none text-center;
 }
 
 table.float-center,
 td.float-center,
-th.float-center{
+th.float-center {
   @apply text-center my-0 mx-auto float-none;
 }
 
-th.float-right{
+th.float-right {
   @apply my-0 mx-auto float-right text-center;
 }
 
 /* stylelint-disable property-no-unknown */
-.hide-for-large{
+.hide-for-large {
   @apply hidden overflow-hidden max-h-0 text-[0] w-0 leading-0;
 }
 /* stylelint-enable property-no-unknown */
 
-@media only screen and (max-width: 596px){
-  .hide-for-large{
+@media only screen and (max-width: 596px) {
+  .hide-for-large {
     @apply block w-auto overflow-visible max-h-none text-[inherit] leading-[inherit];
   }
 }
 
 /* stylelint-disable property-no-unknown */
-table.body table.container .hide-for-large *{
+table.body table.container .hide-for-large * {
   mso-hide: all;
 }
 /* stylelint-enable property-no-unknown */
 
-@media only screen and (max-width: 596px){
+@media only screen and (max-width: 596px) {
   table.body table.container .hide-for-large,
-  table.body table.container .row.hide-for-large{
+  table.body table.container .row.hide-for-large {
     @apply table w-full;
   }
 }
 
-@media only screen and (max-width: 596px){
-  table.body table.container .callout-inner.hide-for-large{
+@media only screen and (max-width: 596px) {
+  table.body table.container .callout-inner.hide-for-large {
     @apply table-cell w-full;
   }
 }
 
 /* stylelint-disable property-no-unknown */
-@media only screen and (max-width: 596px){
-  table.body table.container .show-for-large{
+@media only screen and (max-width: 596px) {
+  table.body table.container .show-for-large {
     mso-hide: all;
+
     @apply hidden w-0 overflow-hidden;
   }
 }
@@ -889,7 +890,7 @@ h6,
 p,
 td,
 th,
-a{
+a {
   @apply text-black font-normal p-0 m-0 text-left leading-[1.3] font-[Arial, sans-serif];
 }
 
@@ -898,31 +899,31 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   @apply text-[inherit] break-normal font-[Arial, sans-serif] font-normal mb-[10px];
 }
 
-h1{
+h1 {
   @apply text-[32px];
 }
 
-h2{
+h2 {
   @apply text-[30px];
 }
 
-h3{
+h3 {
   @apply text-[28px];
 }
 
-h4{
+h4 {
   @apply text-[24px];
 }
 
-h5{
+h5 {
   @apply text-[20px];
 }
 
-h6{
+h6 {
   @apply text-[18px];
 }
 
@@ -930,39 +931,39 @@ body,
 table.body,
 p,
 td,
-th{
+th {
   @apply text-[16px] leading-[1.3];
 }
 
-p{
+p {
   @apply mb-[10px];
 }
 
-p.lead{
+p.lead {
   @apply text-[20px] leading-[1.6];
 }
 
-p.subheader{
+p.subheader {
   @apply mt-[4px] mb-[8px] font-normal leading-[1.4] text-gray-8;
 }
 
-small{
+small {
   @apply text-[80%] text-gray-9;
 }
 
-a{
+a {
   @apply no-underline text-skyblue;
 }
 
-a:hover{
+a:hover {
   @apply text-secondary;
 }
 
-a:active{
+a:active {
   @apply text-lightblue;
 }
 
-a:visited{
+a:visited {
   @apply text-skyblue;
 }
 
@@ -977,66 +978,65 @@ h4 a:visited,
 h5 a,
 h5 a:visited,
 h6 a,
-h6 a:visited{
+h6 a:visited {
   @apply text-skyblue;
 }
 
-pre{
+pre {
   @apply bg-background-6 my-[30px] mx-0;
 }
 
-pre code{
+pre code {
   @apply text-gray-9;
 }
 
-pre code span.callout{
+pre code span.callout {
   @apply text-gray-8 font-bold;
 }
 
-pre code span.callout-strong{
+pre code span.callout-strong {
   @apply text-skyorange font-bold;
-
 }
 
-table.hr{
+table.hr {
   @apply w-full;
 }
 
-table.hr th{
+table.hr th {
   @apply h-0 max-w-[580px] border-t-0 border-r-0 border-b-[1px] border-b-solid border-b-black border-l-0 my-[20px] mx-auto clear-both;
 }
 
-.stat{
+.stat {
   @apply text-[40px] leading-[1];
 }
 
-p + .stat{
+p + .stat {
   @apply -mt-[16px];
 }
 
 /* stylelint-disable property-no-unknown */
-span.preheader{
+span.preheader {
   @apply hidden invisible text-[1px] text-background-6 leading-[1px] max-h-0 max-w-0 opacity-0 overflow-hidden;
 }
 /* stylelint-enable property-no-unknown */
 
-table.button{
+table.button {
   @apply w-auto mt-0 mx-0 mb-[16px];
 }
 
-table.button table td{
+table.button table td {
   @apply text-left text-white bg-primary border-[2px] border-solid border-primary;
 }
 
-table.button table td a{
+table.button table td a {
   @apply font-[Arial, sans-serif] text-[16px] text-white no-underline inline-block py-[8px] px-[16px] border-0 border-solid border-primary rounded-[3px];
 }
 
-table.button.radius table td{
+table.button.radius table td {
   @apply rounded-[4px] border-none;
 }
 
-table.button.rounded table td{
+table.button.rounded table td {
   @apply rounded-[500px] border-none;
 }
 
@@ -1051,435 +1051,432 @@ table.button.small:active table tr td a,
 table.button.small table tr td a:visited,
 table.button.large:hover table tr td a,
 table.button.large:active table tr td a,
-table.button.large table tr td a:visited{
+table.button.large table tr td a:visited {
   @apply text-white;
 }
 
 table.button.tiny table td,
-table.button.tiny table a{
+table.button.tiny table a {
   @apply py-[4px] px-[8px];
 }
 
-table.button.tiny table a{
+table.button.tiny table a {
   @apply text-[10px] font-normal;
 }
 
 table.button.small table td,
-table.button.small table a{
+table.button.small table a {
   @apply py-[5px] px-[10px] text-[12px];
 }
 
-table.button.large table a{
+table.button.large table a {
   @apply py-[10px] px-[20px] text-[20px];
 }
 
 table.button.expand,
-table.button.expanded{
+table.button.expanded {
   @apply w-full;
 }
 
 // Fix for Outlook to center the button
 table.button.expand > tr > td,
-table.button.expanded > tr > td{
+table.button.expanded > tr > td {
   @apply text-center;
 }
 
 table.button.expand table,
-table.button.expanded table{
+table.button.expanded table {
   @apply w-[50%] m-auto;
 }
 
 // Fix for Outlook to center the button link text
 table.button.expand table > tr > td,
-table.button.expanded table > tr > td{
+table.button.expanded table > tr > td {
   @apply text-center;
 }
 
 table.button.expand table a,
-table.button.expanded table a{
+table.button.expanded table a {
   @apply text-center w-full px-0;
 }
 
 table.button.expand center,
-table.button.expanded center{
+table.button.expanded center {
   @apply min-w-0;
 }
 
 table.button:hover table td,
 table.button:visited table td,
-table.button:active table td{
+table.button:active table td {
   @apply bg-primary text-white;
 }
 
 table.button:hover table a,
 table.button:visited table a,
-table.button:active table a{
+table.button:active table a {
   @apply border-0 border-solid border-lightblue;
 }
 
-table.button.secondary table td{
+table.button.secondary table td {
   @apply bg-gray-10 text-white border-0 border-solid border-gray-10;
 }
 
-table.button.secondary table a{
+table.button.secondary table a {
   @apply text-white border-0 border-solid border-gray-10;
 }
 
-table.button.secondary:hover table td{
+table.button.secondary:hover table td {
   @apply bg-background-7 text-white;
-
 }
 
-table.button.secondary:hover table a{
+table.button.secondary:hover table a {
   @apply border-0 border-solid border-background-7;
-
 }
 
-table.button.secondary:hover table td a{
+table.button.secondary:hover table td a {
   @apply text-white;
 }
 
-table.button.secondary:active table td a{
+table.button.secondary:active table td a {
   @apply text-white;
 }
 
-table.button.secondary table td a:visited{
+table.button.secondary table td a:visited {
   @apply text-white;
 }
 
-table.button.success table td{
+table.button.success table td {
   @apply bg-skygreen border-0 border-solid border-skygreen;
 }
 
-table.button.success table a{
+table.button.success table a {
   @apply border-0 border-solid border-skygreen;
 }
 
-table.button.success:hover table td{
+table.button.success:hover table td {
   @apply bg-[color:lighten(skygreen, 10%)];
 }
 
-table.button.success:hover table a{
+table.button.success:hover table a {
   @apply border-0 border-solid border-[color:lighten(skygreen, 10%)];
 }
 
-table.button.alert table td{
+table.button.alert table td {
   @apply bg-skyred border-0 border-solid border-skyred;
 }
 
-table.button.alert table a{
+table.button.alert table a {
   @apply border-0 border-solid border-skyred;
 }
 
-table.button.alert:hover table td{
+table.button.alert:hover table td {
   @apply bg-[color:lighten(skyred, 10%)];
 }
 
-table.button.alert:hover table a{
+table.button.alert:hover table a {
   @apply border-0 border-solid border-[color:lighten(skyred, 10%)];
 }
 
-table.button.warning table td{
+table.button.warning table td {
   @apply bg-lightorange border-0 border-solid border-lightorange;
 }
 
-table.button.warning table a{
+table.button.warning table a {
   @apply border-0 border-solid border-lightorange;
 }
 
-table.button.warning:hover table td{
+table.button.warning:hover table td {
   @apply bg-[color:lighten(lightorange,10%)];
 }
 
-table.button.warning:hover table a{
+table.button.warning:hover table a {
   @apply border-0 border-solid border-[color:lighten(lightorange,10%)];
 }
 
-table.callout{
+table.callout {
   @apply mb-[16px];
 }
 
-th.callout-inner{
+th.callout-inner {
   @apply w-full border-0 border-solid border-background-8 p-[10px] bg-white;
 }
 
-th.callout-inner.primary{
+th.callout-inner.primary {
   @apply bg-lightgray border border-solid border-gray-11 text-black;
 }
 
-th.callout-inner.secondary{
+th.callout-inner.secondary {
   @apply bg-background-9 border border-solid border-gray-11 text-black;
 }
 
-th.callout-inner.success{
+th.callout-inner.success {
   @apply bg-[color:lighten(skygreen,30%)] border border-solid border-[color:lighten(skygreen,30%)] text-white;
 }
 
-th.callout-inner.warning{
+th.callout-inner.warning {
   @apply bg-[color:lighten(lightorange,30%)] border border-solid border-[color:lighten(lightorange,30%)] text-white;
 }
 
-th.callout-inner.alert{
+th.callout-inner.alert {
   @apply bg-[color:lighten(skyred,30%)] border border-solid border-[color:lighten(skyred,30%)] text-white;
 }
 
-.thumbnail{
+.thumbnail {
   @apply shadow-[0 0 0 1px black] border-[4px] border-solid border-white inline-block leading-0 max-w-full rounded-[3px] mb-[16px] transition-shadow duration-[200ms] ease-out;
 }
 
 .thumbnail:hover,
-.thumbnail:focus{
-  @apply shadow-[0 0 6px 1px lightblue]
+.thumbnail:focus {
+  @apply shadow-[0 0 6px 1px lightblue];
 }
 
-table.menu{
+table.menu {
   @apply w-[580px];
 }
 
 table.menu td.menu-item,
-table.menu th.menu-item{
+table.menu th.menu-item {
   @apply p-[10px] pr-[10px];
 }
 
 table.menu td.menu-item a,
-table.menu th.menu-item a{
+table.menu th.menu-item a {
   @apply text-skyblue;
 }
 
 table.menu.vertical td.menu-item,
-table.menu.vertical th.menu-item{
+table.menu.vertical th.menu-item {
   @apply p-[10px] pr-0 block;
 }
 
 table.menu.vertical td.menu-item a,
-table.menu.vertical th.menu-item a{
+table.menu.vertical th.menu-item a {
   @apply w-full;
 }
 
 table.menu.vertical td.menu-item table.menu.vertical td.menu-item,
 table.menu.vertical td.menu-item table.menu.vertical th.menu-item,
 table.menu.vertical th.menu-item table.menu.vertical td.menu-item,
-table.menu.vertical th.menu-item table.menu.vertical th.menu-item{
+table.menu.vertical th.menu-item table.menu.vertical th.menu-item {
   @apply pl-[10px];
 }
 
-table.menu.text-center a{
+table.menu.text-center a {
   @apply text-center;
 }
 
-.menu[align="center"]{
+.menu[align="center"] {
   @apply w-auto;
 }
 
-body.outlook p{
+body.outlook p {
   @apply inline;
 }
 
-@media only screen and (max-width: 596px){
-  table.body img{
+@media only screen and (max-width: 596px) {
+  table.body img {
     @apply w-auto h-auto;
   }
 
-  table.body center{
+  table.body center {
     @apply min-w-0;
   }
 
-  table.body .container{
+  table.body .container {
     @apply w-[95%];
   }
 
   table.body .columns,
-  table.body .column{
+  table.body .column {
     @apply h-auto box-border px-[16px];
   }
 
   table.body .columns .column,
   table.body .columns .columns,
   table.body .column .column,
-  table.body .column .columns{
+  table.body .column .columns {
     @apply px-0;
   }
 
   table.body .collapse .columns,
-  table.body .collapse .column{
+  table.body .collapse .column {
     @apply px-0;
   }
 
   td.small-1,
-  th.small-1{
+  th.small-1 {
     @apply inline-block w-[8.33333%];
   }
 
   td.small-2,
-  th.small-2{
+  th.small-2 {
     @apply inline-block w-[16.66667%];
   }
 
   td.small-3,
-  th.small-3{
+  th.small-3 {
     @apply inline-block w-[25%];
   }
 
   td.small-4,
-  th.small-4{
+  th.small-4 {
     @apply inline-block w-[33.33333%];
   }
 
   td.small-5,
-  th.small-5{
+  th.small-5 {
     @apply inline-block w-[41.66667%];
   }
 
   td.small-6,
-  th.small-6{
+  th.small-6 {
     @apply inline-block w-[50%];
   }
 
   td.small-7,
-  th.small-7{
+  th.small-7 {
     @apply inline-block w-[58.33333%];
-
   }
 
   td.small-8,
-  th.small-8{
+  th.small-8 {
     @apply inline-block w-[66.66667%];
   }
 
   td.small-9,
-  th.small-9{
+  th.small-9 {
     @apply inline-block w-[75%];
   }
 
   td.small-10,
-  th.small-10{
+  th.small-10 {
     @apply inline-block w-[83.33333%];
   }
 
   td.small-11,
-  th.small-11{
+  th.small-11 {
     @apply inline-block w-[91.66667%];
   }
 
   td.small-12,
-  th.small-12{
+  th.small-12 {
     @apply inline-block w-full;
   }
 
   .columns td.small-12,
   .column td.small-12,
   .columns th.small-12,
-  .column th.small-12{
+  .column th.small-12 {
     @apply block w-full;
   }
 
   table.body td.small-offset-1,
-  table.body th.small-offset-1{
+  table.body th.small-offset-1 {
     @apply ml-[8.33333%];
   }
 
   table.body td.small-offset-2,
-  table.body th.small-offset-2{
+  table.body th.small-offset-2 {
     @apply ml-[16.66667%];
   }
 
   table.body td.small-offset-3,
-  table.body th.small-offset-3{
+  table.body th.small-offset-3 {
     @apply ml-[25%];
   }
 
   table.body td.small-offset-4,
-  table.body th.small-offset-4{
+  table.body th.small-offset-4 {
     @apply ml-[33.33333%];
   }
 
   table.body td.small-offset-5,
-  table.body th.small-offset-5{
+  table.body th.small-offset-5 {
     @apply ml-[41.66667%];
   }
 
   table.body td.small-offset-6,
-  table.body th.small-offset-6{
+  table.body th.small-offset-6 {
     @apply ml-[50%];
   }
 
   table.body td.small-offset-7,
-  table.body th.small-offset-7{
+  table.body th.small-offset-7 {
     @apply ml-[58.33333%];
   }
 
   table.body td.small-offset-8,
-  table.body th.small-offset-8{
+  table.body th.small-offset-8 {
     @apply ml-[66.66667%];
   }
 
   table.body td.small-offset-9,
-  table.body th.small-offset-9{
+  table.body th.small-offset-9 {
     @apply ml-[75%];
   }
 
   table.body td.small-offset-10,
-  table.body th.small-offset-10{
+  table.body th.small-offset-10 {
     @apply ml-[83.33333%];
   }
 
   table.body td.small-offset-11,
-  table.body th.small-offset-11{
+  table.body th.small-offset-11 {
     @apply ml-[91.66667%];
   }
 
   table.body table.columns td.expander,
-  table.body table.columns th.expander{
+  table.body table.columns th.expander {
     @apply hidden;
   }
 
   table.body .right-text-pad,
-  table.body .text-pad-right{
+  table.body .text-pad-right {
     @apply pl-[10px];
   }
 
   table.body .left-text-pad,
-  table.body .text-pad-left{
+  table.body .text-pad-left {
     @apply pr-[10px];
   }
 
-  table.menu{
+  table.menu {
     @apply w-full;
   }
 
   table.menu td,
-  table.menu th{
+  table.menu th {
     @apply w-full inline-block;
   }
 
   table.menu.vertical td,
   table.menu.vertical th,
   table.menu.small-vertical td,
-  table.menu.small-vertical th{
+  table.menu.small-vertical th {
     @apply block;
   }
 
-  table.menu[align="center"]{
+  table.menu[align="center"] {
     @apply w-auto;
   }
 
   table.button.small-expand,
-  table.button.small-expanded{
+  table.button.small-expanded {
     @apply w-full;
   }
 
   table.button.small-expand table,
-  table.button.small-expanded table{
+  table.button.small-expanded table {
     @apply w-full;
   }
 
   table.button.small-expand table a,
-  table.button.small-expanded table a{
+  table.button.small-expanded table a {
     @apply text-center w-full px-0;
   }
 
   table.button.small-expand center,
-  table.button.small-expanded center{
+  table.button.small-expanded center {
     @apply min-w-0;
   }
 }
@@ -1487,104 +1484,104 @@ body.outlook p{
 /* 2 - Custom styles --------- */
 
 table.body th.decidim-bar,
-table.body td.decidim-bar{
+table.body td.decidim-bar {
   @apply bg-primary p-[1em];
 
-  a{
+  a {
     @apply text-white;
   }
 }
 
-.main.container > tbody > tr:first-of-type{
+.main.container > tbody > tr:first-of-type {
   @apply bg-primary;
 
-  a{
+  a {
     @apply text-white;
   }
 }
 
-table.body{
+table.body {
   @apply bg-background-10 my-[20px] mx-0;
 }
 
-.decidim-logo{
+.decidim-logo {
   @apply mt-[16px];
 }
 
-.decidim-logo a{
+.decidim-logo a {
   @apply inline-block h-[30px] text-white;
 }
 
-.cityhall-bar{
+.cityhall-bar {
   @apply bg-primary;
 }
 
-.cityhall-logo{
+.cityhall-logo {
   @apply w-[150px] mt-[16px];
 }
 
 .footnote,
-.headnote{
+.headnote {
   @apply pt-[10px] text-gray text-[12px];
 }
 
-table.container.main{
+table.container.main {
   @apply bg-bodybackgroundcolor;
 }
 
-.custom-button{
+.custom-button {
   @apply block text-center rounded-[4px] leading-1 py-[.58em] px-[1em] bg-red;
 }
 
-.button--sc{
+.button--sc {
   @apply tracking-wider font-semibold uppercase;
 
-  &.large{
+  &.large {
     @apply text-[1em];
   }
 }
 
-table.content.image img{
+table.content.image img {
   @apply w-full;
 }
 
 th,
-td{
+td {
   @apply box-border;
 }
 
-.row.content{
-  .email-button a{
+.row.content {
+  .email-button a {
     @apply bg-primary text-white p-[1em] rounded-[16px];
   }
 
-  .email-button__cta a{
-    &.cta-accept{
+  .email-button__cta a {
+    &.cta-accept {
       @apply bg-success;
     }
 
-    &.cta-decline{
+    &.cta-decline {
       @apply bg-bddarkgreen;
     }
   }
 
-  p{
+  p {
     @apply mb-[1.5rem] leading-[2em];
   }
 }
 
-.logo-wrapper{
-  img{
+.logo-wrapper {
+  img {
     @apply bg-primary p-[8px] max-h-[72px];
   }
 
   @apply p-0 pt-[25px];
 }
 
-.footer-social{
+.footer-social {
   @apply gap-[.5em] float-right flex list-none mr-[16px];
 }
 
-.footer-social img{
+.footer-social img {
   @apply w-[16px] h-[16px];
 }

@@ -1,17 +1,17 @@
-.process-header__hashtag a{
+.process-header__hashtag a {
   @apply text-secondary;
 }
 
-.process-nav{
-  &__link{
+.process-nav {
+  &__link {
     @apply normal-case;
   }
 
-  &__content li{
-    &.is-active{
+  &__content li {
+    &.is-active {
       @apply shadow-none;
 
-      a{
+      a {
         @apply text-secondary;
       }
     }

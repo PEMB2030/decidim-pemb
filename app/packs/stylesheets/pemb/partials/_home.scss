@@ -1,24 +1,24 @@
-.home-section{
-  &:not(:first-child){
+.home-section {
+  &:not(:first-child) {
     @apply border-t-[4px] border-t-solid border-t-secondary;
   }
 
-  .button--sc.hollow{
+  .button--sc.hollow {
     @apply bg-primary text-white border-none;
 
-    &:hover{
+    &:hover {
       @apply bg-secondary;
     }
   }
 
-  .hero__container{
-    .columns.small-centered.small-6.medium-4.mediumlarge-3{
+  .hero__container {
+    .columns.small-centered.small-6.medium-4.mediumlarge-3 {
       @apply w-[25em];
     }
   }
 
-  &.subhero{
-    h1{
+  &.subhero {
+    h1 {
       @apply text-secondary;
     }
   }

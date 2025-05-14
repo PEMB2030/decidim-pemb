@@ -1,4 +1,4 @@
-.button{
+.button {
   @apply rounded-[16px];
 
   &.hollow,
@@ -7,40 +7,40 @@
   &.hollow.disabled:hover,
   &.hollow[disabled]:hover,
   &.hollow.disabled:focus,
-  &.hollow[disabled]:focus{
+  &.hollow[disabled]:focus {
     @apply borde-[2px];
   }
 }
 
-.card{
+.card {
   @apply rounded-[16px];
 }
 
 .card .card__image,
-.card--mini .card__image-top{
+.card--mini .card__image-top {
   @apply rounded-tl-[16px] rounded-tr-[16px];
 }
 
-.card--process__column .card--full__image{
+.card--process__column .card--full__image {
   @apply rounded-tr-[16px] rounded-br-[16px];
 }
 
-.card__footer{
+.card__footer {
   @apply rounded-bl-[16px] rounded-br-[16px];
 }
 
-hr.reset{
+hr.reset {
   @apply border-b-[4px] border-b-solid border-b-secondary;
 }
 
-.process_stats{
+.process_stats {
   @apply ml-[1em];
 
-  .process_stats-item{
+  .process_stats-item {
     @apply border-[2px] border-solid border-gray-7 rounded-[16px] mr-[1em];
   }
 }
 
-.conference-programme .programme-selector{
+.conference-programme .programme-selector {
   @apply border-b-[4px] border-b-secondary pb-[1.5rem];
 }

@@ -1,46 +1,46 @@
 body,
-.off-canvas-wrapper{
+.off-canvas-wrapper {
   @apply bg-bodybackgroundcolor;
 }
 
-.callout.primary{
+.callout.primary {
   @apply border-l-[8px] border-l-solid border-l-primary bg-[hsl(map-get($hue, primary), 60%, 90%)];
 }
 
-.callout.secondary{
+.callout.secondary {
   @apply border-l-[8px] border-l-solid border-l-bdlightblue bg-[hsl(map-get($hue, bd-light-blue), 60%, 90%)];
 }
 
-.callout.success{
+.callout.success {
   @apply border-l-[8px] border-l-solid border-l-success bg-[hsl(map-get($hue, success), 60%, 90%)];
 }
 
-.callout.warning{
+.callout.warning {
   @apply border-l-[8px] border-l-solid border-l-warning bg-[hsl(map-get($hue, warning), 60%, 90%)];
 }
 
-.callout.alert{
+.callout.alert {
   @apply border-l-[8px] border-l-solid border-l-alert bg-[hsl(map-get($hue, alert), 60%, 90%)];
 }
 
-.process-stats__data::after{
+.process-stats__data::after {
   @apply border-l-secondary border-l-[4px];
 }
 
-@mixin small-screen{
-  @media print, screen and (max-width: 40em){
+@mixin small-screen {
+  @media print, screen and (max-width: 40em) {
     @content;
   }
 }
 
-@mixin mid-screen{
-  @media print, screen and (min-width: 40em) and (max-width: 63em){
+@mixin mid-screen {
+  @media print, screen and (min-width: 40em) and (max-width: 63em) {
     @content;
   }
 }
 
-@mixin big-screen{
-  @media print, screen and (min-width: 64em){
+@mixin big-screen {
+  @media print, screen and (min-width: 64em) {
     @content;
   }
 }

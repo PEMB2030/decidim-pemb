@@ -158,8 +158,6 @@ GIT
       selenium-webdriver (~> 4.9)
       simplecov (~> 0.22.0)
       simplecov-cobertura (~> 2.1.0)
-      spring (~> 4.0)
-      spring-watcher-listen (~> 2.0)
       w3c_rspec_validators (~> 0.3.0)
       webmock (~> 3.18)
       wisper-rspec (~> 1.0)
@@ -841,11 +839,8 @@ GEM
     smart_properties (1.17.0)
     snaky_hash (2.0.1)
       hashie
-      version_gem (~> 1.1, >= 1.1.1)
-    spring (4.3.0)
-    spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
-      spring (>= 4)
+      version_gem (~> 1.1, >= 1.1.1)
     stackprof (0.2.27)
     stringio (3.1.7)
     temple (0.10.3)
@@ -932,13 +927,13 @@ DEPENDENCIES
   letter_opener_web
   listen (~> 3.1)
   memory_profiler
+  nokogiri
   puma (>= 6.3.1)
   rack-mini-profiler
   sidekiq
   sidekiq-cron
   stackprof
   web-console
-  wicked_pdf (~> 2.1)
 
 RUBY VERSION
    ruby 3.2.8p263

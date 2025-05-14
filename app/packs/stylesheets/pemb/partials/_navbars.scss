@@ -1,56 +1,56 @@
-.title-bar{
+.title-bar {
   @apply bg-titlebarbg;
 }
 
-.logo-wrapper{
-  .custom-logos{
+.logo-wrapper {
+  .custom-logos {
     @apply pb-0;
 
-    img{
+    img {
       @apply h-[3em] max-h-none;
     }
   }
 }
 
-.navbar{
+.navbar {
   @apply bg-navbarbg;
 
   a,
-  a:hover{
+  a:hover {
     @apply text-primary font-bold;
   }
 }
 
-.main-nav__link{
-  a{
+.main-nav__link {
+  a {
     @apply text-navbarfg;
   }
 
   a:hover,
-  a:focus{
+  a:focus {
     @apply text-navbarfghover;
   }
 
-  &--active a{
+  &--active a {
     @apply inset-shadow-[0 -4px 0 0 primary];
   }
 }
 
-.topbar__search input{
+.topbar__search input {
   @apply bg-white text-bodyfontcolor;
 }
 
-.topbar__search:not(:focus-within) button{
+.topbar__search:not(:focus-within) button {
   @apply text-white bg-secondary;
 }
 
 .topbar__user__login a,
 .topbar__dropmenu > ul > li > a,
 .topbar__admin__link a,
-.topbar__menu button{
+.topbar__menu button {
   @apply text-white;
 
-  &:hover{
+  &:hover {
     @apply text-white;
   }
 }

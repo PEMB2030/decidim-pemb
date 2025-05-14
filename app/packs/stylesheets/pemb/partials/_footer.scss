@@ -1,58 +1,58 @@
-.main-footer{
+.main-footer {
   @apply bg-secondary;
 }
 
-.mini-footer{
+.mini-footer {
   @apply bg-primary;
 }
 
 .main-footer,
-.mini-footer{
+.mini-footer {
   a,
-  a:hover{
+  a:hover {
     @apply text-white;
   }
 }
 
-.mini-footer{
+.mini-footer {
   @apply p-t-[2em];
 
   a,
-  a:hover{
+  a:hover {
     @apply no-underline;
   }
 }
 
-.custom-logos{
-  a img + .external-link-indicator{
+.custom-logos {
+  a img + .external-link-indicator {
     @apply hidden;
   }
 
   @apply flex items-center justify-center gap-[2em] p-b-[2em];
 
-  img{
+  img {
     @apply w-auto h-[3em];
   }
 
-  &-secondary img{
+  &-secondary img {
     @apply h-[2.5em];
   }
 
-  @include small-screen{
+  @include small-screen {
     @apply flex-col;
   }
 
-  @include mid-screen{
-    img{
+  @include mid-screen {
+    img {
       @apply h-[3em];
     }
 
-    &-secondary img{
+    &-secondary img {
       @apply h-[1.5em];
     }
   }
 }
 
-.mini-footer #custom-logos-support{
+.mini-footer #custom-logos-support {
   @apply p-0;
 }
