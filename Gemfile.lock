@@ -8,7 +8,7 @@ GIT
       decidim-core (~> 0.29.0)
 
 GIT
-  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
+  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
   revision: ccb89b5eda6dba04658a70f34a38a97f1ecddf02
   branch: main
   specs:
@@ -19,173 +19,10 @@ GIT
       sassc (~> 2.3)
 
 GIT
-  remote: https://github.com/openpoke/decidim-module-access_codes.git
-  revision: b9fcf57c85605776d5e0856d493a4d57a34fef2f
-  branch: upgrade-0.29
+  remote: https://github.com/decidim/decidim.git
+  revision: ab82fa84dc15db684ac82e3005acc04e0a027a28
+  branch: release/0.29-stable
   specs:
-    decidim-access_codes (0.29.3)
-      decidim-admin (= 0.29.3)
-      decidim-core (= 0.29.3)
-      decidim-verifications (= 0.29.3)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
-    actioncable (7.0.8.7)
-      actionpack (= 7.0.8.7)
-      activesupport (= 7.0.8.7)
-      nio4r (~> 2.0)
-      websocket-driver (>= 0.6.1)
-    actionmailbox (7.0.8.7)
-      actionpack (= 7.0.8.7)
-      activejob (= 7.0.8.7)
-      activerecord (= 7.0.8.7)
-      activestorage (= 7.0.8.7)
-      activesupport (= 7.0.8.7)
-      mail (>= 2.7.1)
-      net-imap
-      net-pop
-      net-smtp
-    actionmailer (7.0.8.7)
-      actionpack (= 7.0.8.7)
-      actionview (= 7.0.8.7)
-      activejob (= 7.0.8.7)
-      activesupport (= 7.0.8.7)
-      mail (~> 2.5, >= 2.5.4)
-      net-imap
-      net-pop
-      net-smtp
-      rails-dom-testing (~> 2.0)
-    actionpack (7.0.8.7)
-      actionview (= 7.0.8.7)
-      activesupport (= 7.0.8.7)
-      rack (~> 2.0, >= 2.2.4)
-      rack-test (>= 0.6.3)
-      rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actiontext (7.0.8.7)
-      actionpack (= 7.0.8.7)
-      activerecord (= 7.0.8.7)
-      activestorage (= 7.0.8.7)
-      activesupport (= 7.0.8.7)
-      globalid (>= 0.6.0)
-      nokogiri (>= 1.8.5)
-    actionview (7.0.8.7)
-      activesupport (= 7.0.8.7)
-      builder (~> 3.1)
-      erubi (~> 1.4)
-      rails-dom-testing (~> 2.0)
-      rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    active_link_to (1.0.5)
-      actionpack
-      addressable
-    activejob (7.0.8.7)
-      activesupport (= 7.0.8.7)
-      globalid (>= 0.3.6)
-    activemodel (7.0.8.7)
-      activesupport (= 7.0.8.7)
-    activerecord (7.0.8.7)
-      activemodel (= 7.0.8.7)
-      activesupport (= 7.0.8.7)
-    activestorage (7.0.8.7)
-      actionpack (= 7.0.8.7)
-      activejob (= 7.0.8.7)
-      activerecord (= 7.0.8.7)
-      activesupport (= 7.0.8.7)
-      marcel (~> 1.0)
-      mini_mime (>= 1.1.0)
-    activesupport (7.0.8.7)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
-    acts_as_list (1.2.4)
-      activerecord (>= 6.1)
-      activesupport (>= 6.1)
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
-    ast (2.4.3)
-    aws-eventstream (1.3.2)
-    aws-partitions (1.1102.0)
-    aws-sdk-core (3.223.0)
-      aws-eventstream (~> 1, >= 1.3.0)
-      aws-partitions (~> 1, >= 1.992.0)
-      aws-sigv4 (~> 1.9)
-      base64
-      jmespath (~> 1, >= 1.6.1)
-      logger
-    aws-sdk-kms (1.100.0)
-      aws-sdk-core (~> 3, >= 3.216.0)
-      aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.185.0)
-      aws-sdk-core (~> 3, >= 3.216.0)
-      aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.5)
-    aws-sigv4 (1.11.0)
-      aws-eventstream (~> 1, >= 1.0.2)
-    base64 (0.2.0)
-    batch-loader (1.5.0)
-    bcrypt (3.1.20)
-    better_html (2.1.1)
-      actionview (>= 6.0)
-      activesupport (>= 6.0)
-      ast (~> 2.0)
-      erubi (~> 1.4)
-      parser (>= 2.4)
-      smart_properties
-    bigdecimal (3.1.9)
-    bindex (0.8.1)
-    bootsnap (1.18.4)
-      msgpack (~> 1.2)
-    brakeman (7.0.2)
-      racc
-    browser (2.7.1)
-    builder (3.3.0)
-    bullet (7.1.6)
-      activesupport (>= 3.0.0)
-      uniform_notifier (~> 1.11)
-    byebug (11.1.3)
-    capybara (3.40.0)
-      addressable
-      matrix
-      mini_mime (>= 0.1.3)
-      nokogiri (~> 1.11)
-      rack (>= 1.6.0)
-      rack-test (>= 0.6.3)
-      regexp_parser (>= 1.5, < 3.0)
-      xpath (~> 3.2)
-    cells (4.1.8)
-      declarative-builder (~> 0.2.0)
-      declarative-option (< 0.2.0)
-      tilt (>= 1.4, < 3)
-      uber (< 0.2.0)
-    cells-erb (0.1.0)
-      cells (~> 4.0)
-      erbse (>= 0.1.1)
-    cells-rails (0.1.6)
-      actionpack (>= 5.0)
-      cells (>= 4.1.6, < 5.0.0)
-    charlock_holmes (0.7.9)
-    childprocess (5.1.0)
-      logger (~> 1.5)
-    commonmarker (0.23.11)
-    concurrent-ruby (1.3.4)
-    connection_pool (2.5.3)
-    crack (1.0.0)
-      bigdecimal
-      rexml
-    crass (1.0.6)
-    cronex (0.15.0)
-      tzinfo
-      unicode (>= 0.4.4.5)
-    css_parser (1.21.1)
-      addressable
-    csv (3.3.4)
-    dartsass (1.49.8)
-    date (3.4.1)
-    date_validator (0.12.0)
-      activemodel (>= 3)
-      activesupport (>= 3)
     decidim (0.29.3)
       decidim-accountability (= 0.29.3)
       decidim-admin (= 0.29.3)
@@ -363,6 +200,174 @@ GEM
       decidim-forms (= 0.29.3)
     decidim-verifications (0.29.3)
       decidim-core (= 0.29.3)
+
+GIT
+  remote: https://github.com/openpoke/decidim-module-access_codes.git
+  revision: b9fcf57c85605776d5e0856d493a4d57a34fef2f
+  branch: upgrade-0.29
+  specs:
+    decidim-access_codes (0.29.3)
+      decidim-admin (= 0.29.3)
+      decidim-core (= 0.29.3)
+      decidim-verifications (= 0.29.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actioncable (7.0.8.7)
+      actionpack (= 7.0.8.7)
+      activesupport (= 7.0.8.7)
+      nio4r (~> 2.0)
+      websocket-driver (>= 0.6.1)
+    actionmailbox (7.0.8.7)
+      actionpack (= 7.0.8.7)
+      activejob (= 7.0.8.7)
+      activerecord (= 7.0.8.7)
+      activestorage (= 7.0.8.7)
+      activesupport (= 7.0.8.7)
+      mail (>= 2.7.1)
+      net-imap
+      net-pop
+      net-smtp
+    actionmailer (7.0.8.7)
+      actionpack (= 7.0.8.7)
+      actionview (= 7.0.8.7)
+      activejob (= 7.0.8.7)
+      activesupport (= 7.0.8.7)
+      mail (~> 2.5, >= 2.5.4)
+      net-imap
+      net-pop
+      net-smtp
+      rails-dom-testing (~> 2.0)
+    actionpack (7.0.8.7)
+      actionview (= 7.0.8.7)
+      activesupport (= 7.0.8.7)
+      rack (~> 2.0, >= 2.2.4)
+      rack-test (>= 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.2.0)
+    actiontext (7.0.8.7)
+      actionpack (= 7.0.8.7)
+      activerecord (= 7.0.8.7)
+      activestorage (= 7.0.8.7)
+      activesupport (= 7.0.8.7)
+      globalid (>= 0.6.0)
+      nokogiri (>= 1.8.5)
+    actionview (7.0.8.7)
+      activesupport (= 7.0.8.7)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_link_to (1.0.5)
+      actionpack
+      addressable
+    activejob (7.0.8.7)
+      activesupport (= 7.0.8.7)
+      globalid (>= 0.3.6)
+    activemodel (7.0.8.7)
+      activesupport (= 7.0.8.7)
+    activerecord (7.0.8.7)
+      activemodel (= 7.0.8.7)
+      activesupport (= 7.0.8.7)
+    activestorage (7.0.8.7)
+      actionpack (= 7.0.8.7)
+      activejob (= 7.0.8.7)
+      activerecord (= 7.0.8.7)
+      activesupport (= 7.0.8.7)
+      marcel (~> 1.0)
+      mini_mime (>= 1.1.0)
+    activesupport (7.0.8.7)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    acts_as_list (1.2.4)
+      activerecord (>= 6.1)
+      activesupport (>= 6.1)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
+    ast (2.4.3)
+    aws-eventstream (1.3.2)
+    aws-partitions (1.1102.0)
+    aws-sdk-core (3.223.0)
+      aws-eventstream (~> 1, >= 1.3.0)
+      aws-partitions (~> 1, >= 1.992.0)
+      aws-sigv4 (~> 1.9)
+      base64
+      jmespath (~> 1, >= 1.6.1)
+      logger
+    aws-sdk-kms (1.100.0)
+      aws-sdk-core (~> 3, >= 3.216.0)
+      aws-sigv4 (~> 1.5)
+    aws-sdk-s3 (1.185.0)
+      aws-sdk-core (~> 3, >= 3.216.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.5)
+    aws-sigv4 (1.11.0)
+      aws-eventstream (~> 1, >= 1.0.2)
+    base64 (0.2.0)
+    batch-loader (1.5.0)
+    bcrypt (3.1.20)
+    better_html (2.1.1)
+      actionview (>= 6.0)
+      activesupport (>= 6.0)
+      ast (~> 2.0)
+      erubi (~> 1.4)
+      parser (>= 2.4)
+      smart_properties
+    bigdecimal (3.1.9)
+    bindex (0.8.1)
+    bootsnap (1.18.4)
+      msgpack (~> 1.2)
+    brakeman (5.4.1)
+    browser (2.7.1)
+    builder (3.3.0)
+    bullet (7.1.6)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
+    byebug (11.1.3)
+    capybara (3.40.0)
+      addressable
+      matrix
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.11)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      regexp_parser (>= 1.5, < 3.0)
+      xpath (~> 3.2)
+    cells (4.1.8)
+      declarative-builder (~> 0.2.0)
+      declarative-option (< 0.2.0)
+      tilt (>= 1.4, < 3)
+      uber (< 0.2.0)
+    cells-erb (0.1.0)
+      cells (~> 4.0)
+      erbse (>= 0.1.1)
+    cells-rails (0.1.6)
+      actionpack (>= 5.0)
+      cells (>= 4.1.6, < 5.0.0)
+    charlock_holmes (0.7.9)
+    childprocess (5.1.0)
+      logger (~> 1.5)
+    commonmarker (0.23.11)
+    concurrent-ruby (1.3.4)
+    connection_pool (2.5.3)
+    crack (1.0.0)
+      bigdecimal
+      rexml
+    crass (1.0.6)
+    cronex (0.15.0)
+      tzinfo
+      unicode (>= 0.4.4.5)
+    css_parser (1.21.1)
+      addressable
+    csv (3.3.4)
+    dartsass (1.49.8)
+    date (3.4.1)
+    date_validator (0.12.0)
+      activemodel (>= 3)
+      activesupport (>= 3)
     declarative-builder (0.2.0)
       trailblazer-option (~> 0.1.0)
     declarative-option (0.1.0)
@@ -468,6 +473,8 @@ GEM
       html-pipeline (~> 2.14, >= 2.14.3)
     hashdiff (1.1.2)
     hashie (5.0.0)
+    health_check (3.1.0)
+      railties (>= 5.0)
     highline (3.1.2)
       reline
     html-pipeline (2.14.3)
@@ -908,25 +915,25 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-s3
   bootsnap (~> 1.7)
-  brakeman
+  brakeman (~> 5.4)
   bullet
   byebug (~> 11.0)
-  decidim (= 0.29.3)
+  decidim!
   decidim-access_codes!
-  decidim-conferences (= 0.29.3)
+  decidim-conferences!
   decidim-decidim_awesome!
-  decidim-dev (= 0.29.3)
-  decidim-templates (= 0.29.3)
+  decidim-dev!
+  decidim-templates!
   decidim-term_customizer!
-  deface
+  deface (>= 1.9)
   faker (~> 3.2)
   flamegraph
+  health_check
   letter_opener_web
   listen (~> 3.1)
   memory_profiler
-  puma (>= 5.0.0)
+  puma (>= 6.3.1)
   rack-mini-profiler
-  rubocop-faker
   sidekiq
   sidekiq-cron
   stackprof
@@ -934,7 +941,7 @@ DEPENDENCIES
   wicked_pdf (~> 2.1)
 
 RUBY VERSION
-   ruby 3.2.6p234
+   ruby 3.2.8p263
 
 BUNDLED WITH
-   2.6.6
+   2.6.5
