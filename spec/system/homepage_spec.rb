@@ -26,4 +26,9 @@ describe "Homepage" do
     expect(page).to have_link(nil, href: "https://twitter.com/pembarcelona")
     expect(page).to have_link(nil, href: "/link?external_url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F11257078")
   end
+
+  it "renders the language chooser on header" do
+    visit decidim.root_path
+    expect(page).to have_css(".main-header__language-container")
+  end
 end
