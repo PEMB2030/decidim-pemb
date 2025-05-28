@@ -1,12 +1,14 @@
 FROM ruby:3.2.8 AS builder
 
-RUN apt-get update && apt-get upgrade -y && apt-get install gnupg2 && \
-    curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y ca-certificates curl gnupg && \
+    mkdir -p /etc/apt/keyrings && \
+    curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
     apt-get update && apt-get install -y nodejs yarn \
     build-essential \
     postgresql-client \
+    p7zip \
     libpq-dev && \
     apt-get clean
 
@@ -32,11 +34,10 @@ RUN gem install bundler:$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xa
     find /usr/local/bundle/ -name "*.o" -delete && \
     find /usr/local/bundle/ -name ".git" -exec rm -rf {} + && \
     find /usr/local/bundle/ -name ".github" -exec rm -rf {} + && \
-    # whkhtmltopdf has binaries for all platforms, we don't need them once uncompressed
-    rm -rf /usr/local/bundle/gems/wkhtmltopdf-binary-*/bin/*.gz && \
     # Remove additional unneded decidim files
     find /usr/local/bundle/ -name "decidim_app-design" -exec rm -rf {} + && \
     find /usr/local/bundle/ -name "spec" -exec rm -rf {} +
+    find /usr/local/bundle/ -wholename "*/decidim-dev/lib/decidim/dev/assets/*" -exec rm -rf {} +
 
 RUN npm ci
 
@@ -81,10 +82,15 @@ RUN apt-get update && \
     apt-get install -y postgresql-client \
     imagemagick \
     curl \
+    p7zip \
+    wkhtmltopdf \
     supervisor && \
     apt-get clean
 
 EXPOSE 3000
+
+ARG CAPROVER_GIT_COMMIT_SHA=${CAPROVER_GIT_COMMIT_SHA}
+ENV APP_REVISION=${CAPROVER_GIT_COMMIT_SHA}
 
 ENV RAILS_LOG_TO_STDOUT true
 ENV RAILS_SERVE_STATIC_FILES true
