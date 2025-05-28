@@ -887,7 +887,7 @@ DEPENDENCIES
   decidim-dev!
   decidim-templates!
   decidim-term_customizer!
-  deface (>= 1.9)
+  deface
   faker (~> 3.2)
   flamegraph
   health_check

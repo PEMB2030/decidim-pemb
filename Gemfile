@@ -14,7 +14,7 @@ gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_aweso
 gem "decidim-term_customizer", github: "CodiTramuntana/decidim-module-term_customizer", branch: "upgrade/decidim_0.29"
 
 gem "bootsnap", "~> 1.7"
-gem "deface", ">= 1.9"
+gem "deface"
 gem "health_check"
 gem "puma", ">= 6.3.1"
 
