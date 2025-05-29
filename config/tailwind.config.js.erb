@@ -34,8 +34,8 @@ module.exports = {
       transparent,
       white,
       neutral,
-      primary: '#00d378',
-      secondary: '#5a36ce',
+      primary: "#5a36ce",
+      secondary: "#00d378",
       tertiary: withOpacity("--tertiary-rgb"),
       success: "#28A745",
       alert: "#ED1C24",
@@ -61,8 +61,11 @@ module.exports = {
       lightblue: "#147dc2",
       skyorange: "#ff6908",
       skygreen: "#00a767",
+      skygreenlight: "#1abf7b",
       skyred: "#e30613",
+      skyredlight: "#F91926",
       lightorange: "#ee734d",
+      lightorangelight: "#F5AE97",
       lightgray: "#def0fc",
       gray: {
         DEFAULT: "#6B7280CC", // 80% opacity
@@ -98,7 +101,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ["Source Sans Pro", "ui-sans-serif", "system-ui", "sans-serif"]
+      sans: ["Source Sans Pro", "ui-sans-serif", "system-ui", "sans-serif"],
+      arial: ["Arial", "sans-serif"]
     },
     fontSize: {
       xs: ["13px", "16px"],
@@ -119,3 +123,4 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography")]
 }
+
