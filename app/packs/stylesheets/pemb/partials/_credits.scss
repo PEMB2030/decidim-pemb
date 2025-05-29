@@ -4,7 +4,6 @@
   }
 
   #made-with {
-
     @apply grid md:grid-cols-2 mb-[2rem] mt-[2rem] mx-auto md:w-2/3 md:justify-around;
 
     div {
@@ -23,7 +22,7 @@
         @apply md:mr-0;
 
         img {
-          @apply w-[140px] h-full;
+          @apply w-[140px] h-full object-contain;
         }
 
         a,

@@ -1,25 +1,5 @@
-.home-section {
-  &:not(:first-child) {
-    @apply border-t-[4px] border-solid border-t-secondary;
-  }
-
-  .button--sc.hollow {
-    @apply bg-primary text-white border-none;
-
-    &:hover {
-      @apply bg-secondary;
-    }
-  }
-
-  .hero__container {
-    .columns.small-centered.small-6.medium-4.mediumlarge-3 {
-      @apply w-[25em];
-    }
-  }
-
-  &.subhero {
-    h1 {
-      @apply text-secondary;
-    }
+main.home {
+  #home__menu {
+    @apply bg-secondary;
   }
 }
