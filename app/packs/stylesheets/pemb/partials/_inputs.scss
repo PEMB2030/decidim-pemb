@@ -1,15 +1,15 @@
 ::-webkit-input-placeholder {
-  @apply text-bodyfontcolor;
+  @apply text-black;
 }
 
 :-ms-input-placeholder {
-  @apply text-bodyfontcolor;
+  @apply text-black;
 }
 
 ::-ms-input-placeholder {
-  @apply text-bodyfontcolor;
+  @apply text-black;
 }
 
 ::placeholder {
-  @apply text-bodyfontcolor;
+  @apply text-black;
 }

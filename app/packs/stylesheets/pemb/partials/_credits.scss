@@ -3,27 +3,36 @@
     @apply pb-[1rem] md:pt-[.2rem];
   }
 
-  .logos {
-    @apply flex h-[2rem] mt-[1.5rem];
+  #made-with {
 
-    .decidim-logo,
-    .pokecode-logo {
-      img {
-        @apply w-full h-full;
-      }
+    @apply grid md:grid-cols-2 mb-[2rem] mt-[2rem] mx-auto md:w-2/3 md:justify-around;
 
-      a,
-      a:hover,
-      a:focus {
-        @apply text-white no-underline;
-      }
+    div {
+      @apply justify-self-center ;
     }
 
-    @apply md:items-end md:mt-0;
+    #license {
+      @apply md:w-7/12 lg:w-8/12;
+    }
 
-    .decidim-logo,
-    .pokecode-logo {
-      @apply md:mr-0;
+    .logos {
+      @apply grid md:grid-cols-2 gap-8 md:h-[2rem] mt-[1.5rem] md:items-end md:mt-0 w-full;
+
+      .decidim-logo,
+      .pokecode-logo {
+        @apply md:mr-0;
+
+        img {
+          @apply w-[140px] h-full;
+        }
+
+        a,
+        a:hover,
+        a:focus {
+          @apply text-white no-underline;
+        }
+      }
+
     }
   }
 }

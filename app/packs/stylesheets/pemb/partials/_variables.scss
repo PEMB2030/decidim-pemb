@@ -1,26 +1,6 @@
 body,
 .off-canvas-wrapper {
-  @apply bg-bodybackgroundcolor;
-}
-
-.callout.primary {
-  @apply border-l-[8px] border-solid border-l-primary;
-}
-
-.callout.secondary {
-  @apply border-l-[8px] border-solid border-l-bdlightblue;
-}
-
-.callout.success {
-  @apply border-l-[8px] border-solid border-l-success;
-}
-
-.callout.warning {
-  @apply border-l-[8px] border-solid border-l-warning;
-}
-
-.callout.alert {
-  @apply border-l-[8px] border-solid border-l-alert;
+  @apply bg-white;
 }
 
 .process-stats__data::after {

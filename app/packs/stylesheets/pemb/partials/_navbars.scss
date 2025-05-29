@@ -12,12 +12,12 @@
   }
 }
 
-.navbar {
+#menu-bar {
   @apply bg-navbarbg;
 
   a,
   a:hover {
-    @apply text-primary font-bold;
+    @apply text-white font-bold;
   }
 }
 
@@ -33,7 +33,7 @@
 }
 
 .topbar__search input {
-  @apply bg-white text-bodyfontcolor;
+  @apply bg-white text-black;
 }
 
 .topbar__search:not(:focus-within) button {

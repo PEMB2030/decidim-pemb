@@ -1,3 +1,5 @@
-header > div#sticky-header-container {
-  background-color: @apply bg-primary;
+header {
+  div#sticky-header-container {
+    @apply bg-primary;
+  }
 }
