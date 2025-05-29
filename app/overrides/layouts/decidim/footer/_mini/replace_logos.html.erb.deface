@@ -15,7 +15,7 @@
     </a>
   </div>
   <div class="row">
-    <p class="column medium-centered medium-4 text-center" id="custom-logos-support">Amb el suport de:</p>
+    <p class="column mb-4 text-center text-white p-2" id="custom-logos-support">Amb el suport de:</p>
   </div>
   <div class="custom-logos custom-logos-secondary">
     <a rel="amb"
@@ -30,8 +30,8 @@
     </a>
   </div>
 
- <div class="row">
-  <div class="medium-7 large-8 column">
+ <div id="made-with">
+  <div id="license">
     <a rel="license noopener" class="cc-badge"
         href="http://creativecommons.org/licenses/by-sa/4.0/"
         target="_blank">
@@ -39,7 +39,7 @@
     </a>
     <%= t("layouts.decidim.footer.made_with_open_source").html_safe %>
   </div>
-  <div class="medium-5 large-4 column logos">
+  <div class="logos">
     <div class="decidim-logo pokecode-logo">
       <a rel="decidim noopener"
           href="http://pokecode.net/"
