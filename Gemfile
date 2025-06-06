@@ -3,38 +3,33 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: "https://github.com/openpoke/decidim", branch: "backport-maps" }
+DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.29-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
-gem "decidim-consultations", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-access_codes", git: "https://github.com/Platoniq/decidim-module-access_codes", branch: "release/0.27-stable"
-gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "memoize-27"
-gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify", branch: "release/0.27-stable"
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "release/0.27-stable"
+gem "decidim-access_codes", github: "openpoke/decidim-module-access_codes", branch: "main"
+gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "main"
+gem "decidim-term_customizer", github: "CodiTramuntana/decidim-module-term_customizer", branch: "upgrade/decidim_0.29"
 
 gem "bootsnap", "~> 1.7"
 gem "deface"
-gem "puma", ">= 5.0.0"
-
-gem "wicked_pdf", "~> 2.1"
+gem "health_check"
+gem "puma", ">= 6.3.1"
+gem "rails_semantic_logger"
+gem "sentry-rails"
+gem "sentry-ruby"
 
 group :development, :test do
+  gem "brakeman", "~> 5.4"
   gem "byebug", "~> 11.0", platform: :mri
-  gem "faker", "~> 2.14"
-  gem "rubocop-faker"
-
-  gem "brakeman"
   gem "decidim-dev", DECIDIM_VERSION
+  gem "faker", "~> 3.2"
 end
 
 group :development do
   gem "letter_opener_web"
-  gem "listen", "~> 3.1"
-  gem "spring", ">= 4.0.0"
-  gem "spring-watcher-listen", "~> 2.1"
   gem "web-console"
   # Profiling gems
   gem "bullet"

@@ -5,3 +5,94 @@
 // To override CSS variables or Foundation settings use _decidim-settings.scss
 //
 // By default this is empty.
+
+@import "stylesheets/pemb";
+
+// This code is for header language chooser
+.main-bar__links-desktop {
+  @media (min-width: 768px) {
+    [data-target*="dropdown"] {
+      @apply block min-w-16;
+
+      div {
+        @apply block text-secondary text-sm text-center;
+
+        svg {
+          @apply inline-block;
+        }
+      }
+    }
+  }
+
+  .main-header__language-chooser {
+    @apply relative z-10;
+
+    > ul {
+      @apply absolute left-0 bg-white p-4 shadow-md text-left;
+
+      > li {
+        @apply text-secondary text-md hover:underline hover:bg-secondary hover:text-white transition;
+
+        > a {
+          @apply p-2 w-full block;
+        }
+      }
+    }
+  }
+}
+
+.main-footer {
+  @apply bg-secondary;
+}
+
+.mini-footer {
+  @apply bg-primary;
+}
+
+.main-footer,
+.mini-footer {
+  a,
+  a:hover {
+    @apply text-white;
+  }
+}
+
+.mini-footer {
+  @apply pt-[2em];
+
+  a,
+  a:hover {
+    @apply no-underline;
+  }
+}
+
+.custom-logos {
+  a img + .external-link-indicator {
+    @apply hidden;
+  }
+
+  @apply flex items-center justify-center gap-[2em] pb-[2em];
+
+  img {
+    @apply w-auto h-[3em];
+  }
+
+  &-secondary img {
+    @apply h-[2.5em];
+  }
+
+  @include mid-screen {
+    img {
+      @apply h-[3em];
+    }
+
+    &-secondary img {
+      @apply h-[1.5em];
+    }
+  }
+}
+
+.mini-footer #custom-logos-support {
+  @apply p-0;
+}
+

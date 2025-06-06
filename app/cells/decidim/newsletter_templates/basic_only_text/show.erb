@@ -26,9 +26,10 @@
             <table>
               <tr>
                 <th>
-                  <% if organization.official_img_header.attached? %>
+
+                  <% if organization.logo.attached? %>
                     <%= link_to newsletter.organization_official_url do %>
-                      <%= image_tag organization.attached_uploader(:official_img_header).path, alt: "", style: "max-height: 50px", class: "float-right" %>
+                      <%= image_tag organization.attached_uploader(:logo).path, alt: "", style: "max-height: 50px", class: "float-right" %>
                     <% end %>
                   <% end %>
                 </th>

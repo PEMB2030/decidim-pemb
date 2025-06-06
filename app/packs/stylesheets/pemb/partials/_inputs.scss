@@ -1,14 +1,15 @@
-@import "./variables";
-
 ::-webkit-input-placeholder {
-  color: $body-font-color;
+  @apply text-black;
 }
+
 :-ms-input-placeholder {
-  color: $body-font-color;
+  @apply text-black;
 }
+
 ::-ms-input-placeholder {
-  color: $body-font-color;
+  @apply text-black;
 }
+
 ::placeholder {
-  color: $body-font-color;
+  @apply text-black;
 }

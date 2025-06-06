@@ -1,64 +1,58 @@
-@import "variables";
-
-.main-footer {
-  background-color: var(--secondary);
-}
-
-.mini-footer {
-  background-color: var(--primary);
-}
-
-.main-footer,
-.mini-footer {
-  a,
-  a:hover {
-    color: white;
-  }
-}
-
-.mini-footer {
-  padding-top: 2em;
-  a,
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-.custom-logos {
-  a img + .external-link-indicator {
-    display: none;
+footer {
+  .main-footer {
+    @apply bg-secondary;
   }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-  padding-bottom: 2em;
+  .mini-footer {
+    @apply bg-primary pt-[2em];
 
-  img {
-    height: 3em;
-    width: auto;
+    a,
+    a:hover {
+      @apply no-underline;
+    }
+
+    #custom-logos-support {
+      @apply p-0 text-white mb-[1rem];
+    }
+
   }
 
-  &-secondary img {
-    height: 2.5em;
+  .main-footer,
+  .mini-footer {
+    a,
+    a:hover {
+      @apply text-white;
+    }
   }
 
-  @include small-screen {
-    flex-direction: column;
-  }
+  .custom-logos {
+    a img + .external-link-indicator {
+      @apply hidden;
+    }
 
-  @include mid-screen {
+    @apply flex items-center justify-center gap-[2em] pb-[2em];
+
     img {
-      height: 3em;
+      @apply w-auto h-[3em];
     }
 
     &-secondary img {
-      height: 1.5em;
+      @apply h-[2.5em];
     }
-  }
-}
 
-.mini-footer #custom-logos-support {
-  padding: 0;
+    @include small-screen {
+      @apply flex-col;
+    }
+
+    @include mid-screen {
+      img {
+        @apply h-[3em];
+      }
+
+      &-secondary img {
+        @apply h-[1.5em];
+      }
+    }
+
+  }
 }

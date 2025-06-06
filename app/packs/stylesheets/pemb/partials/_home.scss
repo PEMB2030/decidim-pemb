@@ -1,29 +1,5 @@
-@import "variables";
-
-.home-section {
-  &:not(:first-child) {
-    border-top: $border-width-big solid var(--secondary);
-  }
-
-  .button--sc.hollow {
-    background-color: var(--primary);
-    color: white;
-    border: none;
-
-    &:hover {
-      background-color: var(--secondary);
-    }
-  }
-
-  .hero__container {
-    .columns.small-centered.small-6.medium-4.mediumlarge-3 {
-      width: 25em;
-    }
-  }
-
-  &.subhero {
-    h1 {
-      color: var(--secondary);
-    }
+main.home {
+  #home__menu {
+    @apply bg-secondary;
   }
 }

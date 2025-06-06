@@ -1,0 +1,60 @@
+<!-- replace '.mini-footer' -->
+
+<div class="footer-transition"></div>
+<div class="mini-footer">
+  <div class="custom-logos">
+    <a rel="pemb"
+        href="https://pemb.cat"
+        target="_blank" rel="noopener">
+        <%= image_pack_tag("media/images/logo_pemb.svg", alt: "PEMB (Pla Estratègic Metropolità de Barcelona)") %>
+    </a>
+    <a rel="Barcelona Demà"
+      href="https://compromismetropolita.cat"
+      target="_blank" rel="noopener">
+      <%= image_pack_tag("media/images/logo_ciutat.svg") %>
+    </a>
+  </div>
+  <div class="row">
+    <p class="column mb-4 text-center text-white p-2" id="custom-logos-support">Amb el suport de:</p>
+  </div>
+  <div class="custom-logos custom-logos-secondary">
+    <a rel="amb"
+        href="https://amb.cat/"
+        target="_blank">
+      <%= image_pack_tag("media/images/logo_amb.png", alt: "AMB (Area Metropolitana de Barcelona)" ) %>
+    </a>
+    <a rel="diba"
+        href="https://www.diba.cat/"
+        target="_blank">
+      <%= image_pack_tag("media/images/logo_diba.png", alt: "Diputació de Barcelona" ) %>
+    </a>
+  </div>
+
+ <div id="made-with">
+  <div id="license">
+    <a rel="license noopener" class="cc-badge"
+        href="http://creativecommons.org/licenses/by-sa/4.0/"
+        target="_blank">
+      <%= image_pack_tag("media/images/cc-badge.png", alt: t("layouts.decidim.footer.cc_by_license")) %>
+    </a>
+    <%= t("layouts.decidim.footer.made_with_open_source").html_safe %>
+  </div>
+  <div class="logos">
+    <div class="decidim-logo pokecode-logo">
+      <a rel="decidim noopener"
+          href="http://pokecode.net/"
+          target="_blank"
+          title="<%= t("pokecode.footer.logo") %>">
+        <span class="pokecode-text show-for-medium"><%= t("pokecode.footer.text") %></span>
+        <%= image_pack_tag("media/images/logo_pokecode_white.png", alt: t("pokecode.footer.logo")) %>
+      </a>
+    </div>
+    <div class="decidim-logo">
+      <a rel="decidim noopener"
+          href="https://decidim.org/"
+          target="_blank">
+        <%= image_pack_tag("media/images/decidim-logo.svg", alt: t("layouts.decidim.footer.decidim_logo")) %>
+      </a>
+    </div>
+  </div>
+</div>

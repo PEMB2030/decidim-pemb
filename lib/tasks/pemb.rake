@@ -26,7 +26,7 @@ namespace :pemb do
         days.each do |day|
           new_metrics = klass.new(day.to_s, org)
           ActiveRecord::Base.transaction do
-            old_metrics.where(day: day).delete_all
+            old_metrics.where(day:).delete_all
             new_metrics.save
           end
         end
@@ -52,7 +52,7 @@ namespace :pemb do
     mail = ActionMailer::Base.mail(to: args.email,
                                    from: Decidim.mailer_sender,
                                    subject: "A test mail from #{Decidim.application_name}",
-                                   body: "Sent by #{ENV.fetch("LOGNAME", nil)} in #{ENV.fetch("HOME", nil)} at #{Date.current}")
+                                   body: "Sent by #{ENV.fetch("LOGNAME", nil)} in #{Dir.home} at #{Date.current}")
     mail.deliver_now
   rescue ArgumentError
     puts mail_usage

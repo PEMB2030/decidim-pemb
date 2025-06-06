@@ -1,0 +1,7 @@
+a.button.button__secondary {
+  @apply bg-primary;
+
+  &:hover {
+    @apply bg-primary brightness-125;
+  }
+}
