@@ -9,7 +9,7 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-access_codes", github: "openpoke/decidim-module-access_codes", branch: "upgrade-0.29"
+gem "decidim-access_codes", github: "openpoke/decidim-module-access_codes", branch: "main"
 gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-term_customizer", github: "CodiTramuntana/decidim-module-term_customizer", branch: "upgrade/decidim_0.29"
 
@@ -17,6 +17,9 @@ gem "bootsnap", "~> 1.7"
 gem "deface"
 gem "health_check"
 gem "puma", ">= 6.3.1"
+gem "rails_semantic_logger"
+gem "sentry-rails"
+gem "sentry-ruby"
 
 group :development, :test do
   gem "brakeman", "~> 5.4"
@@ -27,7 +30,6 @@ end
 
 group :development do
   gem "letter_opener_web"
-  gem "listen", "~> 3.1"
   gem "web-console"
   # Profiling gems
   gem "bullet"
